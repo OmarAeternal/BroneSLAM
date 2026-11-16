@@ -1,0 +1,22 @@
+======================================================================
+RINGKASAN CEK DRIFT & LOOP CLOSURE
+======================================================================
+Durasi (waktu sim)       : 600.3 s
+Jarak tempuh (GT)        : 107.85 m
+Pesan /rtabmap/info      : 0
+Loop closure diterima    : 0
+Proximity diterima       : 0
+Kandidat ditolak         : 0
+Lompatan koreksi terbesar: 142.8 cm
+Error pose SLAM  akhir/rata/maks: 95.4 / 85.2 / 229.4 cm
+Error pose ODOM  akhir/rata/maks: 216.2 / 294.6 / 718.2 cm
+Drift ODOM akhir         : 2.00 % dari jarak
+Error node graf (peta) rata/median/maks: 330.5 / 269.3 / 745.0 cm  (799 node)
+Node dengan error > 10 cm: 799 (100 %)
+----------------------------------------------------------------------
+DIAGNOSIS:
+- /rtabmap/info tidak pernah diterima. Apakah RTAB-Map jalan?
+- Tidak ada satu pun loop closure/proximity yang diterima. Drift odometri langsung masuk ke peta -> tembok dobel.
+- Sebagian node peta melenceng hingga 745 cm dari posisi aslinya. Tembok dari node itu tergambar bergeser (sumber "tembok hantu").
+----------------------------------------------------------------------
+File hasil: /home/bromarku/brone/BRONE_D455_REAL/hasil_cek_drift/20261114_210833

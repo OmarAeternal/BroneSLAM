@@ -1,0 +1,928 @@
+t,jenis,keterangan
+5.95,KOREKSI,"map->odom lompat 9.1 cm, 4.3 deg"
+12.43,TOLAK,kandidat node 16 -> 1 ditolak  (hyp=0.33 inliers=0)
+18.99,PROX,diterima: node 21 -> 11
+19.44,KOREKSI,"map->odom lompat 6.5 cm, 2.0 deg"
+20.83,PROX,diterima: node 22 -> 11
+21.52,PROX,diterima: node 23 -> 10
+22.7,PROX,diterima: node 24 -> 10
+23.73,PROX,diterima: node 25 -> 10
+23.78,PROX,diterima: node 26 -> 1
+24.62,PROX,diterima: node 27 -> 10
+41.86,PROX,diterima: node 38 -> 28
+44.0,PROX,diterima: node 39 -> 29
+45.39,PROX,diterima: node 40 -> 30
+51.09,TOLAK,kandidat node 44 -> 15 ditolak  (hyp=0.11 inliers=0)
+52.08,TOLAK,kandidat node 45 -> 15 ditolak  (hyp=0.11 inliers=0)
+58.08,TOLAK,kandidat node 49 -> 39 ditolak  (hyp=0.14 inliers=0)
+59.17,TOLAK,kandidat node 50 -> 39 ditolak  (hyp=0.15 inliers=0)
+60.0,TOLAK,kandidat node 51 -> 39 ditolak  (hyp=0.16 inliers=0)
+61.23,TOLAK,kandidat node 52 -> 15 ditolak  (hyp=0.14 inliers=0)
+61.3,PROX,diterima: node 53 -> 27
+61.3,TOLAK,kandidat node 53 -> 15 ditolak  (hyp=0.14 inliers=8 opt_err=0.15m)
+64.11,TOLAK,kandidat node 54 -> 15 ditolak  (hyp=0.14 inliers=0)
+66.51,TOLAK,kandidat node 55 -> 9 ditolak  (hyp=0.17 inliers=0)
+69.26,LOOP,"diterima: node 56 -> 28  (hyp=0.15, inliers=13)"
+69.26,PROX,diterima: node 56 -> 28
+74.06,TOLAK,kandidat node 57 -> 31 ditolak  (hyp=0.14 inliers=18 opt_err=0.03m)
+76.77,PROX,diterima: node 58 -> 33
+76.77,TOLAK,kandidat node 58 -> 34 ditolak  (hyp=0.15 inliers=28 opt_err=0.14m)
+77.2,LOOP,"diterima: node 59 -> 35  (hyp=0.15, inliers=21)"
+77.2,PROX,diterima: node 59 -> 35
+77.76,TOLAK,kandidat node 60 -> 35 ditolak  (hyp=0.14 inliers=25 opt_err=0.02m)
+78.26,TOLAK,kandidat node 61 -> 35 ditolak  (hyp=0.20 inliers=22 opt_err=0.02m)
+79.97,PROX,diterima: node 62 -> 36
+79.97,TOLAK,kandidat node 62 -> 36 ditolak  (hyp=0.16 inliers=9 opt_err=0.02m)
+80.74,PROX,diterima: node 63 -> 36
+80.74,TOLAK,kandidat node 63 -> 36 ditolak  (hyp=0.13 inliers=7 opt_err=0.02m)
+82.8,TOLAK,kandidat node 64 -> 39 ditolak  (hyp=0.14 inliers=0)
+84.19,TOLAK,kandidat node 65 -> 40 ditolak  (hyp=0.12 inliers=0)
+85.26,PROX,diterima: node 67 -> 37
+85.9,PROX,diterima: node 68 -> 37
+85.9,TOLAK,kandidat node 68 -> 40 ditolak  (hyp=0.12 inliers=0 opt_err=0.02m)
+86.38,PROX,diterima: node 69 -> 37
+86.38,TOLAK,kandidat node 69 -> 42 ditolak  (hyp=0.12 inliers=0 opt_err=0.02m)
+89.74,PROX,diterima: node 70 -> 36
+89.74,TOLAK,kandidat node 70 -> 40 ditolak  (hyp=0.12 inliers=0 opt_err=0.02m)
+90.53,TOLAK,kandidat node 71 -> 44 ditolak  (hyp=0.13 inliers=7)
+91.23,TOLAK,kandidat node 72 -> 43 ditolak  (hyp=0.16 inliers=6)
+91.44,KOREKSI,"map->odom lompat 25.8 cm, 4.6 deg"
+91.46,LOOP,"diterima: node 73 -> 44  (hyp=0.20, inliers=13)"
+91.46,PROX,diterima: node 73 -> 44
+91.95,KOREKSI,"map->odom lompat 35.8 cm, 5.2 deg"
+94.22,TOLAK,kandidat node 74 -> 44 ditolak  (hyp=0.15 inliers=0)
+96.19,PROX,diterima: node 75 -> 57
+96.19,TOLAK,kandidat node 75 -> 15 ditolak  (hyp=0.12 inliers=0 opt_err=0.02m)
+98.03,TOLAK,kandidat node 76 -> 55 ditolak  (hyp=0.13 inliers=0)
+98.67,TOLAK,kandidat node 77 -> 65 ditolak  (hyp=0.14 inliers=0)
+99.86,TOLAK,kandidat node 78 -> 55 ditolak  (hyp=0.16 inliers=0)
+100.43,TOLAK,kandidat node 79 -> 55 ditolak  (hyp=0.17 inliers=0)
+101.38,TOLAK,kandidat node 80 -> 55 ditolak  (hyp=0.19 inliers=0)
+104.62,TOLAK,kandidat node 81 -> 55 ditolak  (hyp=0.19 inliers=0)
+105.3,TOLAK,kandidat node 82 -> 55 ditolak  (hyp=0.19 inliers=0)
+106.19,TOLAK,kandidat node 83 -> 54 ditolak  (hyp=0.18 inliers=0)
+106.72,TOLAK,kandidat node 84 -> 66 ditolak  (hyp=0.14 inliers=0)
+107.39,PROX,diterima: node 85 -> 75
+107.39,TOLAK,kandidat node 85 -> 66 ditolak  (hyp=0.12 inliers=0 opt_err=0.02m)
+107.94,PROX,diterima: node 86 -> 76
+107.94,TOLAK,kandidat node 86 -> 67 ditolak  (hyp=0.13 inliers=0 opt_err=0.02m)
+110.05,PROX,diterima: node 87 -> 77
+110.05,TOLAK,kandidat node 87 -> 56 ditolak  (hyp=0.14 inliers=0 opt_err=0.02m)
+110.74,PROX,diterima: node 88 -> 78
+110.74,TOLAK,kandidat node 88 -> 64 ditolak  (hyp=0.12 inliers=0 opt_err=0.02m)
+112.75,TOLAK,kandidat node 89 -> 9 ditolak  (hyp=0.17 inliers=0)
+114.11,TOLAK,kandidat node 90 -> 9 ditolak  (hyp=0.26 inliers=0)
+114.7,TOLAK,kandidat node 91 -> 8 ditolak  (hyp=0.17 inliers=0)
+115.39,TOLAK,kandidat node 92 -> 8 ditolak  (hyp=0.13 inliers=0)
+116.59,TOLAK,kandidat node 93 -> 15 ditolak  (hyp=0.12 inliers=0)
+127.46,TOLAK,kandidat node 102 -> 66 ditolak  (hyp=0.12 inliers=0)
+128.0,TOLAK,kandidat node 103 -> 79 ditolak  (hyp=0.14 inliers=0)
+130.1,TOLAK,kandidat node 104 -> 88 ditolak  (hyp=0.16 inliers=0)
+130.9,TOLAK,kandidat node 105 -> 90 ditolak  (hyp=0.16 inliers=0)
+131.63,TOLAK,kandidat node 106 -> 39 ditolak  (hyp=0.14 inliers=0)
+132.22,TOLAK,kandidat node 107 -> 39 ditolak  (hyp=0.14 inliers=0)
+133.1,TOLAK,kandidat node 108 -> 39 ditolak  (hyp=0.13 inliers=0)
+133.95,KOREKSI,"map->odom lompat 20.4 cm, 4.1 deg"
+134.77,PROX,diterima: node 111 -> 101
+135.3,PROX,diterima: node 112 -> 102
+136.74,PROX,diterima: node 114 -> 104
+137.23,PROX,diterima: node 115 -> 105
+137.76,PROX,diterima: node 116 -> 106
+137.76,TOLAK,kandidat node 116 -> 66 ditolak  (hyp=0.12 inliers=0 opt_err=0.02m)
+138.38,PROX,diterima: node 117 -> 107
+138.38,TOLAK,kandidat node 117 -> 66 ditolak  (hyp=0.13 inliers=0 opt_err=0.02m)
+139.84,PROX,diterima: node 118 -> 108
+140.06,PROX,diterima: node 119 -> 109
+140.4,PROX,diterima: node 120 -> 110
+140.4,TOLAK,kandidat node 120 -> 90 ditolak  (hyp=0.13 inliers=0 opt_err=0.02m)
+141.1,PROX,diterima: node 121 -> 111
+141.1,TOLAK,kandidat node 121 -> 91 ditolak  (hyp=0.13 inliers=0 opt_err=0.02m)
+141.94,PROX,diterima: node 122 -> 112
+142.9,PROX,diterima: node 123 -> 113
+142.9,TOLAK,kandidat node 123 -> 79 ditolak  (hyp=0.12 inliers=0 opt_err=0.02m)
+143.7,PROX,diterima: node 124 -> 114
+144.34,PROX,diterima: node 125 -> 115
+144.9,PROX,diterima: node 126 -> 116
+145.42,PROX,diterima: node 127 -> 117
+145.42,TOLAK,kandidat node 127 -> 90 ditolak  (hyp=0.12 inliers=0 opt_err=0.02m)
+146.06,PROX,diterima: node 128 -> 118
+146.62,PROX,diterima: node 129 -> 119
+146.62,TOLAK,kandidat node 129 -> 90 ditolak  (hyp=0.11 inliers=0 opt_err=0.02m)
+147.82,PROX,diterima: node 130 -> 120
+147.82,TOLAK,kandidat node 130 -> 39 ditolak  (hyp=0.11 inliers=0 opt_err=0.02m)
+148.16,PROX,diterima: node 131 -> 121
+148.16,TOLAK,kandidat node 131 -> 39 ditolak  (hyp=0.13 inliers=0 opt_err=0.02m)
+149.65,PROX,diterima: node 132 -> 122
+149.65,TOLAK,kandidat node 132 -> 41 ditolak  (hyp=0.13 inliers=0 opt_err=0.02m)
+150.26,PROX,diterima: node 133 -> 123
+150.26,TOLAK,kandidat node 133 -> 68 ditolak  (hyp=0.13 inliers=0 opt_err=0.02m)
+150.86,PROX,diterima: node 134 -> 124
+150.86,TOLAK,kandidat node 134 -> 67 ditolak  (hyp=0.16 inliers=0 opt_err=0.02m)
+151.94,PROX,diterima: node 135 -> 125
+151.94,TOLAK,kandidat node 135 -> 68 ditolak  (hyp=0.16 inliers=0 opt_err=0.02m)
+152.83,PROX,diterima: node 136 -> 126
+152.83,TOLAK,kandidat node 136 -> 68 ditolak  (hyp=0.15 inliers=0 opt_err=0.02m)
+153.46,TOLAK,kandidat node 137 -> 68 ditolak  (hyp=0.15 inliers=0)
+154.0,TOLAK,kandidat node 138 -> 67 ditolak  (hyp=0.16 inliers=0)
+154.96,TOLAK,kandidat node 139 -> 65 ditolak  (hyp=0.17 inliers=0)
+155.7,TOLAK,kandidat node 140 -> 64 ditolak  (hyp=0.15 inliers=0)
+155.95,KOREKSI,"map->odom lompat 10.5 cm, 4.0 deg"
+156.4,TOLAK,kandidat node 141 -> 68 ditolak  (hyp=0.16 inliers=0)
+156.45,KOREKSI,"map->odom lompat 5.2 cm, 2.1 deg"
+157.14,TOLAK,kandidat node 142 -> 62 ditolak  (hyp=0.16 inliers=0)
+158.02,TOLAK,kandidat node 143 -> 15 ditolak  (hyp=0.14 inliers=0)
+158.7,PROX,diterima: node 144 -> 55
+158.7,TOLAK,kandidat node 144 -> 15 ditolak  (hyp=0.14 inliers=0 opt_err=0.02m)
+159.2,PROX,diterima: node 145 -> 55
+159.2,TOLAK,kandidat node 145 -> 15 ditolak  (hyp=0.13 inliers=0 opt_err=0.02m)
+159.74,PROX,diterima: node 146 -> 55
+159.74,TOLAK,kandidat node 146 -> 15 ditolak  (hyp=0.14 inliers=0 opt_err=0.02m)
+160.34,PROX,diterima: node 147 -> 55
+160.34,TOLAK,kandidat node 147 -> 15 ditolak  (hyp=0.14 inliers=0 opt_err=0.02m)
+160.83,PROX,diterima: node 148 -> 55
+160.83,TOLAK,kandidat node 148 -> 79 ditolak  (hyp=0.13 inliers=0 opt_err=0.02m)
+161.39,TOLAK,kandidat node 149 -> 66 ditolak  (hyp=0.15 inliers=0)
+162.0,TOLAK,kandidat node 150 -> 15 ditolak  (hyp=0.14 inliers=0)
+163.02,TOLAK,kandidat node 151 -> 15 ditolak  (hyp=0.13 inliers=0)
+163.68,TOLAK,kandidat node 152 -> 79 ditolak  (hyp=0.15 inliers=0)
+164.26,TOLAK,kandidat node 153 -> 81 ditolak  (hyp=0.19 inliers=0)
+164.86,TOLAK,kandidat node 154 -> 39 ditolak  (hyp=0.17 inliers=0)
+165.36,TOLAK,kandidat node 155 -> 39 ditolak  (hyp=0.17 inliers=0)
+165.9,TOLAK,kandidat node 156 -> 39 ditolak  (hyp=0.16 inliers=0)
+166.66,TOLAK,kandidat node 157 -> 55 ditolak  (hyp=0.15 inliers=0)
+167.09,TOLAK,kandidat node 158 -> 80 ditolak  (hyp=0.17 inliers=0)
+167.66,TOLAK,kandidat node 159 -> 80 ditolak  (hyp=0.16 inliers=0)
+168.59,TOLAK,kandidat node 160 -> 15 ditolak  (hyp=0.15 inliers=0)
+169.5,PROX,diterima: node 161 -> 54
+169.5,TOLAK,kandidat node 161 -> 15 ditolak  (hyp=0.15 inliers=0 opt_err=0.02m)
+170.53,PROX,diterima: node 162 -> 54
+170.53,TOLAK,kandidat node 162 -> 15 ditolak  (hyp=0.14 inliers=0 opt_err=0.02m)
+170.96,PROX,diterima: node 163 -> 54
+170.96,TOLAK,kandidat node 163 -> 15 ditolak  (hyp=0.14 inliers=0 opt_err=0.02m)
+171.73,PROX,diterima: node 164 -> 54
+171.73,TOLAK,kandidat node 164 -> 15 ditolak  (hyp=0.15 inliers=0 opt_err=0.02m)
+172.38,PROX,diterima: node 165 -> 54
+172.38,TOLAK,kandidat node 165 -> 55 ditolak  (hyp=0.19 inliers=6 opt_err=0.02m)
+173.14,PROX,diterima: node 166 -> 54
+173.14,TOLAK,kandidat node 166 -> 15 ditolak  (hyp=0.16 inliers=0 opt_err=0.02m)
+173.78,PROX,diterima: node 167 -> 51
+173.78,TOLAK,kandidat node 167 -> 87 ditolak  (hyp=0.17 inliers=0 opt_err=0.02m)
+174.56,TOLAK,kandidat node 168 -> 55 ditolak  (hyp=0.16 inliers=7)
+175.31,PROX,diterima: node 169 -> 159
+175.31,TOLAK,kandidat node 169 -> 84 ditolak  (hyp=0.16 inliers=0 opt_err=0.02m)
+175.86,PROX,diterima: node 170 -> 160
+175.86,TOLAK,kandidat node 170 -> 15 ditolak  (hyp=0.16 inliers=0 opt_err=0.02m)
+176.62,PROX,diterima: node 171 -> 161
+176.62,TOLAK,kandidat node 171 -> 54 ditolak  (hyp=0.15 inliers=0 opt_err=0.02m)
+177.46,PROX,diterima: node 172 -> 51
+177.46,TOLAK,kandidat node 172 -> 83 ditolak  (hyp=0.20 inliers=0 opt_err=0.02m)
+178.06,PROX,diterima: node 173 -> 51
+178.06,TOLAK,kandidat node 173 -> 84 ditolak  (hyp=0.21 inliers=0 opt_err=0.02m)
+178.7,PROX,diterima: node 174 -> 51
+178.7,TOLAK,kandidat node 174 -> 54 ditolak  (hyp=0.19 inliers=9 opt_err=0.02m)
+179.23,LOOP,"diterima: node 175 -> 54  (hyp=0.18, inliers=13)"
+179.23,PROX,diterima: node 175 -> 54
+179.76,LOOP,"diterima: node 176 -> 54  (hyp=0.17, inliers=10)"
+179.76,PROX,diterima: node 176 -> 54
+180.53,LOOP,"diterima: node 177 -> 54  (hyp=0.18, inliers=15)"
+180.53,PROX,diterima: node 177 -> 54
+181.1,LOOP,"diterima: node 178 -> 54  (hyp=0.22, inliers=15)"
+181.1,PROX,diterima: node 178 -> 54
+181.6,LOOP,"diterima: node 179 -> 54  (hyp=0.25, inliers=12)"
+181.6,PROX,diterima: node 179 -> 54
+182.13,LOOP,"diterima: node 180 -> 54  (hyp=0.23, inliers=10)"
+182.13,PROX,diterima: node 180 -> 54
+183.1,TOLAK,kandidat node 181 -> 52 ditolak  (hyp=0.20 inliers=14 opt_err=0.02m)
+183.68,TOLAK,kandidat node 182 -> 14 ditolak  (hyp=0.20 inliers=18 opt_err=0.02m)
+184.59,TOLAK,kandidat node 183 -> 14 ditolak  (hyp=0.19 inliers=19 opt_err=0.02m)
+185.26,TOLAK,kandidat node 184 -> 14 ditolak  (hyp=0.21 inliers=19 opt_err=0.02m)
+186.19,TOLAK,kandidat node 185 -> 14 ditolak  (hyp=0.22 inliers=16 opt_err=0.02m)
+186.9,TOLAK,kandidat node 186 -> 14 ditolak  (hyp=0.26 inliers=27 opt_err=0.02m)
+187.54,TOLAK,kandidat node 187 -> 14 ditolak  (hyp=0.26 inliers=26 opt_err=0.02m)
+188.34,TOLAK,kandidat node 188 -> 14 ditolak  (hyp=0.27 inliers=16 opt_err=0.02m)
+188.9,TOLAK,kandidat node 189 -> 90 ditolak  (hyp=0.25 inliers=12 opt_err=0.02m)
+189.57,PROX,diterima: node 190 -> 180
+189.57,TOLAK,kandidat node 190 -> 12 ditolak  (hyp=0.24 inliers=5 opt_err=0.02m)
+191.1,PROX,diterima: node 191 -> 181
+191.1,TOLAK,kandidat node 191 -> 81 ditolak  (hyp=0.25 inliers=0 opt_err=0.02m)
+191.66,TOLAK,kandidat node 192 -> 80 ditolak  (hyp=0.29 inliers=0)
+192.19,TOLAK,kandidat node 193 -> 81 ditolak  (hyp=0.41 inliers=0)
+192.86,TOLAK,kandidat node 194 -> 81 ditolak  (hyp=0.28 inliers=0)
+193.42,TOLAK,kandidat node 195 -> 81 ditolak  (hyp=0.23 inliers=0)
+194.06,TOLAK,kandidat node 196 -> 81 ditolak  (hyp=0.32 inliers=0)
+194.66,TOLAK,kandidat node 197 -> 81 ditolak  (hyp=0.49 inliers=0)
+195.23,TOLAK,kandidat node 198 -> 81 ditolak  (hyp=0.71 inliers=0)
+196.06,TOLAK,kandidat node 199 -> 81 ditolak  (hyp=0.58 inliers=0)
+196.93,TOLAK,kandidat node 200 -> 81 ditolak  (hyp=0.49 inliers=0)
+197.66,PROX,diterima: node 201 -> 191
+197.66,TOLAK,kandidat node 201 -> 81 ditolak  (hyp=0.42 inliers=0 opt_err=0.02m)
+198.19,PROX,diterima: node 202 -> 192
+198.19,TOLAK,kandidat node 202 -> 81 ditolak  (hyp=0.40 inliers=0 opt_err=0.02m)
+198.8,PROX,diterima: node 203 -> 193
+198.8,TOLAK,kandidat node 203 -> 88 ditolak  (hyp=0.45 inliers=0 opt_err=0.02m)
+199.3,TOLAK,kandidat node 204 -> 88 ditolak  (hyp=0.45 inliers=0)
+200.16,PROX,diterima: node 205 -> 194
+200.16,TOLAK,kandidat node 205 -> 88 ditolak  (hyp=0.46 inliers=0 opt_err=0.02m)
+200.72,PROX,diterima: node 206 -> 195
+200.72,TOLAK,kandidat node 206 -> 88 ditolak  (hyp=0.44 inliers=0 opt_err=0.02m)
+201.42,PROX,diterima: node 207 -> 196
+201.42,TOLAK,kandidat node 207 -> 80 ditolak  (hyp=0.41 inliers=0 opt_err=0.02m)
+201.94,PROX,diterima: node 208 -> 197
+201.94,TOLAK,kandidat node 208 -> 80 ditolak  (hyp=0.33 inliers=0 opt_err=0.02m)
+202.5,PROX,diterima: node 209 -> 198
+202.5,TOLAK,kandidat node 209 -> 81 ditolak  (hyp=0.50 inliers=0 opt_err=0.02m)
+203.06,PROX,diterima: node 210 -> 199
+203.06,TOLAK,kandidat node 210 -> 81 ditolak  (hyp=0.70 inliers=0 opt_err=0.02m)
+203.54,TOLAK,kandidat node 211 -> 81 ditolak  (hyp=0.85 inliers=0)
+204.18,PROX,diterima: node 212 -> 200
+204.18,TOLAK,kandidat node 212 -> 81 ditolak  (hyp=0.64 inliers=0 opt_err=0.02m)
+204.66,PROX,diterima: node 213 -> 201
+204.66,TOLAK,kandidat node 213 -> 81 ditolak  (hyp=0.43 inliers=0 opt_err=0.02m)
+205.7,TOLAK,kandidat node 214 -> 81 ditolak  (hyp=0.45 inliers=0)
+206.46,TOLAK,kandidat node 215 -> 81 ditolak  (hyp=0.31 inliers=0)
+206.77,TOLAK,kandidat node 216 -> 81 ditolak  (hyp=0.24 inliers=0)
+207.36,TOLAK,kandidat node 217 -> 77 ditolak  (hyp=0.18 inliers=0)
+207.44,KOREKSI,"map->odom lompat 11.0 cm, 2.1 deg"
+208.46,TOLAK,kandidat node 218 -> 44 ditolak  (hyp=0.14 inliers=0)
+209.17,TOLAK,kandidat node 219 -> 82 ditolak  (hyp=0.13 inliers=0)
+210.0,TOLAK,kandidat node 220 -> 202 ditolak  (hyp=0.15 inliers=0)
+211.14,TOLAK,kandidat node 221 -> 201 ditolak  (hyp=0.14 inliers=0)
+211.57,TOLAK,kandidat node 222 -> 70 ditolak  (hyp=0.16 inliers=0)
+212.37,TOLAK,kandidat node 223 -> 39 ditolak  (hyp=0.14 inliers=0)
+213.31,TOLAK,kandidat node 224 -> 166 ditolak  (hyp=0.13 inliers=0)
+214.13,TOLAK,kandidat node 225 -> 84 ditolak  (hyp=0.13 inliers=0)
+214.74,TOLAK,kandidat node 226 -> 84 ditolak  (hyp=0.15 inliers=0)
+215.57,TOLAK,kandidat node 227 -> 102 ditolak  (hyp=0.13 inliers=0)
+216.16,TOLAK,kandidat node 228 -> 102 ditolak  (hyp=0.11 inliers=0)
+220.77,TOLAK,kandidat node 235 -> 151 ditolak  (hyp=0.11 inliers=0)
+221.5,TOLAK,kandidat node 236 -> 151 ditolak  (hyp=0.12 inliers=0)
+222.08,TOLAK,kandidat node 237 -> 19 ditolak  (hyp=0.14 inliers=0)
+222.8,TOLAK,kandidat node 238 -> 65 ditolak  (hyp=0.14 inliers=0)
+223.79,TOLAK,kandidat node 239 -> 18 ditolak  (hyp=0.14 inliers=6)
+224.8,TOLAK,kandidat node 240 -> 64 ditolak  (hyp=0.12 inliers=0)
+225.36,TOLAK,kandidat node 241 -> 65 ditolak  (hyp=0.14 inliers=0)
+226.02,TOLAK,kandidat node 242 -> 19 ditolak  (hyp=0.14 inliers=0)
+226.61,TOLAK,kandidat node 243 -> 21 ditolak  (hyp=0.12 inliers=0)
+227.44,TOLAK,kandidat node 244 -> 21 ditolak  (hyp=0.12 inliers=0)
+228.16,PROX,diterima: node 245 -> 235
+228.16,TOLAK,kandidat node 245 -> 206 ditolak  (hyp=0.15 inliers=0 opt_err=0.02m)
+228.77,PROX,diterima: node 246 -> 23
+228.77,TOLAK,kandidat node 246 -> 200 ditolak  (hyp=0.16 inliers=13 opt_err=0.02m)
+228.94,KOREKSI,"map->odom lompat 45.3 cm, 7.0 deg"
+229.44,PROX,diterima: node 247 -> 13
+229.44,TOLAK,kandidat node 247 -> 201 ditolak  (hyp=0.22 inliers=0 opt_err=0.02m)
+230.03,PROX,diterima: node 248 -> 23
+230.03,TOLAK,kandidat node 248 -> 201 ditolak  (hyp=0.39 inliers=10 opt_err=0.02m)
+230.53,PROX,diterima: node 249 -> 13
+230.53,TOLAK,kandidat node 249 -> 202 ditolak  (hyp=0.55 inliers=0 opt_err=0.02m)
+231.12,PROX,diterima: node 250 -> 13
+231.12,TOLAK,kandidat node 250 -> 202 ditolak  (hyp=0.64 inliers=0 opt_err=0.02m)
+231.82,PROX,diterima: node 251 -> 13
+231.82,TOLAK,kandidat node 251 -> 202 ditolak  (hyp=0.51 inliers=0 opt_err=0.02m)
+232.5,PROX,diterima: node 252 -> 10
+232.5,TOLAK,kandidat node 252 -> 202 ditolak  (hyp=0.37 inliers=0 opt_err=0.02m)
+233.33,PROX,diterima: node 253 -> 25
+233.33,TOLAK,kandidat node 253 -> 201 ditolak  (hyp=0.29 inliers=14 opt_err=0.02m)
+234.0,TOLAK,kandidat node 254 -> 23 ditolak  (hyp=0.24 inliers=15 opt_err=0.03m)
+234.59,PROX,diterima: node 255 -> 245
+234.59,TOLAK,kandidat node 255 -> 25 ditolak  (hyp=0.23 inliers=9 opt_err=0.02m)
+235.26,PROX,diterima: node 256 -> 246
+235.26,TOLAK,kandidat node 256 -> 26 ditolak  (hyp=0.29 inliers=9 opt_err=0.02m)
+235.92,PROX,diterima: node 257 -> 55
+235.92,TOLAK,kandidat node 257 -> 26 ditolak  (hyp=0.31 inliers=7 opt_err=0.02m)
+236.43,PROX,diterima: node 258 -> 55
+236.43,TOLAK,kandidat node 258 -> 27 ditolak  (hyp=0.38 inliers=5 opt_err=0.02m)
+237.1,TOLAK,kandidat node 259 -> 26 ditolak  (hyp=0.38 inliers=6 opt_err=0.02m)
+237.57,PROX,diterima: node 260 -> 250
+237.57,TOLAK,kandidat node 260 -> 26 ditolak  (hyp=0.31 inliers=8 opt_err=0.02m)
+238.3,TOLAK,kandidat node 261 -> 56 ditolak  (hyp=0.30 inliers=0)
+238.99,TOLAK,kandidat node 262 -> 57 ditolak  (hyp=0.27 inliers=0 opt_err=0.02m)
+239.54,PROX,diterima: node 263 -> 51
+239.54,TOLAK,kandidat node 263 -> 70 ditolak  (hyp=0.26 inliers=0 opt_err=0.02m)
+240.03,TOLAK,kandidat node 264 -> 70 ditolak  (hyp=0.33 inliers=0)
+240.62,TOLAK,kandidat node 265 -> 70 ditolak  (hyp=0.50 inliers=0)
+241.36,TOLAK,kandidat node 266 -> 70 ditolak  (hyp=0.71 inliers=0)
+242.13,PROX,diterima: node 267 -> 257
+242.13,TOLAK,kandidat node 267 -> 70 ditolak  (hyp=0.53 inliers=0 opt_err=0.02m)
+242.83,TOLAK,kandidat node 268 -> 70 ditolak  (hyp=0.70 inliers=0)
+243.3,PROX,diterima: node 269 -> 259
+243.3,TOLAK,kandidat node 269 -> 68 ditolak  (hyp=0.57 inliers=0 opt_err=0.02m)
+244.0,TOLAK,kandidat node 270 -> 68 ditolak  (hyp=0.56 inliers=0 opt_err=0.02m)
+244.56,TOLAK,kandidat node 271 -> 68 ditolak  (hyp=0.43 inliers=0)
+245.23,PROX,diterima: node 272 -> 262
+245.23,TOLAK,kandidat node 272 -> 67 ditolak  (hyp=0.48 inliers=0 opt_err=0.02m)
+245.86,TOLAK,kandidat node 273 -> 68 ditolak  (hyp=0.46 inliers=0)
+246.43,PROX,diterima: node 274 -> 264
+246.43,TOLAK,kandidat node 274 -> 68 ditolak  (hyp=0.44 inliers=0 opt_err=0.02m)
+246.96,PROX,diterima: node 275 -> 265
+246.96,TOLAK,kandidat node 275 -> 70 ditolak  (hyp=0.45 inliers=0 opt_err=0.02m)
+247.55,PROX,diterima: node 276 -> 266
+247.55,TOLAK,kandidat node 276 -> 66 ditolak  (hyp=0.42 inliers=0 opt_err=0.02m)
+248.08,PROX,diterima: node 277 -> 267
+248.08,TOLAK,kandidat node 277 -> 67 ditolak  (hyp=0.43 inliers=0 opt_err=0.02m)
+248.7,PROX,diterima: node 278 -> 268
+248.7,TOLAK,kandidat node 278 -> 66 ditolak  (hyp=0.46 inliers=0 opt_err=0.02m)
+249.57,TOLAK,kandidat node 279 -> 66 ditolak  (hyp=0.54 inliers=0)
+250.3,TOLAK,kandidat node 280 -> 64 ditolak  (hyp=0.58 inliers=0)
+250.9,TOLAK,kandidat node 281 -> 64 ditolak  (hyp=0.68 inliers=7)
+251.54,TOLAK,kandidat node 282 -> 64 ditolak  (hyp=0.82 inliers=6)
+252.32,TOLAK,kandidat node 283 -> 64 ditolak  (hyp=0.85 inliers=11)
+252.98,TOLAK,kandidat node 284 -> 64 ditolak  (hyp=0.82 inliers=13 opt_err=0.02m)
+253.5,TOLAK,kandidat node 285 -> 64 ditolak  (hyp=0.76 inliers=17 opt_err=0.03m)
+254.13,TOLAK,kandidat node 286 -> 65 ditolak  (hyp=0.77 inliers=7)
+255.63,TOLAK,kandidat node 287 -> 66 ditolak  (hyp=0.76 inliers=14 opt_err=0.02m)
+257.14,TOLAK,kandidat node 288 -> 66 ditolak  (hyp=0.77 inliers=10 opt_err=0.03m)
+257.68,TOLAK,kandidat node 289 -> 64 ditolak  (hyp=0.77 inliers=10 opt_err=0.02m)
+258.29,TOLAK,kandidat node 290 -> 65 ditolak  (hyp=0.65 inliers=10 opt_err=0.02m)
+258.99,PROX,diterima: node 291 -> 281
+258.99,TOLAK,kandidat node 291 -> 70 ditolak  (hyp=0.62 inliers=0 opt_err=0.02m)
+259.6,PROX,diterima: node 292 -> 282
+259.6,TOLAK,kandidat node 292 -> 70 ditolak  (hyp=0.74 inliers=0 opt_err=0.02m)
+260.13,PROX,diterima: node 293 -> 283
+260.13,TOLAK,kandidat node 293 -> 70 ditolak  (hyp=0.80 inliers=0 opt_err=0.02m)
+260.7,TOLAK,kandidat node 294 -> 70 ditolak  (hyp=0.63 inliers=0 opt_err=0.02m)
+261.66,TOLAK,kandidat node 295 -> 44 ditolak  (hyp=0.48 inliers=0 opt_err=0.02m)
+261.94,PROX,diterima: node 296 -> 286
+261.94,TOLAK,kandidat node 296 -> 44 ditolak  (hyp=0.39 inliers=0 opt_err=0.02m)
+262.45,PROX,diterima: node 297 -> 287
+262.45,TOLAK,kandidat node 297 -> 68 ditolak  (hyp=0.31 inliers=0 opt_err=0.02m)
+262.99,TOLAK,kandidat node 298 -> 68 ditolak  (hyp=0.18 inliers=0)
+263.6,PROX,diterima: node 299 -> 64
+263.6,TOLAK,kandidat node 299 -> 66 ditolak  (hyp=0.22 inliers=0 opt_err=0.02m)
+264.18,PROX,diterima: node 300 -> 69
+264.18,TOLAK,kandidat node 300 -> 67 ditolak  (hyp=0.20 inliers=0 opt_err=0.02m)
+264.7,PROX,diterima: node 301 -> 64
+264.7,TOLAK,kandidat node 301 -> 67 ditolak  (hyp=0.18 inliers=0 opt_err=0.02m)
+265.63,TOLAK,kandidat node 302 -> 66 ditolak  (hyp=0.23 inliers=0)
+266.19,TOLAK,kandidat node 303 -> 65 ditolak  (hyp=0.27 inliers=0)
+266.86,TOLAK,kandidat node 304 -> 65 ditolak  (hyp=0.26 inliers=0)
+268.18,TOLAK,kandidat node 305 -> 65 ditolak  (hyp=0.32 inliers=0)
+268.83,TOLAK,kandidat node 306 -> 65 ditolak  (hyp=0.33 inliers=0)
+269.36,TOLAK,kandidat node 307 -> 201 ditolak  (hyp=0.40 inliers=0)
+270.5,TOLAK,kandidat node 308 -> 202 ditolak  (hyp=0.48 inliers=0)
+270.96,TOLAK,kandidat node 309 -> 202 ditolak  (hyp=0.65 inliers=0)
+271.7,TOLAK,kandidat node 310 -> 202 ditolak  (hyp=0.80 inliers=0)
+272.22,TOLAK,kandidat node 311 -> 205 ditolak  (hyp=0.88 inliers=0)
+273.23,PROX,diterima: node 312 -> 73
+273.23,TOLAK,kandidat node 312 -> 205 ditolak  (hyp=0.90 inliers=14 opt_err=0.02m)
+274.0,PROX,diterima: node 313 -> 72
+274.0,TOLAK,kandidat node 313 -> 205 ditolak  (hyp=0.76 inliers=18 opt_err=0.02m)
+274.9,PROX,diterima: node 314 -> 72
+274.9,TOLAK,kandidat node 314 -> 205 ditolak  (hyp=0.58 inliers=13 opt_err=0.02m)
+275.39,PROX,diterima: node 315 -> 72
+275.39,TOLAK,kandidat node 315 -> 205 ditolak  (hyp=0.41 inliers=18 opt_err=0.02m)
+276.32,PROX,diterima: node 316 -> 34
+276.32,TOLAK,kandidat node 316 -> 205 ditolak  (hyp=0.32 inliers=0 opt_err=0.02m)
+277.07,TOLAK,kandidat node 317 -> 205 ditolak  (hyp=0.27 inliers=0)
+277.44,KOREKSI,"map->odom lompat 9.6 cm, 3.7 deg"
+277.49,PROX,diterima: node 318 -> 47
+277.49,TOLAK,kandidat node 318 -> 299 ditolak  (hyp=0.24 inliers=23 opt_err=0.02m)
+278.16,PROX,diterima: node 319 -> 47
+278.16,TOLAK,kandidat node 319 -> 298 ditolak  (hyp=0.28 inliers=0 opt_err=0.02m)
+279.73,TOLAK,kandidat node 320 -> 298 ditolak  (hyp=0.19 inliers=13 opt_err=0.09m)
+280.46,PROX,diterima: node 321 -> 48
+280.46,TOLAK,kandidat node 321 -> 299 ditolak  (hyp=0.25 inliers=0 opt_err=0.02m)
+281.36,TOLAK,kandidat node 322 -> 297 ditolak  (hyp=0.35 inliers=0 opt_err=0.02m)
+281.78,TOLAK,kandidat node 323 -> 295 ditolak  (hyp=0.44 inliers=0 opt_err=0.02m)
+282.34,TOLAK,kandidat node 324 -> 294 ditolak  (hyp=0.61 inliers=0 opt_err=0.02m)
+283.47,TOLAK,kandidat node 325 -> 295 ditolak  (hyp=0.72 inliers=0 opt_err=0.02m)
+284.75,TOLAK,kandidat node 326 -> 295 ditolak  (hyp=0.58 inliers=26 opt_err=0.02m)
+286.93,TOLAK,kandidat node 327 -> 293 ditolak  (hyp=0.52 inliers=14 opt_err=0.02m)
+288.86,PROX,diterima: node 328 -> 280
+288.86,TOLAK,kandidat node 328 -> 293 ditolak  (hyp=0.66 inliers=0 opt_err=0.02m)
+289.68,PROX,diterima: node 329 -> 280
+289.68,TOLAK,kandidat node 329 -> 297 ditolak  (hyp=0.59 inliers=0 opt_err=0.02m)
+290.59,PROX,diterima: node 330 -> 280
+290.59,TOLAK,kandidat node 330 -> 295 ditolak  (hyp=0.71 inliers=0 opt_err=0.02m)
+291.1,PROX,diterima: node 331 -> 280
+291.1,TOLAK,kandidat node 331 -> 297 ditolak  (hyp=0.65 inliers=0 opt_err=0.02m)
+291.9,TOLAK,kandidat node 332 -> 297 ditolak  (hyp=0.58 inliers=0 opt_err=0.02m)
+292.7,TOLAK,kandidat node 333 -> 299 ditolak  (hyp=0.51 inliers=0)
+293.01,TOLAK,kandidat node 334 -> 299 ditolak  (hyp=0.61 inliers=0 opt_err=0.02m)
+294.06,TOLAK,kandidat node 335 -> 299 ditolak  (hyp=0.65 inliers=0)
+295.82,TOLAK,kandidat node 336 -> 299 ditolak  (hyp=0.65 inliers=0)
+297.54,TOLAK,kandidat node 337 -> 296 ditolak  (hyp=0.51 inliers=0)
+298.9,PROX,diterima: node 338 -> 328
+298.9,TOLAK,kandidat node 338 -> 295 ditolak  (hyp=0.45 inliers=0 opt_err=0.02m)
+299.54,PROX,diterima: node 339 -> 329
+299.54,TOLAK,kandidat node 339 -> 296 ditolak  (hyp=0.36 inliers=0 opt_err=0.02m)
+300.4,PROX,diterima: node 340 -> 330
+300.4,TOLAK,kandidat node 340 -> 296 ditolak  (hyp=0.48 inliers=0 opt_err=0.02m)
+301.58,PROX,diterima: node 341 -> 331
+301.58,TOLAK,kandidat node 341 -> 297 ditolak  (hyp=0.46 inliers=0 opt_err=0.02m)
+302.66,PROX,diterima: node 342 -> 332
+302.66,TOLAK,kandidat node 342 -> 296 ditolak  (hyp=0.40 inliers=0 opt_err=0.02m)
+303.22,PROX,diterima: node 343 -> 333
+303.22,TOLAK,kandidat node 343 -> 296 ditolak  (hyp=0.33 inliers=0 opt_err=0.02m)
+304.34,PROX,diterima: node 344 -> 334
+304.34,TOLAK,kandidat node 344 -> 296 ditolak  (hyp=0.27 inliers=0 opt_err=0.02m)
+304.85,PROX,diterima: node 345 -> 335
+304.85,TOLAK,kandidat node 345 -> 296 ditolak  (hyp=0.38 inliers=0 opt_err=0.02m)
+305.5,PROX,diterima: node 346 -> 336
+305.5,TOLAK,kandidat node 346 -> 296 ditolak  (hyp=0.66 inliers=0 opt_err=0.02m)
+306.83,TOLAK,kandidat node 347 -> 297 ditolak  (hyp=0.68 inliers=0)
+306.96,TOLAK,kandidat node 348 -> 296 ditolak  (hyp=0.63 inliers=0)
+307.7,TOLAK,kandidat node 349 -> 296 ditolak  (hyp=0.47 inliers=0 opt_err=0.02m)
+308.1,PROX,diterima: node 350 -> 40
+308.1,TOLAK,kandidat node 350 -> 296 ditolak  (hyp=0.34 inliers=0 opt_err=0.02m)
+309.46,PROX,diterima: node 351 -> 40
+309.46,TOLAK,kandidat node 351 -> 296 ditolak  (hyp=0.25 inliers=0 opt_err=0.02m)
+309.95,KOREKSI,"map->odom lompat 15.3 cm, 3.2 deg"
+310.16,PROX,diterima: node 352 -> 40
+310.16,TOLAK,kandidat node 352 -> 296 ditolak  (hyp=0.19 inliers=0 opt_err=0.02m)
+311.41,PROX,diterima: node 353 -> 40
+311.41,TOLAK,kandidat node 353 -> 294 ditolak  (hyp=0.27 inliers=0 opt_err=0.02m)
+311.73,PROX,diterima: node 354 -> 40
+311.73,TOLAK,kandidat node 354 -> 295 ditolak  (hyp=0.22 inliers=0 opt_err=0.02m)
+312.72,PROX,diterima: node 355 -> 40
+312.72,TOLAK,kandidat node 355 -> 294 ditolak  (hyp=0.29 inliers=0 opt_err=0.02m)
+313.7,PROX,diterima: node 356 -> 170
+313.7,TOLAK,kandidat node 356 -> 297 ditolak  (hyp=0.27 inliers=0 opt_err=0.02m)
+313.95,KOREKSI,"map->odom lompat 6.6 cm, 2.5 deg"
+314.22,PROX,diterima: node 357 -> 170
+314.22,TOLAK,kandidat node 357 -> 297 ditolak  (hyp=0.28 inliers=0 opt_err=0.02m)
+316.03,PROX,diterima: node 358 -> 170
+316.03,TOLAK,kandidat node 358 -> 297 ditolak  (hyp=0.40 inliers=0 opt_err=0.02m)
+318.59,PROX,diterima: node 359 -> 280
+318.59,TOLAK,kandidat node 359 -> 295 ditolak  (hyp=0.56 inliers=0 opt_err=0.02m)
+320.86,TOLAK,kandidat node 360 -> 295 ditolak  (hyp=0.70 inliers=0)
+320.96,TOLAK,kandidat node 361 -> 300 ditolak  (hyp=0.61 inliers=0)
+321.55,TOLAK,kandidat node 362 -> 298 ditolak  (hyp=0.76 inliers=0)
+323.79,TOLAK,kandidat node 363 -> 297 ditolak  (hyp=0.69 inliers=0)
+324.42,TOLAK,kandidat node 364 -> 299 ditolak  (hyp=0.72 inliers=11 opt_err=0.02m)
+325.06,TOLAK,kandidat node 365 -> 298 ditolak  (hyp=0.80 inliers=0 opt_err=0.02m)
+327.97,PROX,diterima: node 366 -> 288
+327.97,TOLAK,kandidat node 366 -> 297 ditolak  (hyp=0.87 inliers=0 opt_err=0.02m)
+330.3,PROX,diterima: node 367 -> 40
+330.3,TOLAK,kandidat node 367 -> 296 ditolak  (hyp=0.87 inliers=0 opt_err=0.02m)
+330.8,TOLAK,kandidat node 368 -> 295 ditolak  (hyp=0.91 inliers=0)
+332.74,PROX,diterima: node 369 -> 40
+332.74,TOLAK,kandidat node 369 -> 294 ditolak  (hyp=0.91 inliers=0 opt_err=0.02m)
+333.31,PROX,diterima: node 370 -> 40
+333.31,TOLAK,kandidat node 370 -> 294 ditolak  (hyp=0.93 inliers=0 opt_err=0.02m)
+333.44,KOREKSI,"map->odom lompat 7.2 cm, 2.3 deg"
+334.42,PROX,diterima: node 371 -> 361
+334.42,TOLAK,kandidat node 371 -> 294 ditolak  (hyp=0.94 inliers=0 opt_err=0.02m)
+335.23,TOLAK,kandidat node 372 -> 298 ditolak  (hyp=0.92 inliers=0 opt_err=0.02m)
+336.3,TOLAK,kandidat node 373 -> 299 ditolak  (hyp=0.88 inliers=0 opt_err=0.02m)
+337.25,TOLAK,kandidat node 374 -> 299 ditolak  (hyp=0.85 inliers=0 opt_err=0.02m)
+338.83,TOLAK,kandidat node 375 -> 300 ditolak  (hyp=0.78 inliers=0 opt_err=0.02m)
+339.3,PROX,diterima: node 376 -> 43
+339.3,TOLAK,kandidat node 376 -> 295 ditolak  (hyp=0.74 inliers=0 opt_err=0.02m)
+341.78,PROX,diterima: node 377 -> 45
+341.78,TOLAK,kandidat node 377 -> 300 ditolak  (hyp=0.58 inliers=0 opt_err=0.02m)
+344.74,TOLAK,kandidat node 378 -> 295 ditolak  (hyp=0.65 inliers=0 opt_err=0.02m)
+345.7,TOLAK,kandidat node 379 -> 295 ditolak  (hyp=0.78 inliers=0 opt_err=0.02m)
+346.51,TOLAK,kandidat node 380 -> 295 ditolak  (hyp=0.90 inliers=0 opt_err=0.02m)
+347.82,PROX,diterima: node 381 -> 47
+347.82,TOLAK,kandidat node 381 -> 295 ditolak  (hyp=0.93 inliers=0 opt_err=0.02m)
+348.3,PROX,diterima: node 382 -> 171
+348.3,TOLAK,kandidat node 382 -> 295 ditolak  (hyp=0.94 inliers=0 opt_err=0.02m)
+348.56,PROX,diterima: node 383 -> 48
+348.56,TOLAK,kandidat node 383 -> 294 ditolak  (hyp=0.80 inliers=13 opt_err=0.02m)
+351.14,TOLAK,kandidat node 384 -> 295 ditolak  (hyp=0.60 inliers=0 opt_err=0.02m)
+351.66,TOLAK,kandidat node 385 -> 295 ditolak  (hyp=0.45 inliers=16 opt_err=0.03m)
+353.26,TOLAK,kandidat node 386 -> 295 ditolak  (hyp=0.32 inliers=0 opt_err=0.02m)
+354.53,TOLAK,kandidat node 387 -> 297 ditolak  (hyp=0.31 inliers=21 opt_err=0.02m)
+355.02,TOLAK,kandidat node 388 -> 297 ditolak  (hyp=0.34 inliers=13 opt_err=0.02m)
+356.62,TOLAK,kandidat node 389 -> 297 ditolak  (hyp=0.41 inliers=10 opt_err=0.02m)
+358.54,TOLAK,kandidat node 390 -> 296 ditolak  (hyp=0.41 inliers=16 opt_err=0.02m)
+359.57,TOLAK,kandidat node 391 -> 296 ditolak  (hyp=0.30 inliers=0 opt_err=0.02m)
+360.62,TOLAK,kandidat node 392 -> 296 ditolak  (hyp=0.22 inliers=14 opt_err=0.02m)
+361.58,TOLAK,kandidat node 393 -> 296 ditolak  (hyp=0.18 inliers=0 opt_err=0.02m)
+362.19,PROX,diterima: node 394 -> 384
+362.19,TOLAK,kandidat node 394 -> 287 ditolak  (hyp=0.15 inliers=0 opt_err=0.02m)
+364.34,PROX,diterima: node 395 -> 188
+364.34,TOLAK,kandidat node 395 -> 288 ditolak  (hyp=0.17 inliers=0 opt_err=0.02m)
+366.13,PROX,diterima: node 396 -> 188
+366.13,TOLAK,kandidat node 396 -> 288 ditolak  (hyp=0.20 inliers=0 opt_err=0.02m)
+367.02,TOLAK,kandidat node 397 -> 202 ditolak  (hyp=0.22 inliers=0)
+367.66,TOLAK,kandidat node 398 -> 201 ditolak  (hyp=0.25 inliers=0)
+368.24,PROX,diterima: node 399 -> 321
+368.24,TOLAK,kandidat node 399 -> 205 ditolak  (hyp=0.33 inliers=0 opt_err=0.02m)
+369.39,TOLAK,kandidat node 400 -> 202 ditolak  (hyp=0.44 inliers=0)
+370.13,TOLAK,kandidat node 401 -> 202 ditolak  (hyp=0.60 inliers=0)
+370.7,TOLAK,kandidat node 402 -> 202 ditolak  (hyp=0.79 inliers=0)
+373.2,TOLAK,kandidat node 403 -> 205 ditolak  (hyp=0.87 inliers=0)
+374.56,PROX,diterima: node 404 -> 394
+374.56,TOLAK,kandidat node 404 -> 206 ditolak  (hyp=0.69 inliers=0 opt_err=0.02m)
+376.45,PROX,diterima: node 405 -> 77
+376.45,TOLAK,kandidat node 405 -> 206 ditolak  (hyp=0.82 inliers=0 opt_err=0.02m)
+376.88,PROX,diterima: node 406 -> 244
+376.88,TOLAK,kandidat node 406 -> 206 ditolak  (hyp=0.64 inliers=0 opt_err=0.02m)
+378.4,TOLAK,kandidat node 407 -> 207 ditolak  (hyp=0.45 inliers=0)
+379.36,TOLAK,kandidat node 408 -> 206 ditolak  (hyp=0.30 inliers=0)
+379.44,KOREKSI,"map->odom lompat 8.8 cm, 3.6 deg"
+380.14,TOLAK,kandidat node 409 -> 206 ditolak  (hyp=0.22 inliers=0)
+380.66,PROX,diterima: node 410 -> 11
+380.66,TOLAK,kandidat node 410 -> 9 ditolak  (hyp=0.24 inliers=0 opt_err=0.02m)
+381.97,TOLAK,kandidat node 411 -> 212 ditolak  (hyp=0.20 inliers=0)
+382.86,PROX,diterima: node 412 -> 11
+382.86,TOLAK,kandidat node 412 -> 9 ditolak  (hyp=0.27 inliers=0 opt_err=0.02m)
+384.37,PROX,diterima: node 413 -> 11
+384.37,TOLAK,kandidat node 413 -> 9 ditolak  (hyp=0.57 inliers=0 opt_err=0.02m)
+385.17,PROX,diterima: node 414 -> 11
+385.17,TOLAK,kandidat node 414 -> 8 ditolak  (hyp=0.45 inliers=0 opt_err=0.02m)
+385.76,PROX,diterima: node 415 -> 244
+385.76,TOLAK,kandidat node 415 -> 9 ditolak  (hyp=0.80 inliers=0 opt_err=0.02m)
+386.99,PROX,diterima: node 416 -> 244
+386.99,TOLAK,kandidat node 416 -> 9 ditolak  (hyp=0.94 inliers=0 opt_err=0.02m)
+387.63,PROX,diterima: node 417 -> 244
+387.63,TOLAK,kandidat node 417 -> 9 ditolak  (hyp=0.97 inliers=0 opt_err=0.02m)
+388.34,PROX,diterima: node 418 -> 245
+388.34,TOLAK,kandidat node 418 -> 9 ditolak  (hyp=0.97 inliers=16 opt_err=0.02m)
+389.42,PROX,diterima: node 419 -> 246
+389.42,TOLAK,kandidat node 419 -> 8 ditolak  (hyp=0.80 inliers=18 opt_err=0.02m)
+390.37,PROX,diterima: node 420 -> 252
+390.37,TOLAK,kandidat node 420 -> 8 ditolak  (hyp=0.66 inliers=10 opt_err=0.02m)
+391.57,PROX,diterima: node 421 -> 249
+391.57,TOLAK,kandidat node 421 -> 8 ditolak  (hyp=0.47 inliers=7 opt_err=0.02m)
+392.88,PROX,diterima: node 422 -> 251
+392.88,TOLAK,kandidat node 422 -> 8 ditolak  (hyp=0.34 inliers=0 opt_err=0.02m)
+394.93,PROX,diterima: node 423 -> 257
+394.93,TOLAK,kandidat node 423 -> 8 ditolak  (hyp=0.27 inliers=13 opt_err=0.02m)
+397.63,PROX,diterima: node 424 -> 258
+397.63,TOLAK,kandidat node 424 -> 8 ditolak  (hyp=0.24 inliers=11 opt_err=0.02m)
+398.58,PROX,diterima: node 425 -> 260
+398.58,TOLAK,kandidat node 425 -> 259 ditolak  (hyp=0.26 inliers=12 opt_err=0.02m)
+399.25,LOOP,"diterima: node 426 -> 260  (hyp=0.24, inliers=15)"
+399.25,PROX,diterima: node 426 -> 260
+400.56,LOOP,"diterima: node 427 -> 262  (hyp=0.26, inliers=16)"
+400.56,PROX,diterima: node 427 -> 262
+401.6,PROX,diterima: node 428 -> 51
+401.6,TOLAK,kandidat node 428 -> 261 ditolak  (hyp=0.32 inliers=7 opt_err=0.02m)
+402.45,PROX,diterima: node 429 -> 51
+402.45,TOLAK,kandidat node 429 -> 263 ditolak  (hyp=0.42 inliers=9 opt_err=0.02m)
+404.43,PROX,diterima: node 430 -> 266
+404.43,TOLAK,kandidat node 430 -> 262 ditolak  (hyp=0.49 inliers=9 opt_err=0.02m)
+405.2,TOLAK,kandidat node 431 -> 297 ditolak  (hyp=0.36 inliers=0)
+406.5,PROX,diterima: node 432 -> 103
+406.5,TOLAK,kandidat node 432 -> 296 ditolak  (hyp=0.29 inliers=18 opt_err=0.02m)
+409.58,PROX,diterima: node 433 -> 107
+409.58,TOLAK,kandidat node 433 -> 263 ditolak  (hyp=0.25 inliers=0 opt_err=0.02m)
+410.1,LOOP,"diterima: node 434 -> 108  (hyp=0.22, inliers=34)"
+410.1,PROX,diterima: node 434 -> 108
+411.2,TOLAK,kandidat node 435 -> 107 ditolak  (hyp=0.18 inliers=12 opt_err=0.02m)
+411.73,PROX,diterima: node 436 -> 110
+411.73,TOLAK,kandidat node 436 -> 107 ditolak  (hyp=0.17 inliers=29 opt_err=0.02m)
+412.46,PROX,diterima: node 437 -> 111
+412.46,TOLAK,kandidat node 437 -> 111 ditolak  (hyp=0.20 inliers=3 opt_err=0.02m)
+413.54,LOOP,"diterima: node 438 -> 111  (hyp=0.21, inliers=22)"
+413.54,PROX,diterima: node 438 -> 111
+414.06,PROX,diterima: node 439 -> 115
+414.06,TOLAK,kandidat node 439 -> 111 ditolak  (hyp=0.27 inliers=10 opt_err=0.02m)
+414.66,PROX,diterima: node 440 -> 115
+414.66,TOLAK,kandidat node 440 -> 111 ditolak  (hyp=0.32 inliers=18 opt_err=0.02m)
+415.36,TOLAK,kandidat node 441 -> 111 ditolak  (hyp=0.29 inliers=16 opt_err=0.04m)
+417.02,PROX,diterima: node 442 -> 117
+417.02,TOLAK,kandidat node 442 -> 112 ditolak  (hyp=0.33 inliers=9 opt_err=0.02m)
+417.39,PROX,diterima: node 443 -> 117
+417.39,TOLAK,kandidat node 443 -> 112 ditolak  (hyp=0.32 inliers=18 opt_err=0.02m)
+418.02,PROX,diterima: node 444 -> 117
+418.02,TOLAK,kandidat node 444 -> 114 ditolak  (hyp=0.30 inliers=13 opt_err=0.02m)
+419.26,PROX,diterima: node 445 -> 435
+419.26,TOLAK,kandidat node 445 -> 297 ditolak  (hyp=0.31 inliers=0 opt_err=0.02m)
+419.39,PROX,diterima: node 446 -> 107
+419.39,TOLAK,kandidat node 446 -> 299 ditolak  (hyp=0.31 inliers=0 opt_err=0.02m)
+419.82,PROX,diterima: node 447 -> 437
+419.82,TOLAK,kandidat node 447 -> 299 ditolak  (hyp=0.35 inliers=0 opt_err=0.02m)
+420.37,PROX,diterima: node 448 -> 438
+420.37,TOLAK,kandidat node 448 -> 298 ditolak  (hyp=0.27 inliers=0 opt_err=0.02m)
+420.9,PROX,diterima: node 449 -> 439
+420.9,TOLAK,kandidat node 449 -> 296 ditolak  (hyp=0.28 inliers=0 opt_err=0.02m)
+421.39,TOLAK,kandidat node 450 -> 295 ditolak  (hyp=0.32 inliers=0)
+421.97,PROX,diterima: node 451 -> 441
+421.97,TOLAK,kandidat node 451 -> 295 ditolak  (hyp=0.24 inliers=0 opt_err=0.02m)
+422.7,PROX,diterima: node 452 -> 104
+422.7,TOLAK,kandidat node 452 -> 297 ditolak  (hyp=0.23 inliers=0 opt_err=0.02m)
+423.5,PROX,diterima: node 453 -> 104
+423.5,TOLAK,kandidat node 453 -> 297 ditolak  (hyp=0.23 inliers=0 opt_err=0.02m)
+424.22,PROX,diterima: node 454 -> 444
+424.22,TOLAK,kandidat node 454 -> 297 ditolak  (hyp=0.25 inliers=0 opt_err=0.02m)
+424.83,PROX,diterima: node 455 -> 445
+424.83,TOLAK,kandidat node 455 -> 297 ditolak  (hyp=0.29 inliers=0 opt_err=0.02m)
+425.54,PROX,diterima: node 456 -> 446
+425.54,TOLAK,kandidat node 456 -> 299 ditolak  (hyp=0.28 inliers=0 opt_err=0.02m)
+426.16,PROX,diterima: node 457 -> 447
+426.16,TOLAK,kandidat node 457 -> 298 ditolak  (hyp=0.23 inliers=0 opt_err=0.02m)
+426.74,PROX,diterima: node 458 -> 125
+426.74,TOLAK,kandidat node 458 -> 298 ditolak  (hyp=0.18 inliers=0 opt_err=0.02m)
+427.3,TOLAK,kandidat node 459 -> 297 ditolak  (hyp=0.19 inliers=0)
+428.13,PROX,diterima: node 460 -> 125
+428.13,TOLAK,kandidat node 460 -> 403 ditolak  (hyp=0.16 inliers=0 opt_err=0.02m)
+428.78,TOLAK,kandidat node 461 -> 295 ditolak  (hyp=0.17 inliers=0)
+429.17,TOLAK,kandidat node 462 -> 403 ditolak  (hyp=0.17 inliers=0)
+429.78,TOLAK,kandidat node 463 -> 402 ditolak  (hyp=0.16 inliers=0)
+430.43,TOLAK,kandidat node 464 -> 295 ditolak  (hyp=0.21 inliers=0)
+430.99,TOLAK,kandidat node 465 -> 295 ditolak  (hyp=0.29 inliers=0)
+432.46,TOLAK,kandidat node 466 -> 295 ditolak  (hyp=0.43 inliers=0)
+433.2,TOLAK,kandidat node 467 -> 295 ditolak  (hyp=0.63 inliers=0)
+433.78,PROX,diterima: node 468 -> 50
+433.78,TOLAK,kandidat node 468 -> 296 ditolak  (hyp=0.80 inliers=0 opt_err=0.02m)
+434.3,TOLAK,kandidat node 469 -> 295 ditolak  (hyp=0.91 inliers=0)
+435.25,PROX,diterima: node 470 -> 50
+435.25,TOLAK,kandidat node 470 -> 295 ditolak  (hyp=0.69 inliers=0 opt_err=0.02m)
+435.54,TOLAK,kandidat node 471 -> 296 ditolak  (hyp=0.58 inliers=0)
+436.3,TOLAK,kandidat node 472 -> 296 ditolak  (hyp=0.49 inliers=0)
+436.8,TOLAK,kandidat node 473 -> 297 ditolak  (hyp=0.56 inliers=0)
+437.36,TOLAK,kandidat node 474 -> 299 ditolak  (hyp=0.54 inliers=0)
+437.94,TOLAK,kandidat node 475 -> 299 ditolak  (hyp=0.39 inliers=0)
+438.59,TOLAK,kandidat node 476 -> 299 ditolak  (hyp=0.29 inliers=0)
+439.31,TOLAK,kandidat node 477 -> 298 ditolak  (hyp=0.23 inliers=0)
+440.26,TOLAK,kandidat node 478 -> 298 ditolak  (hyp=0.19 inliers=0)
+440.8,TOLAK,kandidat node 479 -> 165 ditolak  (hyp=0.21 inliers=7)
+441.54,TOLAK,kandidat node 480 -> 165 ditolak  (hyp=0.22 inliers=8)
+442.3,TOLAK,kandidat node 481 -> 165 ditolak  (hyp=0.24 inliers=9)
+443.73,TOLAK,kandidat node 482 -> 165 ditolak  (hyp=0.28 inliers=6)
+444.0,TOLAK,kandidat node 483 -> 165 ditolak  (hyp=0.41 inliers=3)
+445.2,TOLAK,kandidat node 484 -> 165 ditolak  (hyp=0.50 inliers=11 opt_err=0.02m)
+445.33,TOLAK,kandidat node 485 -> 164 ditolak  (hyp=0.65 inliers=9)
+445.86,TOLAK,kandidat node 486 -> 165 ditolak  (hyp=0.58 inliers=9)
+446.5,TOLAK,kandidat node 487 -> 167 ditolak  (hyp=0.81 inliers=10 opt_err=0.02m)
+447.01,PROX,diterima: node 488 -> 166
+447.01,TOLAK,kandidat node 488 -> 167 ditolak  (hyp=0.92 inliers=9 opt_err=0.02m)
+447.57,TOLAK,kandidat node 489 -> 169 ditolak  (hyp=0.94 inliers=7)
+448.1,TOLAK,kandidat node 490 -> 172 ditolak  (hyp=0.93 inliers=12 opt_err=0.02m)
+448.77,TOLAK,kandidat node 491 -> 172 ditolak  (hyp=0.96 inliers=10 opt_err=0.02m)
+449.42,TOLAK,kandidat node 492 -> 173 ditolak  (hyp=0.96 inliers=20 opt_err=0.02m)
+450.0,TOLAK,kandidat node 493 -> 174 ditolak  (hyp=0.96 inliers=23 opt_err=0.02m)
+450.7,TOLAK,kandidat node 494 -> 175 ditolak  (hyp=0.94 inliers=37 opt_err=0.02m)
+451.1,TOLAK,kandidat node 495 -> 176 ditolak  (hyp=0.92 inliers=27 opt_err=0.02m)
+451.6,TOLAK,kandidat node 496 -> 179 ditolak  (hyp=0.91 inliers=23 opt_err=0.02m)
+452.35,TOLAK,kandidat node 497 -> 175 ditolak  (hyp=0.90 inliers=18 opt_err=0.02m)
+453.2,TOLAK,kandidat node 498 -> 180 ditolak  (hyp=0.89 inliers=21 opt_err=0.02m)
+453.82,TOLAK,kandidat node 499 -> 178 ditolak  (hyp=0.89 inliers=18 opt_err=0.02m)
+455.14,PROX,diterima: node 500 -> 490
+455.14,TOLAK,kandidat node 500 -> 54 ditolak  (hyp=0.82 inliers=9 opt_err=0.02m)
+455.7,PROX,diterima: node 501 -> 55
+455.7,TOLAK,kandidat node 501 -> 55 ditolak  (hyp=0.75 inliers=9 opt_err=0.02m)
+456.19,TOLAK,kandidat node 502 -> 55 ditolak  (hyp=0.70 inliers=11 opt_err=0.02m)
+457.14,PROX,diterima: node 503 -> 493
+457.14,TOLAK,kandidat node 503 -> 55 ditolak  (hyp=0.67 inliers=9 opt_err=0.02m)
+457.82,TOLAK,kandidat node 504 -> 168 ditolak  (hyp=0.61 inliers=16 opt_err=0.02m)
+458.56,TOLAK,kandidat node 505 -> 167 ditolak  (hyp=0.59 inliers=0)
+459.3,TOLAK,kandidat node 506 -> 55 ditolak  (hyp=0.61 inliers=11 opt_err=0.02m)
+460.43,PROX,diterima: node 507 -> 497
+460.43,TOLAK,kandidat node 507 -> 167 ditolak  (hyp=0.76 inliers=0 opt_err=0.02m)
+461.17,PROX,diterima: node 508 -> 497
+461.17,TOLAK,kandidat node 508 -> 168 ditolak  (hyp=0.82 inliers=0 opt_err=0.02m)
+461.63,PROX,diterima: node 509 -> 497
+461.63,TOLAK,kandidat node 509 -> 169 ditolak  (hyp=0.85 inliers=0 opt_err=0.02m)
+462.34,PROX,diterima: node 510 -> 497
+462.34,TOLAK,kandidat node 510 -> 169 ditolak  (hyp=0.88 inliers=0 opt_err=0.02m)
+463.6,PROX,diterima: node 511 -> 499
+463.6,TOLAK,kandidat node 511 -> 169 ditolak  (hyp=0.85 inliers=0 opt_err=0.02m)
+464.34,PROX,diterima: node 512 -> 78
+464.34,TOLAK,kandidat node 512 -> 169 ditolak  (hyp=0.86 inliers=10 opt_err=0.02m)
+464.45,KOREKSI,"map->odom lompat 8.4 cm, 3.5 deg"
+465.12,TOLAK,kandidat node 513 -> 169 ditolak  (hyp=0.68 inliers=0)
+465.58,TOLAK,kandidat node 514 -> 169 ditolak  (hyp=0.54 inliers=0)
+466.13,PROX,diterima: node 515 -> 28
+466.13,TOLAK,kandidat node 515 -> 168 ditolak  (hyp=0.39 inliers=0 opt_err=0.02m)
+466.7,PROX,diterima: node 516 -> 28
+466.7,TOLAK,kandidat node 516 -> 168 ditolak  (hyp=0.26 inliers=0 opt_err=0.02m)
+467.3,TOLAK,kandidat node 517 -> 168 ditolak  (hyp=0.23 inliers=0)
+468.13,TOLAK,kandidat node 518 -> 431 ditolak  (hyp=0.18 inliers=0)
+469.04,PROX,diterima: node 519 -> 25
+469.04,TOLAK,kandidat node 519 -> 56 ditolak  (hyp=0.14 inliers=0 opt_err=0.02m)
+469.63,PROX,diterima: node 520 -> 267
+469.63,TOLAK,kandidat node 520 -> 295 ditolak  (hyp=0.15 inliers=0 opt_err=0.02m)
+470.29,PROX,diterima: node 521 -> 317
+470.29,TOLAK,kandidat node 521 -> 295 ditolak  (hyp=0.16 inliers=0 opt_err=0.02m)
+472.1,PROX,diterima: node 522 -> 33
+472.1,TOLAK,kandidat node 522 -> 296 ditolak  (hyp=0.21 inliers=0 opt_err=0.18m)
+472.62,PROX,diterima: node 523 -> 32
+472.62,TOLAK,kandidat node 523 -> 295 ditolak  (hyp=0.31 inliers=16 opt_err=0.18m)
+473.17,TOLAK,kandidat node 524 -> 295 ditolak  (hyp=0.25 inliers=13 opt_err=0.02m)
+473.79,PROX,diterima: node 525 -> 58
+473.79,TOLAK,kandidat node 525 -> 295 ditolak  (hyp=0.23 inliers=12 opt_err=0.02m)
+474.19,TOLAK,kandidat node 526 -> 294 ditolak  (hyp=0.26 inliers=0)
+474.83,PROX,diterima: node 527 -> 58
+474.83,TOLAK,kandidat node 527 -> 403 ditolak  (hyp=0.29 inliers=13 opt_err=0.02m)
+475.55,PROX,diterima: node 528 -> 58
+475.55,TOLAK,kandidat node 528 -> 35 ditolak  (hyp=0.37 inliers=11 opt_err=0.02m)
+476.3,TOLAK,kandidat node 529 -> 60 ditolak  (hyp=0.49 inliers=21 opt_err=0.13m)
+476.83,TOLAK,kandidat node 530 -> 35 ditolak  (hyp=0.67 inliers=14 opt_err=0.03m)
+477.42,TOLAK,kandidat node 531 -> 61 ditolak  (hyp=0.58 inliers=10 opt_err=0.03m)
+478.34,TOLAK,kandidat node 532 -> 62 ditolak  (hyp=0.57 inliers=13 opt_err=0.03m)
+478.96,TOLAK,kandidat node 533 -> 62 ditolak  (hyp=0.74 inliers=19 opt_err=0.03m)
+479.68,TOLAK,kandidat node 534 -> 63 ditolak  (hyp=0.88 inliers=13 opt_err=0.03m)
+480.37,TOLAK,kandidat node 535 -> 63 ditolak  (hyp=0.90 inliers=14 opt_err=0.03m)
+481.02,TOLAK,kandidat node 536 -> 63 ditolak  (hyp=0.88 inliers=17 opt_err=0.02m)
+481.63,TOLAK,kandidat node 537 -> 63 ditolak  (hyp=0.72 inliers=10 opt_err=0.03m)
+482.62,TOLAK,kandidat node 538 -> 63 ditolak  (hyp=0.63 inliers=8)
+482.83,TOLAK,kandidat node 539 -> 64 ditolak  (hyp=0.50 inliers=17 opt_err=0.02m)
+483.46,TOLAK,kandidat node 540 -> 64 ditolak  (hyp=0.41 inliers=22 opt_err=0.03m)
+484.03,TOLAK,kandidat node 541 -> 66 ditolak  (hyp=0.33 inliers=16)
+484.94,LOOP,"diterima: node 542 -> 65  (hyp=0.34, inliers=10)"
+485.65,TOLAK,kandidat node 543 -> 66 ditolak  (hyp=0.36 inliers=15 opt_err=0.18m)
+486.16,TOLAK,kandidat node 544 -> 65 ditolak  (hyp=0.31 inliers=12 opt_err=0.03m)
+487.1,PROX,diterima: node 545 -> 301
+487.1,TOLAK,kandidat node 545 -> 291 ditolak  (hyp=0.32 inliers=9 opt_err=0.02m)
+487.74,PROX,diterima: node 546 -> 65
+487.74,TOLAK,kandidat node 546 -> 202 ditolak  (hyp=0.35 inliers=0 opt_err=0.02m)
+488.46,TOLAK,kandidat node 547 -> 201 ditolak  (hyp=0.49 inliers=0)
+489.1,TOLAK,kandidat node 548 -> 202 ditolak  (hyp=0.60 inliers=0 opt_err=0.03m)
+489.76,TOLAK,kandidat node 549 -> 202 ditolak  (hyp=0.41 inliers=0 opt_err=0.03m)
+490.27,TOLAK,kandidat node 550 -> 202 ditolak  (hyp=0.36 inliers=0 opt_err=0.03m)
+490.83,TOLAK,kandidat node 551 -> 295 ditolak  (hyp=0.40 inliers=0 opt_err=0.03m)
+491.39,PROX,diterima: node 552 -> 542
+491.39,TOLAK,kandidat node 552 -> 298 ditolak  (hyp=0.49 inliers=0 opt_err=0.02m)
+491.9,PROX,diterima: node 553 -> 301
+491.9,TOLAK,kandidat node 553 -> 300 ditolak  (hyp=0.50 inliers=0 opt_err=0.02m)
+493.14,TOLAK,kandidat node 554 -> 301 ditolak  (hyp=0.44 inliers=0)
+493.7,TOLAK,kandidat node 555 -> 302 ditolak  (hyp=0.63 inliers=8 opt_err=0.02m)
+494.93,PROX,diterima: node 556 -> 301
+494.93,TOLAK,kandidat node 556 -> 303 ditolak  (hyp=0.70 inliers=9 opt_err=0.02m)
+495.58,TOLAK,kandidat node 557 -> 303 ditolak  (hyp=0.79 inliers=13 opt_err=0.03m)
+496.0,TOLAK,kandidat node 558 -> 304 ditolak  (hyp=0.86 inliers=17 opt_err=0.03m)
+496.86,PROX,diterima: node 559 -> 303
+496.86,TOLAK,kandidat node 559 -> 305 ditolak  (hyp=0.85 inliers=2 opt_err=0.02m)
+497.22,PROX,diterima: node 560 -> 367
+497.22,TOLAK,kandidat node 560 -> 304 ditolak  (hyp=0.89 inliers=5 opt_err=0.02m)
+497.73,PROX,diterima: node 561 -> 367
+497.73,TOLAK,kandidat node 561 -> 304 ditolak  (hyp=0.87 inliers=9 opt_err=0.02m)
+498.3,PROX,diterima: node 562 -> 305
+498.3,TOLAK,kandidat node 562 -> 306 ditolak  (hyp=0.89 inliers=4 opt_err=0.02m)
+498.8,TOLAK,kandidat node 563 -> 304 ditolak  (hyp=0.86 inliers=6)
+499.49,TOLAK,kandidat node 564 -> 306 ditolak  (hyp=0.78 inliers=9 opt_err=0.02m)
+500.03,PROX,diterima: node 565 -> 367
+500.03,TOLAK,kandidat node 565 -> 305 ditolak  (hyp=0.71 inliers=7 opt_err=0.02m)
+500.56,TOLAK,kandidat node 566 -> 305 ditolak  (hyp=0.65 inliers=0)
+501.1,TOLAK,kandidat node 567 -> 305 ditolak  (hyp=0.60 inliers=11 opt_err=0.03m)
+502.03,TOLAK,kandidat node 568 -> 296 ditolak  (hyp=0.57 inliers=0)
+502.45,TOLAK,kandidat node 569 -> 295 ditolak  (hyp=0.68 inliers=13 opt_err=0.02m)
+503.06,TOLAK,kandidat node 570 -> 297 ditolak  (hyp=0.70 inliers=18 opt_err=0.02m)
+503.82,TOLAK,kandidat node 571 -> 298 ditolak  (hyp=0.82 inliers=0)
+504.37,TOLAK,kandidat node 572 -> 299 ditolak  (hyp=0.85 inliers=0)
+504.93,TOLAK,kandidat node 573 -> 297 ditolak  (hyp=0.78 inliers=0)
+505.42,TOLAK,kandidat node 574 -> 299 ditolak  (hyp=0.74 inliers=14 opt_err=0.03m)
+506.13,PROX,diterima: node 575 -> 542
+506.13,TOLAK,kandidat node 575 -> 299 ditolak  (hyp=0.59 inliers=21 opt_err=0.02m)
+506.45,KOREKSI,"map->odom lompat 19.2 cm, 3.1 deg"
+506.7,PROX,diterima: node 576 -> 538
+506.7,TOLAK,kandidat node 576 -> 84 ditolak  (hyp=0.57 inliers=14 opt_err=0.02m)
+507.36,PROX,diterima: node 577 -> 64
+507.36,TOLAK,kandidat node 577 -> 85 ditolak  (hyp=0.56 inliers=18 opt_err=0.02m)
+508.74,TOLAK,kandidat node 578 -> 81 ditolak  (hyp=0.48 inliers=25 opt_err=0.18m)
+509.46,TOLAK,kandidat node 579 -> 81 ditolak  (hyp=0.47 inliers=24 opt_err=0.19m)
+510.26,TOLAK,kandidat node 580 -> 81 ditolak  (hyp=0.49 inliers=18 opt_err=0.18m)
+510.66,TOLAK,kandidat node 581 -> 81 ditolak  (hyp=0.56 inliers=10 opt_err=0.03m)
+511.57,TOLAK,kandidat node 582 -> 81 ditolak  (hyp=0.58 inliers=17 opt_err=0.17m)
+512.0,LOOP,"diterima: node 583 -> 545  (hyp=0.60, inliers=14)"
+512.0,PROX,diterima: node 583 -> 545
+512.7,LOOP,"diterima: node 584 -> 545  (hyp=0.75, inliers=22)"
+512.7,PROX,diterima: node 584 -> 545
+513.3,TOLAK,kandidat node 585 -> 546 ditolak  (hyp=0.89 inliers=13 opt_err=0.17m)
+514.03,LOOP,"diterima: node 586 -> 547  (hyp=0.94, inliers=10)"
+514.03,PROX,diterima: node 586 -> 547
+514.66,PROX,diterima: node 587 -> 554
+514.66,TOLAK,kandidat node 587 -> 547 ditolak  (hyp=0.95 inliers=0 opt_err=0.02m)
+515.54,TOLAK,kandidat node 588 -> 546 ditolak  (hyp=0.82 inliers=0 opt_err=0.02m)
+516.0,TOLAK,kandidat node 589 -> 547 ditolak  (hyp=0.67 inliers=0 opt_err=0.03m)
+516.62,TOLAK,kandidat node 590 -> 551 ditolak  (hyp=0.80 inliers=13 opt_err=0.05m)
+517.62,TOLAK,kandidat node 591 -> 551 ditolak  (hyp=0.94 inliers=14 opt_err=0.19m)
+517.81,PROX,diterima: node 592 -> 69
+517.81,TOLAK,kandidat node 592 -> 553 ditolak  (hyp=0.90 inliers=0 opt_err=0.02m)
+518.59,PROX,diterima: node 593 -> 554
+518.59,TOLAK,kandidat node 593 -> 554 ditolak  (hyp=0.86 inliers=6 opt_err=0.02m)
+519.2,PROX,diterima: node 594 -> 301
+519.2,TOLAK,kandidat node 594 -> 554 ditolak  (hyp=0.81 inliers=0 opt_err=0.02m)
+519.81,PROX,diterima: node 595 -> 367
+519.81,TOLAK,kandidat node 595 -> 555 ditolak  (hyp=0.83 inliers=8 opt_err=0.02m)
+520.42,PROX,diterima: node 596 -> 301
+520.42,TOLAK,kandidat node 596 -> 554 ditolak  (hyp=0.92 inliers=6 opt_err=0.02m)
+520.98,LOOP,"diterima: node 597 -> 556  (hyp=0.95, inliers=11)"
+520.98,PROX,diterima: node 597 -> 556
+521.5,PROX,diterima: node 598 -> 554
+521.5,TOLAK,kandidat node 598 -> 556 ditolak  (hyp=0.92 inliers=14 opt_err=0.02m)
+522.06,TOLAK,kandidat node 599 -> 556 ditolak  (hyp=0.96 inliers=17 opt_err=0.02m)
+522.77,TOLAK,kandidat node 600 -> 556 ditolak  (hyp=0.95 inliers=15 opt_err=0.03m)
+523.3,LOOP,"diterima: node 601 -> 558  (hyp=0.97, inliers=22)"
+523.3,PROX,diterima: node 601 -> 558
+523.82,LOOP,"diterima: node 602 -> 559  (hyp=0.96, inliers=19)"
+523.82,PROX,diterima: node 602 -> 559
+524.4,TOLAK,kandidat node 603 -> 559 ditolak  (hyp=0.95 inliers=18)
+525.07,TOLAK,kandidat node 604 -> 561 ditolak  (hyp=0.95 inliers=17 opt_err=0.03m)
+525.66,TOLAK,kandidat node 605 -> 561 ditolak  (hyp=0.95 inliers=19 opt_err=0.03m)
+526.22,TOLAK,kandidat node 606 -> 561 ditolak  (hyp=0.92 inliers=8)
+526.86,TOLAK,kandidat node 607 -> 561 ditolak  (hyp=0.92 inliers=0)
+527.39,TOLAK,kandidat node 608 -> 562 ditolak  (hyp=0.89 inliers=19 opt_err=0.03m)
+528.16,TOLAK,kandidat node 609 -> 562 ditolak  (hyp=0.73 inliers=19 opt_err=0.03m)
+528.72,TOLAK,kandidat node 610 -> 562 ditolak  (hyp=0.58 inliers=11 opt_err=0.03m)
+529.23,TOLAK,kandidat node 611 -> 562 ditolak  (hyp=0.45 inliers=12 opt_err=0.05m)
+530.03,TOLAK,kandidat node 612 -> 563 ditolak  (hyp=0.40 inliers=22 opt_err=0.03m)
+530.4,TOLAK,kandidat node 613 -> 311 ditolak  (hyp=0.45 inliers=15 opt_err=0.03m)
+531.2,TOLAK,kandidat node 614 -> 313 ditolak  (hyp=0.54 inliers=13 opt_err=0.03m)
+531.73,TOLAK,kandidat node 615 -> 313 ditolak  (hyp=0.75 inliers=13 opt_err=0.03m)
+532.75,TOLAK,kandidat node 616 -> 314 ditolak  (hyp=0.83 inliers=15 opt_err=0.03m)
+533.26,TOLAK,kandidat node 617 -> 314 ditolak  (hyp=0.86 inliers=12 opt_err=0.03m)
+533.9,TOLAK,kandidat node 618 -> 316 ditolak  (hyp=0.87 inliers=12 opt_err=0.03m)
+534.46,TOLAK,kandidat node 619 -> 318 ditolak  (hyp=0.78 inliers=14 opt_err=0.03m)
+534.99,TOLAK,kandidat node 620 -> 318 ditolak  (hyp=0.74 inliers=23 opt_err=0.03m)
+535.66,TOLAK,kandidat node 621 -> 319 ditolak  (hyp=0.77 inliers=39 opt_err=0.03m)
+536.51,TOLAK,kandidat node 622 -> 318 ditolak  (hyp=0.63 inliers=19 opt_err=0.03m)
+537.14,TOLAK,kandidat node 623 -> 319 ditolak  (hyp=0.62 inliers=17 opt_err=0.03m)
+537.86,TOLAK,kandidat node 624 -> 319 ditolak  (hyp=0.43 inliers=10 opt_err=0.03m)
+538.37,PROX,diterima: node 625 -> 432
+538.37,TOLAK,kandidat node 625 -> 320 ditolak  (hyp=0.34 inliers=22 opt_err=0.03m)
+538.9,PROX,diterima: node 626 -> 103
+538.9,TOLAK,kandidat node 626 -> 320 ditolak  (hyp=0.25 inliers=2 opt_err=0.03m)
+539.5,TOLAK,kandidat node 627 -> 321 ditolak  (hyp=0.21 inliers=17 opt_err=0.10m)
+540.3,PROX,diterima: node 628 -> 320
+540.3,TOLAK,kandidat node 628 -> 322 ditolak  (hyp=0.21 inliers=0 opt_err=0.03m)
+540.77,PROX,diterima: node 629 -> 268
+540.77,TOLAK,kandidat node 629 -> 322 ditolak  (hyp=0.22 inliers=6 opt_err=0.03m)
+541.25,PROX,diterima: node 630 -> 430
+541.25,TOLAK,kandidat node 630 -> 519 ditolak  (hyp=0.24 inliers=6 opt_err=0.10m)
+541.86,PROX,diterima: node 631 -> 325
+541.86,TOLAK,kandidat node 631 -> 518 ditolak  (hyp=0.31 inliers=11 opt_err=0.10m)
+541.95,KOREKSI,"map->odom lompat 7.5 cm, 2.2 deg"
+542.37,TOLAK,kandidat node 632 -> 517 ditolak  (hyp=0.34 inliers=19 opt_err=0.10m)
+542.86,TOLAK,kandidat node 633 -> 517 ditolak  (hyp=0.32 inliers=24 opt_err=0.10m)
+543.57,LOOP,"diterima: node 634 -> 270  (hyp=0.32, inliers=24)"
+543.57,PROX,diterima: node 634 -> 270
+544.22,LOOP,"diterima: node 635 -> 271  (hyp=0.45, inliers=10)"
+544.22,PROX,diterima: node 635 -> 325
+545.15,LOOP,"diterima: node 636 -> 272  (hyp=0.52, inliers=12)"
+545.15,PROX,diterima: node 636 -> 325
+545.63,TOLAK,kandidat node 637 -> 272 ditolak  (hyp=0.69 inliers=16 opt_err=0.11m)
+546.21,PROX,diterima: node 638 -> 326
+546.21,TOLAK,kandidat node 638 -> 273 ditolak  (hyp=0.84 inliers=24 opt_err=0.11m)
+546.77,PROX,diterima: node 639 -> 276
+546.77,TOLAK,kandidat node 639 -> 274 ditolak  (hyp=0.89 inliers=29 opt_err=0.11m)
+547.26,TOLAK,kandidat node 640 -> 276 ditolak  (hyp=0.89 inliers=20 opt_err=0.11m)
+548.13,TOLAK,kandidat node 641 -> 277 ditolak  (hyp=0.81 inliers=21 opt_err=0.11m)
+548.69,PROX,diterima: node 642 -> 45
+548.69,TOLAK,kandidat node 642 -> 277 ditolak  (hyp=0.78 inliers=9 opt_err=0.11m)
+549.2,TOLAK,kandidat node 643 -> 277 ditolak  (hyp=0.73 inliers=9 opt_err=0.11m)
+549.82,TOLAK,kandidat node 644 -> 277 ditolak  (hyp=0.62 inliers=7 opt_err=0.11m)
+550.37,TOLAK,kandidat node 645 -> 277 ditolak  (hyp=0.62 inliers=0 opt_err=0.11m)
+551.02,PROX,diterima: node 646 -> 285
+551.02,TOLAK,kandidat node 646 -> 277 ditolak  (hyp=0.52 inliers=9 opt_err=0.11m)
+551.57,PROX,diterima: node 647 -> 42
+551.57,TOLAK,kandidat node 647 -> 277 ditolak  (hyp=0.45 inliers=0 opt_err=0.11m)
+552.38,TOLAK,kandidat node 648 -> 277 ditolak  (hyp=0.45 inliers=10 opt_err=0.11m)
+553.17,PROX,diterima: node 649 -> 37
+553.17,TOLAK,kandidat node 649 -> 553 ditolak  (hyp=0.47 inliers=10 opt_err=0.11m)
+553.7,TOLAK,kandidat node 650 -> 550 ditolak  (hyp=0.51 inliers=0 opt_err=0.11m)
+554.69,TOLAK,kandidat node 651 -> 592 ditolak  (hyp=0.53 inliers=0)
+555.06,TOLAK,kandidat node 652 -> 592 ditolak  (hyp=0.63 inliers=0 opt_err=0.11m)
+555.63,TOLAK,kandidat node 653 -> 593 ditolak  (hyp=0.69 inliers=10 opt_err=0.11m)
+556.19,TOLAK,kandidat node 654 -> 594 ditolak  (hyp=0.71 inliers=0)
+557.02,TOLAK,kandidat node 655 -> 594 ditolak  (hyp=0.56 inliers=0)
+557.63,TOLAK,kandidat node 656 -> 594 ditolak  (hyp=0.45 inliers=0)
+558.03,TOLAK,kandidat node 657 -> 591 ditolak  (hyp=0.42 inliers=10 opt_err=0.11m)
+558.56,TOLAK,kandidat node 658 -> 296 ditolak  (hyp=0.45 inliers=0)
+559.18,TOLAK,kandidat node 659 -> 296 ditolak  (hyp=0.34 inliers=0)
+559.73,TOLAK,kandidat node 660 -> 296 ditolak  (hyp=0.31 inliers=0)
+560.26,TOLAK,kandidat node 661 -> 296 ditolak  (hyp=0.30 inliers=0)
+560.99,TOLAK,kandidat node 662 -> 296 ditolak  (hyp=0.32 inliers=0)
+561.52,TOLAK,kandidat node 663 -> 295 ditolak  (hyp=0.40 inliers=0)
+562.26,TOLAK,kandidat node 664 -> 296 ditolak  (hyp=0.33 inliers=0)
+562.99,TOLAK,kandidat node 665 -> 296 ditolak  (hyp=0.25 inliers=0)
+563.54,PROX,diterima: node 666 -> 656
+563.54,TOLAK,kandidat node 666 -> 296 ditolak  (hyp=0.19 inliers=0 opt_err=0.11m)
+564.26,PROX,diterima: node 667 -> 365
+564.26,TOLAK,kandidat node 667 -> 296 ditolak  (hyp=0.18 inliers=0 opt_err=0.11m)
+564.56,PROX,diterima: node 668 -> 365
+564.56,TOLAK,kandidat node 668 -> 377 ditolak  (hyp=0.18 inliers=0 opt_err=0.11m)
+565.17,PROX,diterima: node 669 -> 365
+565.17,TOLAK,kandidat node 669 -> 377 ditolak  (hyp=0.18 inliers=0 opt_err=0.11m)
+565.73,PROX,diterima: node 670 -> 365
+565.73,TOLAK,kandidat node 670 -> 377 ditolak  (hyp=0.15 inliers=0 opt_err=0.11m)
+566.26,PROX,diterima: node 671 -> 365
+566.26,TOLAK,kandidat node 671 -> 363 ditolak  (hyp=0.15 inliers=0 opt_err=0.11m)
+566.8,TOLAK,kandidat node 672 -> 520 ditolak  (hyp=0.15 inliers=0)
+567.42,PROX,diterima: node 673 -> 663
+567.42,TOLAK,kandidat node 673 -> 366 ditolak  (hyp=0.14 inliers=0 opt_err=0.11m)
+568.93,PROX,diterima: node 674 -> 664
+568.93,TOLAK,kandidat node 674 -> 402 ditolak  (hyp=0.15 inliers=0 opt_err=0.11m)
+570.66,TOLAK,kandidat node 675 -> 405 ditolak  (hyp=0.16 inliers=0)
+572.34,TOLAK,kandidat node 676 -> 294 ditolak  (hyp=0.18 inliers=0)
+574.43,TOLAK,kandidat node 677 -> 575 ditolak  (hyp=0.15 inliers=0)
+575.5,TOLAK,kandidat node 678 -> 296 ditolak  (hyp=0.14 inliers=0)
+575.95,KOREKSI,"map->odom lompat 19.8 cm, 3.2 deg"
+576.26,TOLAK,kandidat node 679 -> 295 ditolak  (hyp=0.18 inliers=0)
+576.45,KOREKSI,"map->odom lompat 32.2 cm, 4.9 deg"
+576.94,TOLAK,kandidat node 680 -> 295 ditolak  (hyp=0.12 inliers=0)
+578.74,TOLAK,kandidat node 681 -> 594 ditolak  (hyp=0.13 inliers=0)
+580.16,TOLAK,kandidat node 682 -> 296 ditolak  (hyp=0.14 inliers=0)
+581.23,TOLAK,kandidat node 683 -> 298 ditolak  (hyp=0.15 inliers=0)
+582.13,TOLAK,kandidat node 684 -> 296 ditolak  (hyp=0.19 inliers=0)
+582.8,TOLAK,kandidat node 685 -> 298 ditolak  (hyp=0.33 inliers=0)
+583.54,TOLAK,kandidat node 686 -> 298 ditolak  (hyp=0.60 inliers=0)
+584.19,TOLAK,kandidat node 687 -> 297 ditolak  (hyp=0.80 inliers=0)
+587.17,TOLAK,kandidat node 688 -> 295 ditolak  (hyp=0.88 inliers=0)
+588.1,TOLAK,kandidat node 689 -> 298 ditolak  (hyp=0.94 inliers=0)
+590.19,TOLAK,kandidat node 690 -> 295 ditolak  (hyp=0.93 inliers=0)
+590.43,TOLAK,kandidat node 691 -> 295 ditolak  (hyp=0.93 inliers=14 opt_err=0.33m)
+591.06,TOLAK,kandidat node 692 -> 297 ditolak  (hyp=0.86 inliers=11 opt_err=0.34m)
+592.43,TOLAK,kandidat node 693 -> 297 ditolak  (hyp=0.83 inliers=0)
+593.63,TOLAK,kandidat node 694 -> 297 ditolak  (hyp=0.83 inliers=0)
+593.79,TOLAK,kandidat node 695 -> 297 ditolak  (hyp=0.66 inliers=0)
+594.4,TOLAK,kandidat node 696 -> 297 ditolak  (hyp=0.39 inliers=0)
+597.14,PROX,diterima: node 697 -> 337
+597.14,TOLAK,kandidat node 697 -> 294 ditolak  (hyp=0.50 inliers=0 opt_err=0.11m)
+599.14,TOLAK,kandidat node 698 -> 296 ditolak  (hyp=0.60 inliers=0)
+600.22,TOLAK,kandidat node 699 -> 295 ditolak  (hyp=0.68 inliers=15 opt_err=0.63m)

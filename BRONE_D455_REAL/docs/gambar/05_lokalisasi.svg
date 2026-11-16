@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="400" viewBox="0 0 1040 400" role="img" aria-label="Lokalisasi: odometri roda, gyro, dan visual odometry masuk EKF yang mem-publish TF odom ke base_link. RTAB-Map mem-publish TF map ke odom. Rantai TF map, odom, base_link, camera_link dibaca auto_explorer sebagai pose map ke base_link."><style>/* SVG */
+.bx { fill: #fff; stroke: #1a1a1a; stroke-width: 1.2; }
+.bx-in { fill: #f3f3f3; stroke: #9a9a9a; stroke-width: .8; }
+.bx-bad { fill: #fff; stroke: #a3271b; stroke-width: 1.2; stroke-dasharray: 5 4; }
+.t { fill: #1a1a1a; font: 600 13px "Source Sans 3", "Liberation Sans", Arial, sans-serif; }
+.tm { fill: #1a1a1a; font: 500 12.5px "Source Code Pro", "DejaVu Sans Mono", "Liberation Mono", monospace; }
+.s { fill: #555555; font: 400 12px "Source Sans 3", "Liberation Sans", Arial, sans-serif; }
+.el { fill: #555555; font: 400 11px "Source Code Pro", "DejaVu Sans Mono", "Liberation Mono", monospace; }
+.el-loc { fill: #1d6b5f; font: 400 11px "Source Code Pro", "DejaVu Sans Mono", "Liberation Mono", monospace; }
+.el-slam { fill: #2f4f8f; font: 400 11px "Source Code Pro", "DejaVu Sans Mono", "Liberation Mono", monospace; }
+.el-map { fill: #9a5a12; font: 400 11px "Source Code Pro", "DejaVu Sans Mono", "Liberation Mono", monospace; }
+.el-bad { fill: #a3271b; font: 400 11px "Source Code Pro", "DejaVu Sans Mono", "Liberation Mono", monospace; }
+.e { fill: none; stroke-width: 1.3; }
+.e-loc { stroke: #1d6b5f; } .e-slam { stroke: #2f4f8f; } .e-map { stroke: #9a5a12; }
+.e-fg { stroke: #1a1a1a; } .e-bad { stroke: #a3271b; stroke-dasharray: 5 4; }
+.ah-loc { fill: #1d6b5f; } .ah-slam { fill: #2f4f8f; } .ah-map { fill: #9a5a12; }
+.ah-fg { fill: #1a1a1a; } .ah-bad { fill: #a3271b; }
+.wall { stroke: #9a5a12; stroke-width: 4; }
+.wall-ghost { stroke: #9a5a12; stroke-width: 4; opacity: .5; }
+.ray { stroke: #555555; stroke-width: .8; stroke-dasharray: 3 3; }
+.bot { fill: #1a1a1a; }
+.bot-ghost { fill: none; stroke: #a3271b; stroke-width: 1.3; stroke-dasharray: 3 2; }
+</style><rect width="100%" height="100%" fill="#fff"/>
+        <defs>
+          <marker id="l-loc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="ah-loc" d="M0 0 L10 5 L0 10 z"/></marker>
+          <marker id="l-slam" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="ah-slam" d="M0 0 L10 5 L0 10 z"/></marker>
+          <marker id="l-fg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="ah-fg" d="M0 0 L10 5 L0 10 z"/></marker>
+        </defs>
+        <!-- sensors -->
+        <rect class="bx" x="20" y="100" width="190" height="56"/>
+        <text class="tm" x="115" y="124" text-anchor="middle">/wheel/odom</text>
+        <text class="s" x="115" y="142" text-anchor="middle">vx, vy · varian 0,02</text>
+        <rect class="bx" x="20" y="180" width="190" height="56"/>
+        <text class="tm" x="115" y="204" text-anchor="middle">/imu/data</text>
+        <text class="s" x="115" y="222" text-anchor="middle">gyro ωz · yaw = integrasi</text>
+        <rect class="bx" x="20" y="260" width="190" height="56"/>
+        <text class="tm" x="117" y="284" text-anchor="middle">/vo/odom</text>
+        <text class="s" x="117" y="302" text-anchor="middle">vx, vy · varian dari residu</text>
+
+        <!-- EKF -->
+        <rect class="bx" x="290" y="100" width="200" height="216"/>
+        <text class="t" x="392" y="132" text-anchor="middle">EKF</text>
+        <text class="s" x="392" y="156" text-anchor="middle">prediksi: model holonomik</text>
+        <text class="s" x="392" y="176" text-anchor="middle">x += (vx cosθ − vy sinθ)·dt</text>
+        <text class="s" x="392" y="208" text-anchor="middle">update per sensor</text>
+        <text class="s" x="392" y="228" text-anchor="middle">(asinkron)</text>
+        <text class="s" x="392" y="262" text-anchor="middle">VO diabaikan bila</text>
+        <text class="s" x="392" y="280" text-anchor="middle">varian &gt; 10 (fitur sedikit)</text>
+        <line class="e e-loc" x1="210" y1="128" x2="286" y2="128" marker-end="url(#l-loc)"/>
+        <line class="e e-loc" x1="210" y1="208" x2="286" y2="208" marker-end="url(#l-loc)"/>
+        <line class="e e-loc" x1="210" y1="288" x2="286" y2="288" marker-end="url(#l-loc)"/>
+
+        <!-- rtabmap -->
+        <rect class="bx" x="290" y="20" width="200" height="50"/>
+        <text class="tm" x="392" y="50" text-anchor="middle">rtabmap (SLAM)</text>
+
+        <!-- TF chain -->
+        <rect class="bx" x="640" y="30" width="170" height="44"/>
+        <text class="tm" x="725" y="57" text-anchor="middle">map</text>
+        <rect class="bx" x="640" y="140" width="170" height="44"/>
+        <text class="tm" x="725" y="167" text-anchor="middle">odom</text>
+        <rect class="bx" x="640" y="250" width="170" height="44"/>
+        <text class="tm" x="725" y="277" text-anchor="middle">base_link</text>
+        <rect class="bx" x="640" y="340" width="170" height="44"/>
+        <text class="tm" x="725" y="367" text-anchor="middle">camera_link</text>
+        <line class="e e-slam" x1="725" y1="74" x2="725" y2="136" marker-end="url(#l-slam)"/>
+        <line class="e e-loc" x1="725" y1="184" x2="725" y2="246" marker-end="url(#l-loc)"/>
+        <line class="e e-fg" x1="725" y1="294" x2="725" y2="336" marker-end="url(#l-fg)"/>
+        <text class="el-slam" x="740" y="100">map→odom · 2 Hz</text>
+        <text class="el" x="740" y="115">melompat saat koreksi</text>
+        <text class="el-loc" x="740" y="210">odom→base_link</text>
+        <text class="el" x="740" y="225">halus, drift pelan</text>
+        <text class="el" x="740" y="314">statis: 8 cm depan,</text>
+        <text class="el" x="740" y="328">10 cm atas</text>
+
+        <path class="e e-slam" d="M490 45 H600 V105 H721" marker-end="url(#l-slam)"/>
+        <text class="el-slam" x="545" y="38" text-anchor="middle">publish TF</text>
+        <line class="e e-loc" x1="490" y1="215" x2="721" y2="215" marker-end="url(#l-loc)"/>
+        <text class="el-loc" x="600" y="207" text-anchor="middle">publish TF + /odom</text>
+
+        <!-- explorer -->
+        <rect class="bx" x="880" y="230" width="140" height="64"/>
+        <text class="tm" x="950" y="257" text-anchor="middle">auto_explorer</text>
+        <text class="s" x="950" y="276" text-anchor="middle">+ /map + /scan 5 s</text>
+        <line class="e e-fg" x1="810" y1="268" x2="876" y2="268" marker-end="url(#l-fg)"/>
+        <text class="el" x="843" y="260" text-anchor="middle">map→base</text>
+      </svg>

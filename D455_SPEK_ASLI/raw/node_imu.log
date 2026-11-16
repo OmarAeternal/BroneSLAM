@@ -1,0 +1,40 @@
+[INFO] [1794209818.876383465] [camera.camera]: RealSense ROS v4.58.4
+[INFO] [1794209818.876475157] [camera.camera]: Built with LibRealSense v2.58.4
+[INFO] [1794209818.876482961] [camera.camera]: Running with LibRealSense v2.58.4
+[INFO] [1794209819.054559138] [camera.camera]: Device with serial number 135122251358 was found.
+
+[INFO] [1794209819.054719009] [camera.camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-4/3-4:1.0/video4linux/video2 was found.
+[INFO] [1794209819.054727079] [camera.camera]: Device with name RealSense D455 was found.
+[INFO] [1794209819.054966697] [camera.camera]: Device with port number 3-4 was found.
+[INFO] [1794209819.054975314] [camera.camera]: Device USB type: 2.1
+[WARN] [1794209819.054981345] [camera.camera]: Device 135122251358 is connected using a 2.1 port. Reduced performance is expected.
+[INFO] [1794209819.054992328] [camera.camera]: Starting device RealSense D455 (Product ID: 0x0B5C)
+[INFO] [1794209819.055058186] [camera.camera]: getParameters...
+[INFO] [1794209819.055319521] [camera.camera]: JSON file is not provided
+[INFO] [1794209819.055326591] [camera.camera]: Device Name: RealSense D455
+[INFO] [1794209819.055331785] [camera.camera]: Device Serial No: 135122251358
+[INFO] [1794209819.055337266] [camera.camera]: Device physical port: /sys/devices/pci0000:00/0000:00:14.0/usb3/3-4/3-4:1.0/video4linux/video2
+[INFO] [1794209819.055343912] [camera.camera]: Device FW version: 5.13.0.50
+[INFO] [1794209819.055348950] [camera.camera]: Device Product ID: 0x0B5C
+[INFO] [1794209819.055356547] [camera.camera]: Sync Mode: Off
+[INFO] [1794209819.181781603] [camera.camera]: Stopping Sensor: Depth Module
+[INFO] [1794209819.181904113] [camera.camera]: Stopping Sensor: Motion Module
+[INFO] [1794209819.212462355] [camera.camera]: Starting Sensor: Depth Module
+[INFO] [1794209819.216479675] [camera.camera]: Open profile: stream_type: Infra(1), Format: Y8, Width: 640, Height: 480, FPS: 15
+[INFO] [1794209819.340996499] [camera.camera]: Starting Sensor: Motion Module
+[INFO] [1794209819.345589453] [camera.camera]: Open profile: stream_type: Accel(0)Format: MOTION_XYZ32F, FPS: 100
+[INFO] [1794209819.345645369] [camera.camera]: Open profile: stream_type: Gyro(0)Format: MOTION_XYZ32F, FPS: 200
+[INFO] [1794209819.356319209] [camera.camera]: RealSense Node Is Up!
+[WARN] [1794209828.901521752] [camera.camera]: XXX Hardware Notification:Incomplete video frame detected!
+Size 65536 out of 307455 bytes (21%),1.79421e+12,Warn,Frame Corrupted
+[WARN] [1794209851.238019425] [camera.camera]: XXX Hardware Notification:Incomplete video frame detected!
+Size 65536 out of 307455 bytes (21%),1.79421e+12,Warn,Frame Corrupted
+[WARN] [1794209873.252567782] [camera.camera]: XXX Hardware Notification:Incomplete video frame detected!
+Size 65536 out of 307455 bytes (21%),1.79421e+12,Warn,Frame Corrupted
+[INFO] [1794209873.483894295] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [1794209873.485082483] [camera.camera]: Stop Sensor: Depth Module
+[INFO] [1794209873.485140710] [camera.camera]: Close Sensor. 
+[INFO] [1794209875.256959633] [camera.camera]: Close Sensor - Done. 
+[INFO] [1794209875.257023327] [camera.camera]: Stop Sensor: Motion Module
+[INFO] [1794209875.257707570] [camera.camera]: Close Sensor. 
+[INFO] [1794209876.000038184] [camera.camera]: Close Sensor - Done. 

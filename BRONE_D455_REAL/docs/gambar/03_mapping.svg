@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="250" viewBox="0 0 1040 250" role="img" aria-label="Alur mapping: scan menjadi grid lokal per node, grid lokal dirakit dengan pose node menjadi peta global /map yang dipakai RViz dan auto_explorer. Optimasi graf mengirim pose baru sehingga peta dirakit ulang. RGB-D per node menjadi awan titik 3D."><style>/* SVG */
+.bx { fill: #fff; stroke: #1a1a1a; stroke-width: 1.2; }
+.bx-in { fill: #f3f3f3; stroke: #9a9a9a; stroke-width: .8; }
+.bx-bad { fill: #fff; stroke: #a3271b; stroke-width: 1.2; stroke-dasharray: 5 4; }
+.t { fill: #1a1a1a; font: 600 13px "Source Sans 3", "Liberation Sans", Arial, sans-serif; }
+.tm { fill: #1a1a1a; font: 500 12.5px "Source Code Pro", "DejaVu Sans Mono", "Liberation Mono", monospace; }
+.s { fill: #555555; font: 400 12px "Source Sans 3", "Liberation Sans", Arial, sans-serif; }
+.el { fill: #555555; font: 400 11px "Source Code Pro", "DejaVu Sans Mono", "Liberation Mono", monospace; }
+.el-loc { fill: #1d6b5f; font: 400 11px "Source Code Pro", "DejaVu Sans Mono", "Liberation Mono", monospace; }
+.el-slam { fill: #2f4f8f; font: 400 11px "Source Code Pro", "DejaVu Sans Mono", "Liberation Mono", monospace; }
+.el-map { fill: #9a5a12; font: 400 11px "Source Code Pro", "DejaVu Sans Mono", "Liberation Mono", monospace; }
+.el-bad { fill: #a3271b; font: 400 11px "Source Code Pro", "DejaVu Sans Mono", "Liberation Mono", monospace; }
+.e { fill: none; stroke-width: 1.3; }
+.e-loc { stroke: #1d6b5f; } .e-slam { stroke: #2f4f8f; } .e-map { stroke: #9a5a12; }
+.e-fg { stroke: #1a1a1a; } .e-bad { stroke: #a3271b; stroke-dasharray: 5 4; }
+.ah-loc { fill: #1d6b5f; } .ah-slam { fill: #2f4f8f; } .ah-map { fill: #9a5a12; }
+.ah-fg { fill: #1a1a1a; } .ah-bad { fill: #a3271b; }
+.wall { stroke: #9a5a12; stroke-width: 4; }
+.wall-ghost { stroke: #9a5a12; stroke-width: 4; opacity: .5; }
+.ray { stroke: #555555; stroke-width: .8; stroke-dasharray: 3 3; }
+.bot { fill: #1a1a1a; }
+.bot-ghost { fill: none; stroke: #a3271b; stroke-width: 1.3; stroke-dasharray: 3 2; }
+</style><rect width="100%" height="100%" fill="#fff"/>
+        <defs>
+          <marker id="m-map" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="ah-map" d="M0 0 L10 5 L0 10 z"/></marker>
+          <marker id="m-slam" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="ah-slam" d="M0 0 L10 5 L0 10 z"/></marker>
+        </defs>
+        <rect class="bx" x="20" y="40" width="170" height="64"/>
+        <text class="tm" x="105" y="67" text-anchor="middle">/scan</text>
+        <text class="s" x="105" y="86" text-anchor="middle">irisan depth 0,3–5,5 m</text>
+        <rect class="bx" x="240" y="40" width="190" height="64"/>
+        <text class="t" x="335" y="67" text-anchor="middle">Grid lokal per node</text>
+        <text class="s" x="335" y="86" text-anchor="middle">sel bebas / terisi · 5 cm</text>
+        <rect class="bx" x="480" y="40" width="210" height="64"/>
+        <text class="t" x="587" y="67" text-anchor="middle">Rakit peta global</text>
+        <text class="s" x="587" y="86" text-anchor="middle">grid lokal × pose node</text>
+        <rect class="bx" x="740" y="40" width="120" height="64"/>
+        <text class="tm" x="800" y="67" text-anchor="middle">/map</text>
+        <text class="s" x="800" y="86" text-anchor="middle">OccupancyGrid</text>
+        <rect class="bx" x="900" y="20" width="120" height="44"/>
+        <text class="tm" x="960" y="47" text-anchor="middle">rviz2</text>
+        <rect class="bx" x="900" y="88" width="120" height="44"/>
+        <text class="tm" x="960" y="115" text-anchor="middle">auto_explorer</text>
+        <line class="e e-map" x1="190" y1="72" x2="236" y2="72" marker-end="url(#m-map)"/>
+        <line class="e e-map" x1="430" y1="72" x2="476" y2="72" marker-end="url(#m-map)"/>
+        <line class="e e-map" x1="690" y1="72" x2="736" y2="72" marker-end="url(#m-map)"/>
+        <path class="e e-map" d="M860 72 H880 V42 H896" marker-end="url(#m-map)"/>
+        <path class="e e-map" d="M860 72 H880 V110 H896" marker-end="url(#m-map)"/>
+
+        <rect class="bx" x="20" y="170" width="170" height="56"/>
+        <text class="t" x="105" y="194" text-anchor="middle">RGB + depth</text>
+        <text class="s" x="105" y="212" text-anchor="middle">tersimpan di node</text>
+        <rect class="bx" x="240" y="170" width="190" height="56"/>
+        <text class="t" x="335" y="194" text-anchor="middle">Awan titik 3D</text>
+        <text class="el" x="335" y="212" text-anchor="middle">/rtabmap/cloud_map</text>
+        <rect class="bx" x="480" y="170" width="210" height="56"/>
+        <text class="t" x="587" y="194" text-anchor="middle">Optimasi graf (SLAM)</text>
+        <text class="s" x="587" y="212" text-anchor="middle">pose node diperbarui</text>
+        <line class="e e-map" x1="190" y1="198" x2="236" y2="198" marker-end="url(#m-map)"/>
+        <line class="e e-slam" x1="587" y1="170" x2="587" y2="108" marker-end="url(#m-slam)"/>
+        <text class="el-slam" x="597" y="143">pose baru → rakit ulang</text>
+      </svg>

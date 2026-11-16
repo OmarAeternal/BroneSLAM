@@ -1,0 +1,60 @@
+# =============================================================================
+# Konfigurasi RTAB-Map RGB-D + EKF Sensor Fusion (Roland Siegwart Bab 5.6 & 5.8.5)
+# Robot: BRONE 3-Omniwheel + Intel RealSense D455 (RGB + Depth + IMU)
+# Catatan Penting ROS 2 rtabmap_slam:
+#   - Parameter wrapper ROS (frame_id, subscribe_*, approx_sync) bertipe native (bool/int/string)
+#   - Seluruh parameter internal RTAB-Map (yang memiliki '/') WAJIB bertipe string ("...")
+# =============================================================================
+
+/**:
+  ros__parameters:
+    use_sim_time: true    # waktu dari /clock (driver Webots)
+    frame_id: "base_link"
+    odom_frame_id: "odom"
+    map_frame_id: "map"
+    publish_tf: true
+    map_always_update: true
+
+    # Langganan Sensor (RGB-D + Irisan 2D Depth /scan)
+    subscribe_depth: true
+    subscribe_rgb: true
+    subscribe_scan: true
+    subscribe_odom_info: false
+    approx_sync: true
+    approx_sync_max_interval: 0.08
+    queue_size: 30
+    wait_for_transform: 0.2
+
+    # -------------------------------------------------------------------------
+    # Strategi Registrasi Graph-SLAM (Bab 5.8.5 Appearance + Geometric SLAM)
+    # Reg/Strategy:
+    #   "0" = Vis (Murni Visual Feature PnP RANSAC)
+    #   "1" = Icp (Murni Geometric PointCloud / LaserScan ICP)
+    #   "2" = VisIcp (HYBRID: Visual Feature PnP + Pemolesan Geometri /scan ICP)
+    # -------------------------------------------------------------------------
+    Reg/Strategy: "2"
+    Reg/Force3DoF: "true"
+
+    # Parameter Visual Feature Matching (Bab 4.5 & 5.8.5)
+    Vis/MinInliers: "10"
+    Vis/MaxDepth: "5.5"
+    Vis/MinDepth: "0.3"     # D455 asli: min 0.293 m
+
+    # Parameter Geometric ICP dari Irisan Depth D455 (/scan)
+    Icp/VoxelSize: "0.05"
+    Icp/MaxCorrespondenceDistance: "0.15"
+    Icp/PointToPlane: "false"
+
+    # Parameter Memory & Loop Closure (Place Recognition - Bab 5.8.5)
+    Rtabmap/DetectionRate: "2.0"
+    RGBD/NeighborLinkRefining: "true"
+    RGBD/ProximityBySpace: "true"
+    RGBD/AngularUpdate: "0.02"
+    RGBD/LinearUpdate: "0.02"
+    RGBD/OptimizeMaxError: "3.0"
+
+    # Pembuatan Peta OccupancyGrid 2D (/map) & 3D Cloud (/rtabmap/cloud_map)
+    Grid/Sensor: "0"
+    Grid/RangeMax: "5.5"
+    Grid/RangeMin: "0.3"    # D455 asli: min 0.293 m
+    Grid/CellSize: "0.05"

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="420" viewBox="0 0 1040 420" role="img" aria-label="Alur SLAM RTAB-Map: masukan sinkron menjadi node baru, dihubungkan ke node sebelumnya dengan link tetangga, masuk graf pose. Node baru juga dicari pasangan loop closure lewat kata visual, dan proximity lewat pose node lama. Kandidat diverifikasi secara geometri lalu dicek error optimasinya; yang lolos menjadi link loop dan graf dioptimasi, yang gagal ditolak."><style>/* SVG */
+.bx { fill: #fff; stroke: #1a1a1a; stroke-width: 1.2; }
+.bx-in { fill: #f3f3f3; stroke: #9a9a9a; stroke-width: .8; }
+.bx-bad { fill: #fff; stroke: #a3271b; stroke-width: 1.2; stroke-dasharray: 5 4; }
+.t { fill: #1a1a1a; font: 600 13px "Source Sans 3", "Liberation Sans", Arial, sans-serif; }
+.tm { fill: #1a1a1a; font: 500 12.5px "Source Code Pro", "DejaVu Sans Mono", "Liberation Mono", monospace; }
+.s { fill: #555555; font: 400 12px "Source Sans 3", "Liberation Sans", Arial, sans-serif; }
+.el { fill: #555555; font: 400 11px "Source Code Pro", "DejaVu Sans Mono", "Liberation Mono", monospace; }
+.el-loc { fill: #1d6b5f; font: 400 11px "Source Code Pro", "DejaVu Sans Mono", "Liberation Mono", monospace; }
+.el-slam { fill: #2f4f8f; font: 400 11px "Source Code Pro", "DejaVu Sans Mono", "Liberation Mono", monospace; }
+.el-map { fill: #9a5a12; font: 400 11px "Source Code Pro", "DejaVu Sans Mono", "Liberation Mono", monospace; }
+.el-bad { fill: #a3271b; font: 400 11px "Source Code Pro", "DejaVu Sans Mono", "Liberation Mono", monospace; }
+.e { fill: none; stroke-width: 1.3; }
+.e-loc { stroke: #1d6b5f; } .e-slam { stroke: #2f4f8f; } .e-map { stroke: #9a5a12; }
+.e-fg { stroke: #1a1a1a; } .e-bad { stroke: #a3271b; stroke-dasharray: 5 4; }
+.ah-loc { fill: #1d6b5f; } .ah-slam { fill: #2f4f8f; } .ah-map { fill: #9a5a12; }
+.ah-fg { fill: #1a1a1a; } .ah-bad { fill: #a3271b; }
+.wall { stroke: #9a5a12; stroke-width: 4; }
+.wall-ghost { stroke: #9a5a12; stroke-width: 4; opacity: .5; }
+.ray { stroke: #555555; stroke-width: .8; stroke-dasharray: 3 3; }
+.bot { fill: #1a1a1a; }
+.bot-ghost { fill: none; stroke: #a3271b; stroke-width: 1.3; stroke-dasharray: 3 2; }
+</style><rect width="100%" height="100%" fill="#fff"/>
+        <defs>
+          <marker id="s-slam" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="ah-slam" d="M0 0 L10 5 L0 10 z"/></marker>
+          <marker id="s-bad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="ah-bad" d="M0 0 L10 5 L0 10 z"/></marker>
+          <marker id="s-loc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="ah-loc" d="M0 0 L10 5 L0 10 z"/></marker>
+        </defs>
+        <!-- row 1 -->
+        <rect class="bx" x="20" y="30" width="180" height="64"/>
+        <text class="t" x="110" y="57" text-anchor="middle">Masukan sinkron</text>
+        <text class="s" x="110" y="76" text-anchor="middle">RGB-D · /scan · TF odom</text>
+        <rect class="bx" x="240" y="30" width="170" height="64"/>
+        <text class="t" x="325" y="57" text-anchor="middle">Node baru</text>
+        <text class="s" x="325" y="76" text-anchor="middle">gerak ≥ 2 cm atau 0,02 rad</text>
+        <rect class="bx" x="450" y="30" width="180" height="64"/>
+        <text class="t" x="540" y="57" text-anchor="middle">Link tetangga</text>
+        <text class="s" x="540" y="76" text-anchor="middle">odometri + perbaikan ICP</text>
+        <rect class="bx" x="670" y="30" width="170" height="64"/>
+        <text class="t" x="755" y="57" text-anchor="middle">Graf pose</text>
+        <text class="s" x="755" y="76" text-anchor="middle">node + link, 3 DoF</text>
+        <rect class="bx" x="880" y="30" width="140" height="64"/>
+        <text class="t" x="952" y="54" text-anchor="middle">Optimasi graf</text>
+        <text class="el-loc" x="952" y="71" text-anchor="middle">→ TF map→odom</text>
+        <text class="el" x="952" y="85" text-anchor="middle">/mapGraph /info</text>
+        <line class="e e-slam" x1="200" y1="62" x2="236" y2="62" marker-end="url(#s-slam)"/>
+        <line class="e e-slam" x1="410" y1="62" x2="446" y2="62" marker-end="url(#s-slam)"/>
+        <line class="e e-slam" x1="630" y1="62" x2="666" y2="62" marker-end="url(#s-slam)"/>
+        <line class="e e-slam" x1="840" y1="62" x2="876" y2="62" marker-end="url(#s-slam)"/>
+
+        <!-- row 2 -->
+        <rect class="bx" x="240" y="170" width="170" height="64"/>
+        <text class="t" x="325" y="197" text-anchor="middle">Loop closure global</text>
+        <text class="s" x="325" y="216" text-anchor="middle">kemiripan kata visual</text>
+        <rect class="bx" x="450" y="170" width="180" height="64"/>
+        <text class="t" x="540" y="197" text-anchor="middle">Proximity ruang</text>
+        <text class="s" x="540" y="216" text-anchor="middle">node lama di sekitar pose</text>
+        <line class="e e-slam" x1="325" y1="94" x2="325" y2="166" marker-end="url(#s-slam)"/>
+        <text class="el-slam" x="333" y="134">deskriptor visual</text>
+        <path class="e e-slam" d="M700 94 V130 H540 V166" marker-end="url(#s-slam)"/>
+        <text class="el-slam" x="620" y="123" text-anchor="middle">pose node lama</text>
+
+        <!-- row 3 -->
+        <rect class="bx" x="320" y="310" width="200" height="64"/>
+        <text class="t" x="420" y="337" text-anchor="middle">Verifikasi geometri</text>
+        <text class="s" x="420" y="356" text-anchor="middle">PnP visual ≥ 10 inlier + ICP</text>
+        <rect class="bx" x="580" y="310" width="200" height="64"/>
+        <text class="t" x="680" y="337" text-anchor="middle">Cek hasil optimasi</text>
+        <text class="s" x="680" y="356" text-anchor="middle">error link ≤ 3 m ?</text>
+        <rect class="bx-bad" x="840" y="310" width="180" height="64"/>
+        <text class="t" x="930" y="337" text-anchor="middle" style="fill:#a3271b">Ditolak</text>
+        <text class="s" x="930" y="356" text-anchor="middle">event TOLAK di skrip cek</text>
+        <path class="e e-slam" d="M325 234 V272 H400 V306" marker-end="url(#s-slam)"/>
+        <path class="e e-slam" d="M540 234 V272 H440 V306" marker-end="url(#s-slam)"/>
+        <line class="e e-slam" x1="520" y1="342" x2="576" y2="342" marker-end="url(#s-slam)"/>
+        <text class="el-slam" x="548" y="334" text-anchor="middle">lolos</text>
+        <line class="e e-bad" x1="780" y1="342" x2="836" y2="342" marker-end="url(#s-bad)"/>
+        <text class="el-bad" x="808" y="334" text-anchor="middle">besar</text>
+        <path class="e e-bad" d="M420 374 V400 H930 V378" marker-end="url(#s-bad)"/>
+        <text class="el-bad" x="680" y="393" text-anchor="middle">inlier kurang</text>
+        <path class="e e-slam" d="M760 310 V140 H950 V98" marker-end="url(#s-slam)"/>
+        <text class="el-slam" x="855" y="133" text-anchor="middle">diterima → link loop</text>
+      </svg>

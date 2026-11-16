@@ -1,0 +1,4940 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+
+WorldInfo {
+  info [
+    "Layer 0: Multi-Room Apartment & Office Workspace (Zero-Download Instant Load) + RealSense D455"
+  ]
+  title "Multi-Room Apartment & Workspace SLAM (RealSense D455 - spek asli)"
+  basicTimeStep 16
+}
+Viewpoint {
+  orientation -0.281 0.281 0.917 1.65
+  position -4.8 -12.5 11.5
+  exposure 0.9
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+
+DEF FLOOR Solid {
+  translation -4.96 -6.5 0
+  name "apartment_floor"
+  children [
+    Pose {
+      translation -1.2 -0.5 -0.02
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.76 0.62 0.45
+            roughness 0.55
+            metalness 0.0
+          }
+          geometry Box {
+            size 14.5 14.5 0.04
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0.15 -1.014 -0.015
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.84 0.85 0.87
+            roughness 0.4
+            metalness 0.05
+          }
+          geometry Box {
+            size 9.93 2.13 0.04
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 3.02 3.2 -0.015
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.88 0.87 0.84
+            roughness 0.35
+            metalness 0.05
+          }
+          geometry Box {
+            size 3.6 6.3 0.04
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation -1.2 -0.5 -0.02
+    children [
+      Box {
+        size 16.0 16.0 0.04
+      }
+    ]
+  }
+}
+Solid {
+  translation -0.30 -1.85 0
+  rotation 0 0 1 0
+  name "kitchen_counter_main"
+  children [
+    Pose {
+      translation 0 0 0.43
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.22 0.23 0.25
+            roughness 0.5
+            metalness 0.1
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.7 2.45 0.86
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 0 0.88
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.9 0.88 0.85
+            roughness 0.3
+            metalness 0.1
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.74 2.48 0.04
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0.15 0 1.55
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.25 0.26 0.28
+            roughness 0.5
+            metalness 0.1
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.38 2.4 0.6
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 0.925
+    children [
+      Box {
+        size 0.74 2.48 1.85
+      }
+    ]
+  }
+}
+Solid {
+  translation -0.30 -3.87 0
+  rotation 0 0 1 0
+  name "kitchen_fridge_red"
+  children [
+    Pose {
+      translation 0 0 0.9
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.72 0.08 0.08
+            roughness 0.3
+            metalness 0.3
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.72 0.8 1.8
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 0.9
+    children [
+      Box {
+        size 0.72 0.8 1.8
+      }
+    ]
+  }
+}
+Solid {
+  translation -1.55 -0.95 0
+  rotation 0 0 1 1.5708
+  name "kitchen_island_sink"
+  children [
+    Pose {
+      translation 0 0 0.43
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.22 0.23 0.25
+            roughness 0.5
+            metalness 0.1
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.7 1.85 0.86
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 0 0.88
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.88 0.88 0.86
+            roughness 0.3
+            metalness 0.1
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.74 1.88 0.04
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 0.45
+    children [
+      Box {
+        size 0.74 1.88 0.9
+      }
+    ]
+  }
+}
+Solid {
+  translation -3.52837 -9.4958 0
+  rotation 0 0 1 3.14159
+  name "cabinet 4(3)"
+  children [
+    Pose {
+      translation 0 0 0.95
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.22 0.22 0.24
+            roughness 0.5
+            metalness 0.1
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.42 0.95 1.9
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 0.95
+    children [
+      Box {
+        size 0.42 0.95 1.9
+      }
+    ]
+  }
+}
+Solid {
+  translation -3.52837 -10.4358 0
+  rotation 0 0 1 3.14159
+  name "cabinet 4(6)"
+  children [
+    Pose {
+      translation 0 0 0.95
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.22 0.22 0.24
+            roughness 0.5
+            metalness 0.1
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.42 0.95 1.9
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 0.95
+    children [
+      Box {
+        size 0.42 0.95 1.9
+      }
+    ]
+  }
+}
+Solid {
+  translation -7.2623999999999995 -6.39914 0
+  rotation 0 0 1 1.5708
+  name "cabinet 4(4)"
+  children [
+    Pose {
+      translation 0 0 0.95
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.22 0.22 0.24
+            roughness 0.5
+            metalness 0.1
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.42 0.95 1.9
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 0.95
+    children [
+      Box {
+        size 0.42 0.95 1.9
+      }
+    ]
+  }
+}
+Solid {
+  translation -0.180166 -4.63275 0
+  rotation 0 0 1 3.14159
+  name "cabinet 4(2)"
+  children [
+    Pose {
+      translation 0 0 0.95
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.22 0.22 0.24
+            roughness 0.5
+            metalness 0.1
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.42 0.95 1.9
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 0.95
+    children [
+      Box {
+        size 0.42 0.95 1.9
+      }
+    ]
+  }
+}
+Solid {
+  translation -8.2024 -6.39914 0
+  rotation 0 0 1 1.5708
+  name "cabinet 4(5)"
+  children [
+    Pose {
+      translation 0 0 0.95
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.22 0.22 0.24
+            roughness 0.5
+            metalness 0.1
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.42 0.95 1.9
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 0.95
+    children [
+      Box {
+        size 0.42 0.95 1.9
+      }
+    ]
+  }
+}
+Solid {
+  translation -9.22241 -6.39914 0
+  rotation 0 0 1 1.5708
+  name "cabinet 4(1)"
+  children [
+    Pose {
+      translation 0 0 0.95
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.22 0.22 0.24
+            roughness 0.5
+            metalness 0.1
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.42 0.95 1.9
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 0.95
+    children [
+      Box {
+        size 0.42 0.95 1.9
+      }
+    ]
+  }
+}
+Solid {
+  translation -0.16999999999999998 -9.12 0
+  rotation 0 0 1 3.14159
+  name "cabinet_1"
+  children [
+    Pose {
+      translation 0 0 0.95
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.22 0.22 0.24
+            roughness 0.5
+            metalness 0.1
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.42 0.95 1.9
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 0.95
+    children [
+      Box {
+        size 0.42 0.95 1.9
+      }
+    ]
+  }
+}
+Solid {
+  translation -1.657084 -11.861072 0
+  rotation 0 0 1 1.5708
+  name "bed(1)"
+  children [
+    Pose {
+      translation 0 0 0.18
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.55 0.38 0.24
+            roughness 0.5
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 2.05 1.55 0.36
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0.05 0 0.42
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.92 0.93 0.95
+            roughness 0.8
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 1.9 1.45 0.22
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0.3 0 0.44
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.28 0.42 0.65
+            roughness 0.8
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 1.35 1.46 0.23
+          }
+        }
+      ]
+    }
+    Pose {
+      translation -0.96 0 0.52
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.55 0.38 0.24
+            roughness 0.5
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.12 1.55 1.04
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 0.325
+    children [
+      Box {
+        size 2.05 1.55 0.65
+      }
+    ]
+  }
+}
+Solid {
+  translation -5.445295 -9.996606 0
+  rotation 0 0 1 0
+  name "cabinet(9)"
+  children [
+    Pose {
+      translation 0 0 0.95
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.22 0.22 0.24
+            roughness 0.5
+            metalness 0.1
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.42 0.95 1.9
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 0.95
+    children [
+      Box {
+        size 0.42 0.95 1.9
+      }
+    ]
+  }
+}
+Solid {
+  translation -5.80579 -10.1734 0
+  rotation 0 0 1 3.14159
+  name "cabinet(8)"
+  children [
+    Pose {
+      translation 0 0 0.95
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.22 0.22 0.24
+            roughness 0.5
+            metalness 0.1
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.42 0.95 1.9
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 0.95
+    children [
+      Box {
+        size 0.42 0.95 1.9
+      }
+    ]
+  }
+}
+Solid {
+  translation -3.40405 -2.90904 0
+  rotation 0 0 1 0
+  name "wooden chair(4)"
+  children [
+    Pose {
+      translation 0 0 0.44
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.6 0.44 0.28
+            roughness 0.5
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.45 0.45 0.05
+          }
+        }
+      ]
+    }
+    Pose {
+      translation -0.2 0 0.7
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.6 0.44 0.28
+            roughness 0.5
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.05 0.45 0.48
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 0 0.22
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.35 0.28 0.22
+            roughness 0.5
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.38 0.38 0.44
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 0.45
+    children [
+      Box {
+        size 0.45 0.45 0.9
+      }
+    ]
+  }
+}
+Solid {
+  translation -2.355698 -3.611985 0
+  rotation 0 0 1 0
+  name "wooden chair(6)"
+  children [
+    Pose {
+      translation 0 0 0.44
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.6 0.44 0.28
+            roughness 0.5
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.45 0.45 0.05
+          }
+        }
+      ]
+    }
+    Pose {
+      translation -0.2 0 0.7
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.6 0.44 0.28
+            roughness 0.5
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.05 0.45 0.48
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 0 0.22
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.35 0.28 0.22
+            roughness 0.5
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.38 0.38 0.44
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 0.45
+    children [
+      Box {
+        size 0.45 0.45 0.9
+      }
+    ]
+  }
+}
+Solid {
+  translation -0.595698 -3.611985 0
+  rotation 0 0 1 3.14159
+  name "wooden chair(1)"
+  children [
+    Pose {
+      translation 0 0 0.44
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.6 0.44 0.28
+            roughness 0.5
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.45 0.45 0.05
+          }
+        }
+      ]
+    }
+    Pose {
+      translation -0.2 0 0.7
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.6 0.44 0.28
+            roughness 0.5
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.05 0.45 0.48
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 0 0.22
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.35 0.28 0.22
+            roughness 0.5
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.38 0.38 0.44
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 0.45
+    children [
+      Box {
+        size 0.45 0.45 0.9
+      }
+    ]
+  }
+}
+Solid {
+  translation -1.4680959999999998 -2.749503 0
+  rotation 0 0 1 -1.5707953071795862
+  name "wooden chair(3)"
+  children [
+    Pose {
+      translation 0 0 0.44
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.6 0.44 0.28
+            roughness 0.5
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.45 0.45 0.05
+          }
+        }
+      ]
+    }
+    Pose {
+      translation -0.2 0 0.7
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.6 0.44 0.28
+            roughness 0.5
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.05 0.45 0.48
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 0 0.22
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.35 0.28 0.22
+            roughness 0.5
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.38 0.38 0.44
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 0.45
+    children [
+      Box {
+        size 0.45 0.45 0.9
+      }
+    ]
+  }
+}
+Solid {
+  translation -1.4680959999999998 -4.449503 0
+  rotation 0 0 1 1.5708
+  name "wooden chair(5)"
+  children [
+    Pose {
+      translation 0 0 0.44
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.6 0.44 0.28
+            roughness 0.5
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.45 0.45 0.05
+          }
+        }
+      ]
+    }
+    Pose {
+      translation -0.2 0 0.7
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.6 0.44 0.28
+            roughness 0.5
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.05 0.45 0.48
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 0 0.22
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.35 0.28 0.22
+            roughness 0.5
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.38 0.38 0.44
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 0.45
+    children [
+      Box {
+        size 0.45 0.45 0.9
+      }
+    ]
+  }
+}
+Solid {
+  translation -1.430469 -3.615372 0
+  rotation 0 0 1 0
+  name "round_table_2"
+  children [
+    Pose {
+      translation 0 0 0.72
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.72 0.54 0.36
+            roughness 0.4
+            metalness 0.0
+          }
+          geometry Cylinder {
+            radius 0.65
+            height 0.04
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 0 0.36
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.35 0.35 0.38
+            roughness 0.4
+            metalness 0.4
+          }
+          geometry Cylinder {
+            radius 0.12
+            height 0.72
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 0.37
+    children [
+      Box {
+        size 1.2 1.2 0.74
+      }
+    ]
+  }
+}
+Solid {
+  translation -6.88 -12.059999999999999 0
+  rotation 0 0 1 -1.5707953071795862
+  name "wooden chair(2)"
+  children [
+    Pose {
+      translation 0 0 0.44
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.6 0.44 0.28
+            roughness 0.5
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.45 0.45 0.05
+          }
+        }
+      ]
+    }
+    Pose {
+      translation -0.2 0 0.7
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.6 0.44 0.28
+            roughness 0.5
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.05 0.45 0.48
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 0 0.22
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.35 0.28 0.22
+            roughness 0.5
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.38 0.38 0.44
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 0.45
+    children [
+      Box {
+        size 0.45 0.45 0.9
+      }
+    ]
+  }
+}
+Solid {
+  translation -8.67447 -10.2627 0
+  rotation 0 0 1 0
+  name "bed_3"
+  children [
+    Pose {
+      translation 0 0 0.18
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.55 0.38 0.24
+            roughness 0.5
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 2.05 1.55 0.36
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0.05 0 0.42
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.92 0.93 0.95
+            roughness 0.8
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 1.9 1.45 0.22
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0.3 0 0.44
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.28 0.42 0.65
+            roughness 0.8
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 1.35 1.46 0.23
+          }
+        }
+      ]
+    }
+    Pose {
+      translation -0.96 0 0.52
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.55 0.38 0.24
+            roughness 0.5
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.12 1.55 1.04
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 0.325
+    children [
+      Box {
+        size 2.05 1.55 0.65
+      }
+    ]
+  }
+}
+Solid {
+  translation -6.905085 -12.493314 0
+  rotation 0 0 1 -1.5707963071795863
+  name "desk(2)"
+  children [
+    Pose {
+      translation 0 0 0.72
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.65 0.47 0.3
+            roughness 0.4
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.75 1.4 0.04
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 -0.62 0.36
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.25 0.25 0.28
+            roughness 0.4
+            metalness 0.5
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.7 0.06 0.72
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 0.62 0.36
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.25 0.25 0.28
+            roughness 0.4
+            metalness 0.5
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.7 0.06 0.72
+          }
+        }
+      ]
+    }
+    Pose {
+      translation -0.15 0.0 0.96
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.12 0.14 0.18
+            roughness 0.2
+            metalness 0.3
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.05 0.55 0.34
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0.12 0.0 0.75
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.18 0.18 0.2
+            roughness 0.5
+            metalness 0.1
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.16 0.42 0.02
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 0.375
+    children [
+      Box {
+        size 0.75 1.4 0.75
+      }
+    ]
+  }
+}
+Solid {
+  translation 0 -0.65 0
+  rotation 0 0 1 0
+  name "wall 1"
+  children [
+    Pose {
+      translation 0 0 1.2
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.92 0.91 0.88
+            roughness 0.8
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.3 1.0 2.4
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 1.2
+    children [
+      Box {
+        size 0.3 1.0 2.4
+      }
+    ]
+  }
+}
+Solid {
+  translation 0 -1.65 0
+  rotation 0 0 1 0
+  name "window 1"
+  children [
+    Pose {
+      translation 0 0 0.45
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.92 0.91 0.88
+            roughness 0.8
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.3 1.0 0.9
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 0 1.4500000000000002
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.55 0.78 0.92
+            roughness 0.1
+            metalness 0.1
+            transparency 0.55
+          }
+          geometry Box {
+            size 0.04 1.0 1.1
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 0 2.2
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.92 0.91 0.88
+            roughness 0.8
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.3 1.0 0.3999999999999999
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 1.2
+    children [
+      Box {
+        size 0.3 1.0 2.4
+      }
+    ]
+  }
+}
+Solid {
+  translation -9.9 -7.46 0
+  rotation 0 0 1 -3.1415923071795864
+  name "window 1(3)"
+  children [
+    Pose {
+      translation 0 0 0.7
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.92 0.91 0.88
+            roughness 0.8
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.3 0.7 1.4
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 0 1.7999999999999998
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.55 0.78 0.92
+            roughness 0.1
+            metalness 0.1
+            transparency 0.55
+          }
+          geometry Box {
+            size 0.04 0.7 0.8
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 0 2.3
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.92 0.91 0.88
+            roughness 0.8
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.3 0.7 0.19999999999999996
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 1.2
+    children [
+      Box {
+        size 0.3 0.7 2.4
+      }
+    ]
+  }
+}
+Solid {
+  translation -4.4 -13.12 0
+  rotation 0 0 1 1.570797
+  name "window 1(7)"
+  children [
+    Pose {
+      translation 0 0 0.7
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.92 0.91 0.88
+            roughness 0.8
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.3 0.7 1.4
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 0 1.7999999999999998
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.55 0.78 0.92
+            roughness 0.1
+            metalness 0.1
+            transparency 0.55
+          }
+          geometry Box {
+            size 0.04 0.7 0.8
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 0 2.3
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.92 0.91 0.88
+            roughness 0.8
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.3 0.7 0.19999999999999996
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 1.2
+    children [
+      Box {
+        size 0.3 0.7 2.4
+      }
+    ]
+  }
+}
+Solid {
+  translation -7.95 -13.12 0
+  rotation 0 0 1 -1.5707963071795863
+  name "window 1(1)"
+  children [
+    Pose {
+      translation 0 0 0.45
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.92 0.91 0.88
+            roughness 0.8
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.3 1.0 0.9
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 0 1.4500000000000002
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.55 0.78 0.92
+            roughness 0.1
+            metalness 0.1
+            transparency 0.55
+          }
+          geometry Box {
+            size 0.04 1.0 1.1
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 0 2.2
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.92 0.91 0.88
+            roughness 0.8
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.3 1.0 0.3999999999999999
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 1.2
+    children [
+      Box {
+        size 0.3 1.0 2.4
+      }
+    ]
+  }
+}
+Solid {
+  translation 0 -10.87 0
+  rotation 0 0 1 0
+  name "window 1(4)"
+  children [
+    Pose {
+      translation 0 0 0.45
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.92 0.91 0.88
+            roughness 0.8
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.3 1.0 0.9
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 0 1.4500000000000002
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.55 0.78 0.92
+            roughness 0.1
+            metalness 0.1
+            transparency 0.55
+          }
+          geometry Box {
+            size 0.04 1.0 1.1
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 0 2.2
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.92 0.91 0.88
+            roughness 0.8
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.3 1.0 0.3999999999999999
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 1.2
+    children [
+      Box {
+        size 0.3 1.0 2.4
+      }
+    ]
+  }
+}
+Solid {
+  translation -11.15 -3.48 0
+  rotation 0 0 1 1.570797
+  name "window 1(2)"
+  children [
+    Pose {
+      translation 0 0 1.1
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.55 0.78 0.92
+            roughness 0.1
+            metalness 0.1
+            transparency 0.55
+          }
+          geometry Box {
+            size 0.04 2.2 2.2
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 0 2.3
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.92 0.91 0.88
+            roughness 0.8
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.3 2.2 0.19999999999999973
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 1.2
+    children [
+      Box {
+        size 0.3 2.2 2.4
+      }
+    ]
+  }
+}
+Solid {
+  translation -9.9 -4.73 0
+  rotation 0 0 1 0
+  name "window 1(6)"
+  children [
+    Pose {
+      translation 0 0 1.1
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.55 0.78 0.92
+            roughness 0.1
+            metalness 0.1
+            transparency 0.55
+          }
+          geometry Box {
+            size 0.04 2.2 2.2
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 0 2.3
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.92 0.91 0.88
+            roughness 0.8
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.3 2.2 0.19999999999999973
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 1.2
+    children [
+      Box {
+        size 0.3 2.2 2.4
+      }
+    ]
+  }
+}
+Solid {
+  translation -8.25 0 0
+  rotation 0 0 1 1.570797
+  name "window 1(5)"
+  children [
+    Pose {
+      translation 0 0 0.45
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.92 0.91 0.88
+            roughness 0.8
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.3 1.0 0.9
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 0 1.4500000000000002
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.55 0.78 0.92
+            roughness 0.1
+            metalness 0.1
+            transparency 0.55
+          }
+          geometry Box {
+            size 0.04 1.0 1.1
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 0 2.2
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.92 0.91 0.88
+            roughness 0.8
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.3 1.0 0.3999999999999999
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 1.2
+    children [
+      Box {
+        size 0.3 1.0 2.4
+      }
+    ]
+  }
+}
+Solid {
+  translation 0 -4.57 0
+  rotation 0 0 1 0
+  name "wall 2"
+  children [
+    Pose {
+      translation 0 0 1.2
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.92 0.91 0.88
+            roughness 0.8
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.3 4.85 2.4
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 1.2
+    children [
+      Box {
+        size 0.3 4.85 2.4
+      }
+    ]
+  }
+}
+Solid {
+  translation 0 -12.32 0
+  rotation 0 0 1 0
+  name "wall 2(1)"
+  children [
+    Pose {
+      translation 0 0 1.2
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.92 0.91 0.88
+            roughness 0.8
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.3 1.9 2.4
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 1.2
+    children [
+      Box {
+        size 0.3 1.9 2.4
+      }
+    ]
+  }
+}
+Solid {
+  translation 0 -9.18 0
+  rotation 0 0 1 0
+  name "wall 2(2)"
+  children [
+    Pose {
+      translation 0 0 1.2
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.92 0.91 0.88
+            roughness 0.8
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.3 2.4 2.4
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 1.2
+    children [
+      Box {
+        size 0.3 2.4 2.4
+      }
+    ]
+  }
+}
+Solid {
+  translation -9.9 -3.48 0
+  rotation 0 0 1 0
+  name "wall 3(3)"
+  children [
+    Pose {
+      translation 0 0 1.2
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.92 0.91 0.88
+            roughness 0.8
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.3 0.3 2.4
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 1.2
+    children [
+      Box {
+        size 0.3 0.3 2.4
+      }
+    ]
+  }
+}
+Solid {
+  translation -9.9 -10.41 0
+  rotation 0 0 1 0
+  name "wall 3(1)"
+  children [
+    Pose {
+      translation 0 0 1.2
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.92 0.91 0.88
+            roughness 0.8
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.3 5.2 2.4
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 1.2
+    children [
+      Box {
+        size 0.3 5.2 2.4
+      }
+    ]
+  }
+}
+Solid {
+  translation -9.9 -6.47 0
+  rotation 0 0 1 0
+  name "wall 3(4)"
+  children [
+    Pose {
+      translation 0 0 1.2
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.92 0.91 0.88
+            roughness 0.8
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.3 1.28 2.4
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 1.2
+    children [
+      Box {
+        size 0.3 1.28 2.4
+      }
+    ]
+  }
+}
+Solid {
+  translation -3.8 0 0
+  rotation 0 0 1 1.5708
+  name "wall 5"
+  children [
+    Pose {
+      translation 0 0 1.2
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.92 0.91 0.88
+            roughness 0.8
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.3 7.9 2.4
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 1.2
+    children [
+      Box {
+        size 0.3 7.9 2.4
+      }
+    ]
+  }
+}
+Solid {
+  translation -10.65 0 0
+  rotation 0 0 1 1.5708
+  name "wall 6"
+  children [
+    Pose {
+      translation 0 0 1.2
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.92 0.91 0.88
+            roughness 0.8
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.3 3.8 2.4
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 1.2
+    children [
+      Box {
+        size 0.3 3.8 2.4
+      }
+    ]
+  }
+}
+Solid {
+  translation -12.399999999999999 -1.88 0
+  rotation 0 0 1 0
+  name "wall 3(2)"
+  children [
+    Pose {
+      translation 0 0 1.2
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.92 0.91 0.88
+            roughness 0.8
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.3 3.5 2.4
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 1.2
+    children [
+      Box {
+        size 0.3 3.5 2.4
+      }
+    ]
+  }
+}
+Solid {
+  translation -6.969989999999999 -8.139999999999999 0
+  rotation 0 0 1 0
+  name "wall 7"
+  children [
+    Pose {
+      translation 0 0 1.2
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.92 0.91 0.88
+            roughness 0.8
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.3 0.8 2.4
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 1.2
+    children [
+      Box {
+        size 0.3 0.8 2.4
+      }
+    ]
+  }
+}
+Solid {
+  translation -8.42 -6.6 0
+  rotation 0 0 1 -1.5707933071795868
+  name "wall 7(2)"
+  children [
+    Pose {
+      translation 0 0 1.2
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.92 0.91 0.88
+            roughness 0.8
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.3 3.2 2.4
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 1.2
+    children [
+      Box {
+        size 0.3 3.2 2.4
+      }
+    ]
+  }
+}
+Solid {
+  translation -3.369987 -10.679991 0
+  rotation 0 0 1 -3.1415893071795864
+  name "wall 7(6)"
+  children [
+    Pose {
+      translation 0 0 1.2
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.92 0.91 0.88
+            roughness 0.8
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.3 4.6 2.4
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 1.2
+    children [
+      Box {
+        size 0.3 4.6 2.4
+      }
+    ]
+  }
+}
+Solid {
+  translation -5.58999 -10.73 0
+  rotation 0 0 1 -3.1415893071795864
+  name "wall 7(9)"
+  children [
+    Pose {
+      translation 0 0 1.2
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.92 0.91 0.88
+            roughness 0.8
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.3 4.9 2.4
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 1.2
+    children [
+      Box {
+        size 0.3 4.9 2.4
+      }
+    ]
+  }
+}
+Solid {
+  translation -9.25 -13.12 0
+  rotation 0 0 1 1.5708
+  name "wall 7(7)"
+  children [
+    Pose {
+      translation 0 0 1.2
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.92 0.91 0.88
+            roughness 0.8
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.3 1.6 2.4
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 1.2
+    children [
+      Box {
+        size 0.3 1.6 2.4
+      }
+    ]
+  }
+}
+Solid {
+  translation -6.1 -13.12 0
+  rotation 0 0 1 1.5708
+  name "wall 7(12)"
+  children [
+    Pose {
+      translation 0 0 1.2
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.92 0.91 0.88
+            roughness 0.8
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.3 2.7 2.4
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 1.2
+    children [
+      Box {
+        size 0.3 2.7 2.4
+      }
+    ]
+  }
+}
+Solid {
+  translation -2.1 -13.12 0
+  rotation 0 0 1 1.5708
+  name "wall 7(13)"
+  children [
+    Pose {
+      translation 0 0 1.2
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.92 0.91 0.88
+            roughness 0.8
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.3 3.9 2.4
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 1.2
+    children [
+      Box {
+        size 0.3 3.9 2.4
+      }
+    ]
+  }
+}
+Solid {
+  translation -8.42 -8.43 0
+  rotation 0 0 1 -1.5707933071795868
+  name "wall 7(3)"
+  children [
+    Pose {
+      translation 0 0 1.2
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.92 0.91 0.88
+            roughness 0.8
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.3 3.2 2.4
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 1.2
+    children [
+      Box {
+        size 0.3 3.2 2.4
+      }
+    ]
+  }
+}
+Solid {
+  translation -6.97 -7.24 0
+  rotation 0 0 1 3.14159
+  name "door(3)"
+  children [
+    Pose {
+      translation 0 0 1.2
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.52 0.35 0.22
+            roughness 0.5
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.08 1.0 2.4
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 1.2
+    children [
+      Box {
+        size 0.12 1.0 2.4
+      }
+    ]
+  }
+}
+Solid {
+  translation 0 -7.49 0
+  rotation 0 0 1 0
+  name "door(1)"
+  children [
+    Pose {
+      translation 0 0 1.2
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.52 0.35 0.22
+            roughness 0.5
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.08 1.0 2.4
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 1.2
+    children [
+      Box {
+        size 0.12 1.0 2.4
+      }
+    ]
+  }
+}
+Solid {
+  translation -2.93 -6.6 0
+  rotation 0 0 1 1.5708
+  name "wall 7(1)"
+  children [
+    Pose {
+      translation 0 0 1.2
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.92 0.91 0.88
+            roughness 0.8
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.3 3.045 2.4
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 1.2
+    children [
+      Box {
+        size 0.3 3.045 2.4
+      }
+    ]
+  }
+}
+Solid {
+  translation -0.29 -6.6 0
+  rotation 0 0 1 1.5708
+  name "wall 7(14)"
+  children [
+    Pose {
+      translation 0 0 1.2
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.92 0.91 0.88
+            roughness 0.8
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.3 0.3 2.4
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 1.2
+    children [
+      Box {
+        size 0.3 0.3 2.4
+      }
+    ]
+  }
+}
+Solid {
+  translation -1.94 -5.02 0
+  rotation 0 0 1 1.5708
+  name "wall 7(8)"
+  children [
+    Pose {
+      translation 0 0 1.2
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.92 0.91 0.88
+            roughness 0.8
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.3 3.6 2.4
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 1.2
+    children [
+      Box {
+        size 0.3 3.6 2.4
+      }
+    ]
+  }
+}
+Solid {
+  translation -0.8 -8.43 0
+  rotation 0 0 1 1.5708
+  name "wall 7(4)"
+  children [
+    Pose {
+      translation 0 0 1.2
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.92 0.91 0.88
+            roughness 0.8
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.3 1.7 2.4
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 1.2
+    children [
+      Box {
+        size 0.3 1.7 2.4
+      }
+    ]
+  }
+}
+Solid {
+  translation -3.55 -8.43 0
+  rotation 0 0 1 1.5708
+  name "wall 7(5)"
+  children [
+    Pose {
+      translation 0 0 1.2
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.92 0.91 0.88
+            roughness 0.8
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.3 1.8 2.4
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 1.2
+    children [
+      Box {
+        size 0.3 1.8 2.4
+      }
+    ]
+  }
+}
+Solid {
+  translation -6.78 -8.43 0
+  rotation 0 0 1 1.5708
+  name "wall 7(11)"
+  children [
+    Pose {
+      translation 0 0 1.2
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.92 0.91 0.88
+            roughness 0.8
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.3 0.08 2.4
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 1.2
+    children [
+      Box {
+        size 0.3 0.08 2.4
+      }
+    ]
+  }
+}
+Solid {
+  translation -3.89 -1.8 0
+  rotation 0 0 1 0
+  name "wall 9"
+  children [
+    Pose {
+      translation 0 0 1.2
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.92 0.91 0.88
+            roughness 0.8
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.3 3.3 2.4
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 1.2
+    children [
+      Box {
+        size 0.3 3.3 2.4
+      }
+    ]
+  }
+}
+Solid {
+  translation -3.89 -4.81 0
+  rotation 0 0 1 0
+  name "wall 9(1)"
+  children [
+    Pose {
+      translation 0 0 1.2
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.92 0.91 0.88
+            roughness 0.8
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.3 0.72 2.4
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 1.2
+    children [
+      Box {
+        size 0.3 0.72 2.4
+      }
+    ]
+  }
+}
+Solid {
+  translation -10.415072 -1.632191 0
+  rotation 0 0 1 1.5708
+  name "table(1)"
+  children [
+    Pose {
+      translation 0 0 0.72
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.68 0.5 0.32
+            roughness 0.4
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 1.0 2.5 0.04
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0.4 1.0 0.35
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.3 0.3 0.32
+            roughness 0.4
+            metalness 0.3
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.06 0.06 0.7
+          }
+        }
+      ]
+    }
+    Pose {
+      translation -0.4 1.0 0.35
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.3 0.3 0.32
+            roughness 0.4
+            metalness 0.3
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.06 0.06 0.7
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0.4 -1.0 0.35
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.3 0.3 0.32
+            roughness 0.4
+            metalness 0.3
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.06 0.06 0.7
+          }
+        }
+      ]
+    }
+    Pose {
+      translation -0.4 -1.0 0.35
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.3 0.3 0.32
+            roughness 0.4
+            metalness 0.3
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.06 0.06 0.7
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 0.37
+    children [
+      Box {
+        size 1.0 2.5 0.74
+      }
+    ]
+  }
+}
+Solid {
+  translation -9.55609 -9.09224 0
+  rotation 0 0 1 0
+  name "table(2)"
+  children [
+    Pose {
+      translation 0 0 0.38
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.68 0.5 0.32
+            roughness 0.4
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.3 0.3 0.04
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0.12 0.12 0.18000000000000002
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.3 0.3 0.32
+            roughness 0.4
+            metalness 0.3
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.06 0.06 0.36000000000000004
+          }
+        }
+      ]
+    }
+    Pose {
+      translation -0.12 0.12 0.18000000000000002
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.3 0.3 0.32
+            roughness 0.4
+            metalness 0.3
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.06 0.06 0.36000000000000004
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0.12 -0.12 0.18000000000000002
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.3 0.3 0.32
+            roughness 0.4
+            metalness 0.3
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.06 0.06 0.36000000000000004
+          }
+        }
+      ]
+    }
+    Pose {
+      translation -0.12 -0.12 0.18000000000000002
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.3 0.3 0.32
+            roughness 0.4
+            metalness 0.3
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.06 0.06 0.36000000000000004
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 0.2
+    children [
+      Box {
+        size 0.3 0.3 0.4
+      }
+    ]
+  }
+}
+Solid {
+  translation -9.56036 -11.3804 0
+  rotation 0 0 1 0
+  name "table(3)"
+  children [
+    Pose {
+      translation 0 0 0.38
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.68 0.5 0.32
+            roughness 0.4
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.3 0.3 0.04
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0.12 0.12 0.18000000000000002
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.3 0.3 0.32
+            roughness 0.4
+            metalness 0.3
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.06 0.06 0.36000000000000004
+          }
+        }
+      ]
+    }
+    Pose {
+      translation -0.12 0.12 0.18000000000000002
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.3 0.3 0.32
+            roughness 0.4
+            metalness 0.3
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.06 0.06 0.36000000000000004
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0.12 -0.12 0.18000000000000002
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.3 0.3 0.32
+            roughness 0.4
+            metalness 0.3
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.06 0.06 0.36000000000000004
+          }
+        }
+      ]
+    }
+    Pose {
+      translation -0.12 -0.12 0.18000000000000002
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.3 0.3 0.32
+            roughness 0.4
+            metalness 0.3
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.06 0.06 0.36000000000000004
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 0.2
+    children [
+      Box {
+        size 0.3 0.3 0.4
+      }
+    ]
+  }
+}
+Solid {
+  translation -2.74109 -12.7454 0
+  rotation 0 0 1 0
+  name "table(4)"
+  children [
+    Pose {
+      translation 0 0 0.38
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.68 0.5 0.32
+            roughness 0.4
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.3 0.3 0.04
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0.12 0.12 0.18000000000000002
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.3 0.3 0.32
+            roughness 0.4
+            metalness 0.3
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.06 0.06 0.36000000000000004
+          }
+        }
+      ]
+    }
+    Pose {
+      translation -0.12 0.12 0.18000000000000002
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.3 0.3 0.32
+            roughness 0.4
+            metalness 0.3
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.06 0.06 0.36000000000000004
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0.12 -0.12 0.18000000000000002
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.3 0.3 0.32
+            roughness 0.4
+            metalness 0.3
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.06 0.06 0.36000000000000004
+          }
+        }
+      ]
+    }
+    Pose {
+      translation -0.12 -0.12 0.18000000000000002
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.3 0.3 0.32
+            roughness 0.4
+            metalness 0.3
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.06 0.06 0.36000000000000004
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 0.2
+    children [
+      Box {
+        size 0.3 0.3 0.4
+      }
+    ]
+  }
+}
+Solid {
+  translation -11.745298 -1.636645 0
+  rotation 0 0 1 0
+  name "chair 1(1)"
+  children [
+    Pose {
+      translation 0 0 0.44
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.6 0.44 0.28
+            roughness 0.5
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.45 0.45 0.05
+          }
+        }
+      ]
+    }
+    Pose {
+      translation -0.2 0 0.7
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.6 0.44 0.28
+            roughness 0.5
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.05 0.45 0.48
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 0 0.22
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.35 0.28 0.22
+            roughness 0.5
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.38 0.38 0.44
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 0.45
+    children [
+      Box {
+        size 0.45 0.45 0.9
+      }
+    ]
+  }
+}
+Solid {
+  translation -11.172214 -1.29268 0
+  rotation 0 0 1 -1.5707953071795862
+  name "chair 1(2)"
+  children [
+    Pose {
+      translation 0 0 0.44
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.6 0.44 0.28
+            roughness 0.5
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.45 0.45 0.05
+          }
+        }
+      ]
+    }
+    Pose {
+      translation -0.2 0 0.7
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.6 0.44 0.28
+            roughness 0.5
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.05 0.45 0.48
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 0 0.22
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.35 0.28 0.22
+            roughness 0.5
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.38 0.38 0.44
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 0.45
+    children [
+      Box {
+        size 0.45 0.45 0.9
+      }
+    ]
+  }
+}
+Solid {
+  translation -11.160617 -1.997738 0
+  rotation 0 0 -1 -1.570705307179586
+  name "chair 1(5)"
+  children [
+    Pose {
+      translation 0 0 0.44
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.6 0.44 0.28
+            roughness 0.5
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.45 0.45 0.05
+          }
+        }
+      ]
+    }
+    Pose {
+      translation -0.2 0 0.7
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.6 0.44 0.28
+            roughness 0.5
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.05 0.45 0.48
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 0 0.22
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.35 0.28 0.22
+            roughness 0.5
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.38 0.38 0.44
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 0.45
+    children [
+      Box {
+        size 0.45 0.45 0.9
+      }
+    ]
+  }
+}
+Solid {
+  translation -10.450617 -1.997809 0
+  rotation 0 0 -1 -1.570705307179586
+  name "chair 1(6)"
+  children [
+    Pose {
+      translation 0 0 0.44
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.6 0.44 0.28
+            roughness 0.5
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.45 0.45 0.05
+          }
+        }
+      ]
+    }
+    Pose {
+      translation -0.2 0 0.7
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.6 0.44 0.28
+            roughness 0.5
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.05 0.45 0.48
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 0 0.22
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.35 0.28 0.22
+            roughness 0.5
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.38 0.38 0.44
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 0.45
+    children [
+      Box {
+        size 0.45 0.45 0.9
+      }
+    ]
+  }
+}
+Solid {
+  translation -9.750617 -1.997879 0
+  rotation 0 0 -1 -1.570705307179586
+  name "chair 1(7)"
+  children [
+    Pose {
+      translation 0 0 0.44
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.6 0.44 0.28
+            roughness 0.5
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.45 0.45 0.05
+          }
+        }
+      ]
+    }
+    Pose {
+      translation -0.2 0 0.7
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.6 0.44 0.28
+            roughness 0.5
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.05 0.45 0.48
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 0 0.22
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.35 0.28 0.22
+            roughness 0.5
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.38 0.38 0.44
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 0.45
+    children [
+      Box {
+        size 0.45 0.45 0.9
+      }
+    ]
+  }
+}
+Solid {
+  translation -9.774799 -1.2626819999999999 0
+  rotation 0 0 1 -1.5707953071795862
+  name "chair 1(3)"
+  children [
+    Pose {
+      translation 0 0 0.44
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.6 0.44 0.28
+            roughness 0.5
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.45 0.45 0.05
+          }
+        }
+      ]
+    }
+    Pose {
+      translation -0.2 0 0.7
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.6 0.44 0.28
+            roughness 0.5
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.05 0.45 0.48
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 0 0.22
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.35 0.28 0.22
+            roughness 0.5
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.38 0.38 0.44
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 0.45
+    children [
+      Box {
+        size 0.45 0.45 0.9
+      }
+    ]
+  }
+}
+Solid {
+  translation -10.485493 -1.2858399999999999 0
+  rotation 0 0 1 -1.5707953071795862
+  name "chair 1(4)"
+  children [
+    Pose {
+      translation 0 0 0.44
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.6 0.44 0.28
+            roughness 0.5
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.45 0.45 0.05
+          }
+        }
+      ]
+    }
+    Pose {
+      translation -0.2 0 0.7
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.6 0.44 0.28
+            roughness 0.5
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.05 0.45 0.48
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 0 0.22
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.35 0.28 0.22
+            roughness 0.5
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.38 0.38 0.44
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 0.45
+    children [
+      Box {
+        size 0.45 0.45 0.9
+      }
+    ]
+  }
+}
+Solid {
+  translation -9.203731 -1.595154 0
+  rotation 0 0 1 3.1415
+  name "chair 4(1)"
+  children [
+    Pose {
+      translation 0 0 0.44
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.6 0.44 0.28
+            roughness 0.5
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.45 0.45 0.05
+          }
+        }
+      ]
+    }
+    Pose {
+      translation -0.2 0 0.7
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.6 0.44 0.28
+            roughness 0.5
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.05 0.45 0.48
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 0 0.22
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.35 0.28 0.22
+            roughness 0.5
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.38 0.38 0.44
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 0.45
+    children [
+      Box {
+        size 0.45 0.45 0.9
+      }
+    ]
+  }
+}
+Solid {
+  translation -11.0871 -6.84245 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "table_4"
+  children [
+    Pose {
+      translation 0 0 0.51
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.68 0.5 0.32
+            roughness 0.4
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.8 1.2 0.04
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0.32000000000000006 0.48 0.24500000000000002
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.3 0.3 0.32
+            roughness 0.4
+            metalness 0.3
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.06 0.06 0.49000000000000005
+          }
+        }
+      ]
+    }
+    Pose {
+      translation -0.32000000000000006 0.48 0.24500000000000002
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.3 0.3 0.32
+            roughness 0.4
+            metalness 0.3
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.06 0.06 0.49000000000000005
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0.32000000000000006 -0.48 0.24500000000000002
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.3 0.3 0.32
+            roughness 0.4
+            metalness 0.3
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.06 0.06 0.49000000000000005
+          }
+        }
+      ]
+    }
+    Pose {
+      translation -0.32000000000000006 -0.48 0.24500000000000002
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.3 0.3 0.32
+            roughness 0.4
+            metalness 0.3
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.06 0.06 0.49000000000000005
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 0.265
+    children [
+      Box {
+        size 0.8 1.2 0.53
+      }
+    ]
+  }
+}
+Solid {
+  translation -6.014093 -2.658387 0.02
+  rotation 0 0 1 0
+  name "table(5)"
+  children [
+    Pose {
+      translation 0 0 0.51
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.68 0.5 0.32
+            roughness 0.4
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.8 1.2 0.04
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0.32000000000000006 0.48 0.24500000000000002
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.3 0.3 0.32
+            roughness 0.4
+            metalness 0.3
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.06 0.06 0.49000000000000005
+          }
+        }
+      ]
+    }
+    Pose {
+      translation -0.32000000000000006 0.48 0.24500000000000002
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.3 0.3 0.32
+            roughness 0.4
+            metalness 0.3
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.06 0.06 0.49000000000000005
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0.32000000000000006 -0.48 0.24500000000000002
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.3 0.3 0.32
+            roughness 0.4
+            metalness 0.3
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.06 0.06 0.49000000000000005
+          }
+        }
+      ]
+    }
+    Pose {
+      translation -0.32000000000000006 -0.48 0.24500000000000002
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.3 0.3 0.32
+            roughness 0.4
+            metalness 0.3
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.06 0.06 0.49000000000000005
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 0.265
+    children [
+      Box {
+        size 0.8 1.2 0.53
+      }
+    ]
+  }
+}
+Solid {
+  translation -2.57082 -9.80788 0
+  rotation 0 0 1 -0.2115153071795861
+  name "armchair(1)"
+  children [
+    Pose {
+      translation 0 0 0.22
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.827451 0.843137 0.811765
+            roughness 0.7
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.8 0.85 0.44
+          }
+        }
+      ]
+    }
+    Pose {
+      translation -0.3 0 0.56
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.827451 0.843137 0.811765
+            roughness 0.7
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.2 0.85 0.42
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 -0.35 0.4
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.827451 0.843137 0.811765
+            roughness 0.7
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.8 0.15 0.32
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 0.35 0.4
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.827451 0.843137 0.811765
+            roughness 0.7
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.8 0.15 0.32
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 0.39
+    children [
+      Box {
+        size 0.8 0.85 0.78
+      }
+    ]
+  }
+}
+Solid {
+  translation -6.495947 -4.354153999999999 0
+  rotation 0 0 -1 -1.3592853071795865
+  name "armchair(4)"
+  children [
+    Pose {
+      translation 0 0 0.22
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.13333333333333333 0.13333333333333333 0.13333333333333333
+            roughness 0.7
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.8 0.85 0.44
+          }
+        }
+      ]
+    }
+    Pose {
+      translation -0.3 0 0.56
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.13333333333333333 0.13333333333333333 0.13333333333333333
+            roughness 0.7
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.2 0.85 0.42
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 -0.35 0.4
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.13333333333333333 0.13333333333333333 0.13333333333333333
+            roughness 0.7
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.8 0.15 0.32
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 0.35 0.4
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.13333333333333333 0.13333333333333333 0.13333333333333333
+            roughness 0.7
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.8 0.15 0.32
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 0.39
+    children [
+      Box {
+        size 0.8 0.85 0.78
+      }
+    ]
+  }
+}
+Solid {
+  translation -9.0281 -12.1858 0
+  rotation 0 0 -1 -0.5738853071795864
+  name "armchair(3)"
+  children [
+    Pose {
+      translation 0 0 0.22
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.827451 0.843137 0.811765
+            roughness 0.7
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.8 0.85 0.44
+          }
+        }
+      ]
+    }
+    Pose {
+      translation -0.3 0 0.56
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.827451 0.843137 0.811765
+            roughness 0.7
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.2 0.85 0.42
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 -0.35 0.4
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.827451 0.843137 0.811765
+            roughness 0.7
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.8 0.15 0.32
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 0.35 0.4
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.827451 0.843137 0.811765
+            roughness 0.7
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.8 0.15 0.32
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 0.39
+    children [
+      Box {
+        size 0.8 0.85 0.78
+      }
+    ]
+  }
+}
+Solid {
+  translation -5.9207339999999995 -0.6887059999999999 0
+  rotation 0 0 1 -1.5707953071795862
+  name "sofa_5"
+  children [
+    Pose {
+      translation 0 0 0.22
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.13333333333333333 0.13333333333333333 0.13333333333333333
+            roughness 0.7
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.85 2.05 0.44
+          }
+        }
+      ]
+    }
+    Pose {
+      translation -0.32 0 0.58
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.13333333333333333 0.13333333333333333 0.13333333333333333
+            roughness 0.7
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.22 2.05 0.45
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 -0.92 0.42
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.13333333333333333 0.13333333333333333 0.13333333333333333
+            roughness 0.7
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.85 0.2 0.35
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 0.92 0.42
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.13333333333333333 0.13333333333333333 0.13333333333333333
+            roughness 0.7
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.85 0.2 0.35
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 0.4
+    children [
+      Box {
+        size 0.85 2.05 0.8
+      }
+    ]
+  }
+}
+Solid {
+  translation -7.308742 -2.513508 0
+  rotation 0 0 1 0
+  name "sofa 2"
+  children [
+    Pose {
+      translation 0 0 0.22
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.13333333333333333 0.13333333333333333 0.13333333333333333
+            roughness 0.7
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.85 2.05 0.44
+          }
+        }
+      ]
+    }
+    Pose {
+      translation -0.32 0 0.58
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.13333333333333333 0.13333333333333333 0.13333333333333333
+            roughness 0.7
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.22 2.05 0.45
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 -0.92 0.42
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.13333333333333333 0.13333333333333333 0.13333333333333333
+            roughness 0.7
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.85 0.2 0.35
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 0.92 0.42
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.13333333333333333 0.13333333333333333 0.13333333333333333
+            roughness 0.7
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.85 0.2 0.35
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 0.4
+    children [
+      Box {
+        size 0.85 2.05 0.8
+      }
+    ]
+  }
+}
+Solid {
+  translation -11.1117 -8.1052 0
+  rotation 0 0 1 1.5708
+  name "sofa 2(1)"
+  children [
+    Pose {
+      translation 0 0 0.22
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.827451 0.843137 0.811765
+            roughness 0.7
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.85 2.05 0.44
+          }
+        }
+      ]
+    }
+    Pose {
+      translation -0.32 0 0.58
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.827451 0.843137 0.811765
+            roughness 0.7
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.22 2.05 0.45
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 -0.92 0.42
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.827451 0.843137 0.811765
+            roughness 0.7
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.85 0.2 0.35
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 0.92 0.42
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.827451 0.843137 0.811765
+            roughness 0.7
+            metalness 0.0
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.85 0.2 0.35
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 0.4
+    children [
+      Box {
+        size 0.85 2.05 0.8
+      }
+    ]
+  }
+}
+Solid {
+  translation -4.073264 -0.6770999999999999 0
+  rotation 0 0 1 3.14159
+  name "cabinet 4"
+  children [
+    Pose {
+      translation 0 0 0.95
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.22 0.22 0.24
+            roughness 0.5
+            metalness 0.1
+            transparency 0.0
+          }
+          geometry Box {
+            size 0.42 0.95 1.9
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 0.95
+    children [
+      Box {
+        size 0.42 0.95 1.9
+      }
+    ]
+  }
+}
+Solid {
+  translation -11.870923999999999 -0.53674 0
+  rotation 0 0 1 0
+  name "potted_tree_6"
+  children [
+    Pose {
+      translation 0 0 0.22
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.45 0.32 0.24
+            roughness 0.7
+            metalness 0.0
+          }
+          geometry Cylinder {
+            radius 0.22
+            height 0.44
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 0 0.85
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.22 0.55 0.25
+            roughness 0.8
+            metalness 0.0
+          }
+          geometry Cylinder {
+            radius 0.35
+            height 0.9
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 0.65
+    children [
+      Box {
+        size 0.5 0.5 1.3
+      }
+    ]
+  }
+}
+Solid {
+  translation -6.025363 -12.409485 0
+  rotation 0 0 1 0
+  name "potted tree(1)"
+  children [
+    Pose {
+      translation 0 0 0.22
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.45 0.32 0.24
+            roughness 0.7
+            metalness 0.0
+          }
+          geometry Cylinder {
+            radius 0.22
+            height 0.44
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 0 0.85
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.22 0.55 0.25
+            roughness 0.8
+            metalness 0.0
+          }
+          geometry Cylinder {
+            radius 0.35
+            height 0.9
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 0.65
+    children [
+      Box {
+        size 0.5 0.5 1.3
+      }
+    ]
+  }
+}
+
+DEF OMNI_WHEELS Robot {
+  translation -4.8 -4.2 0.06
+  rotation 0 0 1 -1.5708
+  children [
+    DEF SOLID1 Solid {
+      rotation 0 0 1 0
+      children [
+        DEF WHEEL1 HingeJoint {
+          jointParameters HingeJointParameters {
+            axis -1 0 0
+            anchor -0.1 0 0
+          }
+          device [
+            RotationalMotor {
+              name "wheel1"
+            }
+            PositionSensor {
+              name "wheel1_sensor"
+            }
+          ]
+          endPoint Solid {
+            translation -0.1 0 0
+            rotation -1 0 0 0
+            children [
+              DEF sr1 HingeJoint {
+                jointParameters HingeJointParameters {
+                  axis 0 1 0
+                  anchor -0.02 0 0.05
+                }
+                endPoint Solid {
+                  translation -0.02 0 0.05
+                  rotation 0 1 0 0
+                  children [
+                    DEF r1 Pose {
+                      rotation -1 0 0 1.5708
+                      children [
+                        DEF SMALL_WHEEL_SHAPE Shape {
+                          appearance PBRAppearance {
+                            baseColor 1 0.752941 0.796078
+                            roughness 1
+                            metalness 0
+                          }
+                          geometry Cylinder {
+                            height 0.02
+                            radius 0.01
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                  name "sr1"
+                  boundingObject USE r1
+                  physics Physics {
+                    density -1
+                    mass 0.1
+                  }
+                }
+              }
+              DEF sr2 HingeJoint {
+                jointParameters HingeJointParameters {
+                  axis 0 -0.707107 0.707107
+                  anchor -0.02 0.03535 0.03535
+                }
+                endPoint Solid {
+                  translation -0.02 0.03535 0.03535
+                  rotation 0 -0.7071067811865476 0.7071067811865476 0
+                  children [
+                    DEF r2 Pose {
+                      rotation -1 0 0 2.27
+                      children [
+                        USE SMALL_WHEEL_SHAPE
+                      ]
+                    }
+                  ]
+                  name "sr2"
+                  boundingObject USE r2
+                  physics Physics {
+                    density -1
+                    mass 0.1
+                  }
+                }
+              }
+              DEF sr3 HingeJoint {
+                jointParameters HingeJointParameters {
+                  axis 0 1 0
+                  anchor -0.02 0 -0.05
+                }
+                endPoint Solid {
+                  translation -0.02 0 -0.05
+                  rotation 0 1 0 0
+                  children [
+                    DEF r3 Pose {
+                      rotation -1 0 0 1.5708
+                      children [
+                        USE SMALL_WHEEL_SHAPE
+                      ]
+                    }
+                  ]
+                  name "sr3"
+                  boundingObject USE r3
+                  physics Physics {
+                    density -1
+                    mass 0.1
+                  }
+                }
+              }
+              DEF sr4 HingeJoint {
+                jointParameters HingeJointParameters {
+                  axis 0 -0.707107 0.707107
+                  anchor -0.02 -0.03535 -0.03535
+                }
+                endPoint Solid {
+                  translation -0.02 -0.03535 -0.03535
+                  rotation 0 -0.7071067811865476 0.7071067811865476 0
+                  children [
+                    DEF r4 Pose {
+                      rotation -1 0 0 2.27
+                      children [
+                        USE SMALL_WHEEL_SHAPE
+                      ]
+                    }
+                  ]
+                  name "sr4"
+                  boundingObject USE r4
+                  physics Physics {
+                    density -1
+                    mass 0.1
+                  }
+                }
+              }
+              DEF sr5 HingeJoint {
+                jointParameters HingeJointParameters {
+                  axis 0 0 1
+                  anchor -0.02 0.05 0
+                }
+                endPoint Solid {
+                  translation -0.02 0.05 0
+                  children [
+                    DEF r5 Pose {
+                      children [
+                        USE SMALL_WHEEL_SHAPE
+                      ]
+                    }
+                  ]
+                  name "sr5"
+                  boundingObject USE r5
+                  physics Physics {
+                    density -1
+                    mass 0.1
+                  }
+                }
+              }
+              DEF sr6 HingeJoint {
+                jointParameters HingeJointParameters {
+                  axis 0 0 1
+                  anchor -0.02 -0.05 0
+                }
+                endPoint Solid {
+                  translation -0.02 -0.05 0
+                  children [
+                    DEF r6 Pose {
+                      children [
+                        USE SMALL_WHEEL_SHAPE
+                      ]
+                    }
+                  ]
+                  name "sr6"
+                  boundingObject USE r6
+                  physics Physics {
+                    density -1
+                    mass 0.1
+                  }
+                }
+              }
+              DEF sr7 HingeJoint {
+                jointParameters HingeJointParameters {
+                  axis 0 0.707107 0.707107
+                  anchor -0.02 0.03535 -0.03535
+                }
+                endPoint Solid {
+                  translation -0.02 0.03535 -0.03535
+                  rotation 0 0.7071067811865476 0.7071067811865476 0
+                  children [
+                    DEF r7 Pose {
+                      rotation -1 0 0 0.76
+                      children [
+                        USE SMALL_WHEEL_SHAPE
+                      ]
+                    }
+                  ]
+                  name "sr7"
+                  boundingObject USE r7
+                  physics Physics {
+                    density -1
+                    mass 0.1
+                  }
+                }
+              }
+              DEF sr8 HingeJoint {
+                jointParameters HingeJointParameters {
+                  axis 0 0.707107 0.707107
+                  anchor -0.02 -0.03535 0.03535
+                }
+                endPoint Solid {
+                  translation -0.02 -0.03535 0.03535
+                  rotation 0 0.7071067811865476 0.7071067811865476 0
+                  children [
+                    DEF r8 Pose {
+                      rotation -1 0 0 0.76
+                      children [
+                        USE SMALL_WHEEL_SHAPE
+                      ]
+                    }
+                  ]
+                  name "sr8"
+                  boundingObject USE r8
+                  physics Physics {
+                    density -1
+                    mass 0.1
+                  }
+                }
+              }
+              DEF WHEEL_TRANS Pose {
+                translation -0.02 0 0
+                rotation 0 -1 0 1.5708
+                children [
+                  DEF WHEEL_SHAPE Shape {
+                    appearance PBRAppearance {
+                      baseColor 0.678431 0.847059 0.901961
+                      roughness 1
+                      metalness 0
+                    }
+                    geometry Cylinder {
+                      height 0.02
+                      radius 0.05
+                      subdivision 20
+                    }
+                  }
+                ]
+              }
+            ]
+            boundingObject Pose {
+              translation -0.02 0 0
+              rotation 0 -1 0 1.5708
+              children [
+                DEF wheel1 Shape {
+                  appearance PBRAppearance {
+                    baseColor 0.8 0.8 0.8
+                    transparency 0.12999999523162842
+                    roughness 1
+                    metalness 0
+                    emissiveColor 0 1 0
+                  }
+                  geometry Cylinder {
+                    height 0.02
+                    radius 0.05
+                  }
+                }
+              ]
+            }
+            physics Physics {
+            }
+          }
+        }
+      ]
+      name "wheel 1"
+      boundingObject DEF DUMMY Sphere {
+        radius 0.01
+      }
+      physics Physics {
+      }
+    }
+    DEF SOLID2 Solid {
+      rotation 0 0 1 2.0943951023931953
+      children [
+        DEF WHEEL2 HingeJoint {
+          jointParameters HingeJointParameters {
+            axis -1 0 0
+            anchor -0.1 0 0
+          }
+          device [
+            RotationalMotor {
+              name "wheel2"
+            }
+            PositionSensor {
+              name "wheel2_sensor"
+            }
+          ]
+          endPoint Solid {
+            translation -0.1 0 0
+            rotation -1 0 0 0.00240580999995935
+            children [
+              DEF sr1 HingeJoint {
+                jointParameters HingeJointParameters {
+                  axis 0 1 0
+                  anchor -0.02 0 0.05
+                }
+                endPoint Solid {
+                  translation -0.02 0 0.05
+                  rotation 0 1 0 0
+                  children [
+                    USE r1
+                  ]
+                  name "sr1"
+                  boundingObject USE r1
+                  physics Physics {
+                    density -1
+                    mass 0.1
+                  }
+                }
+              }
+              DEF sr2 HingeJoint {
+                jointParameters HingeJointParameters {
+                  axis 0 -0.707107 0.707107
+                  anchor -0.02 0.03535 0.03535
+                }
+                endPoint Solid {
+                  translation -0.02 0.03535 0.03535
+                  rotation 0 -0.7071067811865476 0.7071067811865476 0
+                  children [
+                    USE r2
+                  ]
+                  name "sr2"
+                  boundingObject USE r2
+                  physics Physics {
+                    density -1
+                    mass 0.1
+                  }
+                }
+              }
+              DEF sr3 HingeJoint {
+                jointParameters HingeJointParameters {
+                  axis 0 1 0
+                  anchor -0.02 0 -0.05
+                }
+                endPoint Solid {
+                  translation -0.02 0 -0.05
+                  rotation 0 1 0 0
+                  children [
+                    USE r3
+                  ]
+                  name "sr3"
+                  boundingObject USE r3
+                  physics Physics {
+                    density -1
+                    mass 0.1
+                  }
+                }
+              }
+              DEF sr4 HingeJoint {
+                jointParameters HingeJointParameters {
+                  axis 0 -0.707107 0.707107
+                  anchor -0.02 -0.03535 -0.03535
+                }
+                endPoint Solid {
+                  translation -0.02 -0.03535 -0.03535
+                  rotation 0 -0.7071067811865476 0.7071067811865476 0
+                  children [
+                    USE r4
+                  ]
+                  name "sr4"
+                  boundingObject USE r4
+                  physics Physics {
+                    density -1
+                    mass 0.1
+                  }
+                }
+              }
+              DEF sr5 HingeJoint {
+                jointParameters HingeJointParameters {
+                  axis 0 0 1
+                  anchor -0.02 0.05 0
+                }
+                endPoint Solid {
+                  translation -0.02 0.05 0
+                  children [
+                    USE r5
+                  ]
+                  name "sr5"
+                  boundingObject USE r5
+                  physics Physics {
+                    density -1
+                    mass 0.1
+                  }
+                }
+              }
+              DEF sr6 HingeJoint {
+                jointParameters HingeJointParameters {
+                  axis 0 0 1
+                  anchor -0.02 -0.05 0
+                }
+                endPoint Solid {
+                  translation -0.02 -0.05 0
+                  children [
+                    USE r6
+                  ]
+                  name "sr6"
+                  boundingObject USE r6
+                  physics Physics {
+                    density -1
+                    mass 0.1
+                  }
+                }
+              }
+              DEF sr7 HingeJoint {
+                jointParameters HingeJointParameters {
+                  axis 0 0.707107 0.707107
+                  anchor -0.02 0.03535 -0.03535
+                }
+                endPoint Solid {
+                  translation -0.02 0.03535 -0.03535
+                  rotation 0 0.7071067811865476 0.7071067811865476 0
+                  children [
+                    USE r7
+                  ]
+                  name "sr7"
+                  boundingObject USE r7
+                  physics Physics {
+                    density -1
+                    mass 0.1
+                  }
+                }
+              }
+              DEF sr8 HingeJoint {
+                jointParameters HingeJointParameters {
+                  axis 0 0.707107 0.707107
+                  anchor -0.02 -0.03535 0.03535
+                }
+                endPoint Solid {
+                  translation -0.02 -0.03535 0.03535
+                  rotation 0 0.7071067811865476 0.7071067811865476 0
+                  children [
+                    USE r8
+                  ]
+                  name "sr8"
+                  boundingObject USE r8
+                  physics Physics {
+                    density -1
+                    mass 0.1
+                  }
+                }
+              }
+              USE WHEEL_TRANS
+            ]
+            boundingObject Pose {
+              translation -0.02 0 0
+              rotation 0 -1 0 1.5708
+              children [
+                DEF wheel1 Shape {
+                  appearance PBRAppearance {
+                    baseColor 0.8 0.8 0.8
+                    transparency 0.12999999523162842
+                    roughness 1
+                    metalness 0
+                    emissiveColor 0 1 0
+                  }
+                  geometry Cylinder {
+                    height 0.02
+                    radius 0.05
+                  }
+                }
+              ]
+            }
+            physics Physics {
+            }
+          }
+        }
+      ]
+      name "wheel 2"
+      boundingObject USE DUMMY
+      physics Physics {
+      }
+    }
+    DEF SOLID3 Solid {
+      rotation 0 0 1 4.1887902047863905
+      children [
+        DEF WHEEL3 HingeJoint {
+          jointParameters HingeJointParameters {
+            axis -1 0 0
+            anchor -0.1 0 0
+          }
+          device [
+            RotationalMotor {
+              name "wheel3"
+            }
+            PositionSensor {
+              name "wheel3_sensor"
+            }
+          ]
+          endPoint Solid {
+            translation -0.1 0 0
+            rotation -1 0 0 0.0039094400000208316
+            children [
+              DEF sr1 HingeJoint {
+                jointParameters HingeJointParameters {
+                  axis 0 1 0
+                  anchor -0.02 0 0.05
+                }
+                endPoint Solid {
+                  translation -0.02 0 0.05
+                  rotation 0 1 0 0
+                  children [
+                    USE r1
+                  ]
+                  name "sr1"
+                  boundingObject USE r1
+                  physics Physics {
+                    density -1
+                    mass 0.1
+                  }
+                }
+              }
+              DEF sr2 HingeJoint {
+                jointParameters HingeJointParameters {
+                  axis 0 -0.707107 0.707107
+                  anchor -0.02 0.03535 0.03535
+                }
+                endPoint Solid {
+                  translation -0.02 0.03535 0.03535
+                  rotation 0 -0.7071067811865476 0.7071067811865476 0
+                  children [
+                    USE r2
+                  ]
+                  name "sr2"
+                  boundingObject USE r2
+                  physics Physics {
+                    density -1
+                    mass 0.1
+                  }
+                }
+              }
+              DEF sr3 HingeJoint {
+                jointParameters HingeJointParameters {
+                  axis 0 1 0
+                  anchor -0.02 0 -0.05
+                }
+                endPoint Solid {
+                  translation -0.02 0 -0.05
+                  rotation 0 1 0 0
+                  children [
+                    USE r3
+                  ]
+                  name "sr3"
+                  boundingObject USE r3
+                  physics Physics {
+                    density -1
+                    mass 0.1
+                  }
+                }
+              }
+              DEF sr4 HingeJoint {
+                jointParameters HingeJointParameters {
+                  axis 0 -0.707107 0.707107
+                  anchor -0.02 -0.03535 -0.03535
+                }
+                endPoint Solid {
+                  translation -0.02 -0.03535 -0.03535
+                  rotation 0 -0.7071067811865476 0.7071067811865476 0
+                  children [
+                    USE r4
+                  ]
+                  name "sr4"
+                  boundingObject USE r4
+                  physics Physics {
+                    density -1
+                    mass 0.1
+                  }
+                }
+              }
+              DEF sr5 HingeJoint {
+                jointParameters HingeJointParameters {
+                  axis 0 0 1
+                  anchor -0.02 0.05 0
+                }
+                endPoint Solid {
+                  translation -0.02 0.05 0
+                  children [
+                    USE r5
+                  ]
+                  name "sr5"
+                  boundingObject USE r5
+                  physics Physics {
+                    density -1
+                    mass 0.1
+                  }
+                }
+              }
+              DEF sr6 HingeJoint {
+                jointParameters HingeJointParameters {
+                  axis 0 0 1
+                  anchor -0.02 -0.05 0
+                }
+                endPoint Solid {
+                  translation -0.02 -0.05 0
+                  children [
+                    USE r6
+                  ]
+                  name "sr6"
+                  boundingObject USE r6
+                  physics Physics {
+                    density -1
+                    mass 0.1
+                  }
+                }
+              }
+              DEF sr7 HingeJoint {
+                jointParameters HingeJointParameters {
+                  axis 0 0.707107 0.707107
+                  anchor -0.02 0.03535 -0.03535
+                }
+                endPoint Solid {
+                  translation -0.02 0.03535 -0.03535
+                  rotation 0 0.7071067811865476 0.7071067811865476 0
+                  children [
+                    USE r7
+                  ]
+                  name "sr7"
+                  boundingObject USE r7
+                  physics Physics {
+                    density -1
+                    mass 0.1
+                  }
+                }
+              }
+              DEF sr8 HingeJoint {
+                jointParameters HingeJointParameters {
+                  axis 0 0.707107 0.707107
+                  anchor -0.02 -0.03535 0.03535
+                }
+                endPoint Solid {
+                  translation -0.02 -0.03535 0.03535
+                  rotation 0 0.7071067811865476 0.7071067811865476 0
+                  children [
+                    USE r8
+                  ]
+                  name "sr8"
+                  boundingObject USE r8
+                  physics Physics {
+                    density -1
+                    mass 0.1
+                  }
+                }
+              }
+              USE WHEEL_TRANS
+            ]
+            boundingObject Pose {
+              translation -0.02 0 0
+              rotation 0 -1 0 1.5708
+              children [
+                DEF wheel1 Shape {
+                  appearance PBRAppearance {
+                    baseColor 0.8 0.8 0.8
+                    transparency 0.12999999523162842
+                    roughness 1
+                    metalness 0
+                    emissiveColor 0 1 0
+                  }
+                  geometry Cylinder {
+                    height 0.02
+                    radius 0.05
+                  }
+                }
+              ]
+            }
+            physics Physics {
+            }
+          }
+        }
+      ]
+      name "wheel 3"
+      boundingObject USE DUMMY
+      physics Physics {
+      }
+    }
+    DEF BODY_TRANS Pose {
+      translation 0 0 0.03
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.564706 0.933333 0.564706
+            roughness 1
+            metalness 0
+          }
+          geometry Cylinder {
+            height 0.15
+            radius 0.1
+            subdivision 18
+          }
+        }
+      ]
+    }
+    # ==========================================================
+    # Intel RealSense D455 Sensor Suite -- DISESUAIKAN KE KAMERA ASLI
+    # (serial 135122251358, diukur 2026-11-09, lihat ~/brone/D455_SPEK_ASLI)
+    # camera_link = titik optik depth (imager kiri) di x=+0.08, z=+0.10 dari base_link
+    # Noise depth, jarak minimum 0.293 m, bayangan stereo, bias gyro, dll.
+    # dimodelkan di rtabmap_rgbd/src/d455_real_model.py (bukan di sini).
+    # ==========================================================
+    DEF IMU InertialUnit {
+      translation 0.08 0 0.10
+      # HANYA untuk ground-truth. D455 asli TIDAK punya orientasi absolut.
+      name "imu"
+    }
+    DEF GYRO Gyro {
+      # ekstrinsik Depth->IMU t = (-30.22, +7.40, +16.02) mm (frame optik)
+      # -> titik IMU di frame depth = -t -> camera_link (x,y,z) = (-16.02, -30.22, +7.40) mm
+      translation 0.06398 -0.03022 0.1074
+      name "gyro"
+    }
+    DEF ACCEL Accelerometer {
+      translation 0.06398 -0.03022 0.1074
+      name "accelerometer"
+    }
+    DEF GPS GPS {
+      name "gps"
+    }
+    DEF D455_COLOR Camera {
+      # ekstrinsik Depth->Color t = (-59.12, +0.15, +0.58) mm (frame optik)
+      # -> titik optik color di frame depth = -t -> camera_link (x,y,z) = (-0.58, -59.12, +0.15) mm
+      #    (kamera warna 59 mm di KANAN imager depth)
+      translation 0.07942 -0.05912 0.10015
+      name "d455_color"
+      width 640
+      height 480
+      # fx asli 640x480 = 379.907 px -> FOV-H = 2*atan(320/379.907) = 80.21 deg
+      fieldOfView 1.40003
+    }
+    DEF D455_DEPTH RangeFinder {
+      translation 0.08 0 0.10
+      name "d455_depth"
+      width 640
+      height 480
+      # fx asli 640x480 = 387.070 px -> FOV-H = 2*atan(320/387.070) = 79.16 deg
+      fieldOfView 1.38166
+      # near-plane render dibiarkan kecil; batas 0.293 m diterapkan di model
+      # (benda < 0.293 m harus jadi 0/kosong, BUKAN tembus pandang)
+      minRange 0.05
+      maxRange 6.0
+    }
+  ]
+  boundingObject USE BODY_TRANS
+  physics Physics {
+  }
+  name "brone_robot"
+  controller "<extern>"
+}
+

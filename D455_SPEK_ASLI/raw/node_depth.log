@@ -1,0 +1,34 @@
+[INFO] [1794209752.760989487] [camera.camera]: RealSense ROS v4.58.4
+[INFO] [1794209752.761249519] [camera.camera]: Built with LibRealSense v2.58.4
+[INFO] [1794209752.761257612] [camera.camera]: Running with LibRealSense v2.58.4
+[INFO] [1794209752.939486173] [camera.camera]: Device with serial number 135122251358 was found.
+
+[INFO] [1794209752.939609826] [camera.camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb3/3-4/3-4:1.0/video4linux/video2 was found.
+[INFO] [1794209752.939622190] [camera.camera]: Device with name RealSense D455 was found.
+[INFO] [1794209752.940005418] [camera.camera]: Device with port number 3-4 was found.
+[INFO] [1794209752.940018428] [camera.camera]: Device USB type: 2.1
+[WARN] [1794209752.940027148] [camera.camera]: Device 135122251358 is connected using a 2.1 port. Reduced performance is expected.
+[INFO] [1794209752.940065750] [camera.camera]: Starting device RealSense D455 (Product ID: 0x0B5C)
+[INFO] [1794209752.940199350] [camera.camera]: getParameters...
+[INFO] [1794209752.940628228] [camera.camera]: JSON file is not provided
+[INFO] [1794209752.940640689] [camera.camera]: Device Name: RealSense D455
+[INFO] [1794209752.940648384] [camera.camera]: Device Serial No: 135122251358
+[INFO] [1794209752.940656423] [camera.camera]: Device physical port: /sys/devices/pci0000:00/0000:00:14.0/usb3/3-4/3-4:1.0/video4linux/video2
+[INFO] [1794209752.940666328] [camera.camera]: Device FW version: 5.13.0.50
+[INFO] [1794209752.940674098] [camera.camera]: Device Product ID: 0x0B5C
+[INFO] [1794209752.940680843] [camera.camera]: Sync Mode: Off
+[INFO] [1794209753.064669461] [camera.camera]: Stopping Sensor: Depth Module
+[INFO] [1794209753.064781003] [camera.camera]: Stopping Sensor: RGB Camera
+[INFO] [1794209753.236386239] [camera.camera]: Starting Sensor: Depth Module
+[INFO] [1794209753.247804778] [camera.camera]: Open profile: stream_type: Infra(1), Format: Y8, Width: 640, Height: 480, FPS: 15
+[INFO] [1794209753.247897073] [camera.camera]: Open profile: stream_type: Depth(0), Format: Z16, Width: 640, Height: 480, FPS: 15
+[INFO] [1794209753.361834342] [camera.camera]: Starting Sensor: RGB Camera
+[INFO] [1794209753.368594154] [camera.camera]: Open profile: stream_type: Color(0), Format: RGB8, Width: 640, Height: 480, FPS: 15
+[INFO] [1794209753.379061967] [camera.camera]: RealSense Node Is Up!
+[INFO] [1794209797.368727917] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [1794209797.370646178] [camera.camera]: Stop Sensor: Depth Module
+[INFO] [1794209797.370730305] [camera.camera]: Close Sensor. 
+[INFO] [1794209799.276240636] [camera.camera]: Close Sensor - Done. 
+[INFO] [1794209799.276285325] [camera.camera]: Stop Sensor: RGB Camera
+[INFO] [1794209799.276292250] [camera.camera]: Close Sensor. 
+[INFO] [1794209799.557730170] [camera.camera]: Close Sensor - Done. 
