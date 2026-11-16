@@ -1,0 +1,22 @@
+======================================================================
+RINGKASAN CEK DRIFT & LOOP CLOSURE
+======================================================================
+Durasi (waktu sim)       : 600.5 s
+Jarak tempuh (GT)        : 34.32 m
+Pesan /rtabmap/info      : 577
+Loop closure diterima    : 24
+Proximity diterima       : 57
+Kandidat ditolak         : 513
+Lompatan koreksi terbesar: 80.3 cm
+Error pose SLAM  akhir/rata/maks: 177.3 / 188.8 / 319.0 cm
+Error pose ODOM  akhir/rata/maks: 313.4 / 309.6 / 599.0 cm
+Drift ODOM akhir         : 9.13 % dari jarak
+Error node graf (peta) rata/median/maks: 201.0 / 225.8 / 321.9 cm  (297 node)
+Node dengan error > 10 cm: 258 (87 %)
+Link di graf akhir       : 298 node, 24 global loop closure, 50 proximity (ruang), 0 proximity (waktu)
+----------------------------------------------------------------------
+DIAGNOSIS:
+- 513 kandidat loop closure DITOLAK (>= yang diterima). Lihat event.csv: inliers kecil -> fitur visual kurang; opt_err besar -> drift sudah melebihi RGBD/OptimizeMaxError.
+- Sebagian node peta melenceng hingga 322 cm dari posisi aslinya. Tembok dari node itu tergambar bergeser (sumber "tembok hantu").
+----------------------------------------------------------------------
+File hasil: /home/bromarku/brone/BRONE_D455_CAMODOM/hasil_cek_drift/20261114_221957

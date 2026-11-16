@@ -1,0 +1,64 @@
+# =============================================================================
+# Odometri KAMERA (RTAB-Map rgbd_odometry) untuk BRONE + Intel RealSense D455
+# Menggantikan: encoder roda + gyro + VO LK custom + EKF (folder BRONE_D455_REAL)
+#
+# Input : /camera/color/image_raw + /camera/aligned_depth_to_color/image_raw
+#         + /camera/color/camera_info   (RGB-D D455, depth sudah di-align ke color)
+# Output: /odom (dengan kovariansi dari registrasi) + TF odom->base_link
+#         /odom_info (jumlah inlier, dipakai RTAB-Map & tools/cek_drift_slam.py)
+#
+# Catatan ROS 2: parameter wrapper bertipe native, parameter internal RTAB-Map
+# (yang memakai '/') WAJIB string.
+# =============================================================================
+
+/**:
+  ros__parameters:
+    use_sim_time: true
+    frame_id: "base_link"
+    odom_frame_id: "odom"
+    publish_tf: true
+    wait_for_transform: 0.2
+    # RGB, depth & camera_info distempel sama oleh driver -> exact sync
+    approx_sync: false
+    queue_size: 10
+    # Saat tracking hilang: jangan publish pose nol (RTAB-Map & explorer jadi kacau)
+    publish_null_when_lost: false
+    # guess_frame_id (odom_gyro) diset launcher bila CAMODOM_GYRO=1 (default):
+    # tebakan rotasi dari gyro D455, lihat src/d455_gyro_guess.py
+
+    # ------------------------------------------------------------------------
+    # Strategi odometri
+    #   0 = Frame-to-Map (F2M): frame dicocokkan ke peta fitur lokal + bundle
+    #       adjustment -> drift lebih kecil (default)
+    #   1 = Frame-to-Frame (F2F): dicocokkan ke keyframe terakhir saja
+    # ------------------------------------------------------------------------
+    Odom/Strategy: "0"
+    Odom/Holonomic: "true"          # BRONE omni: bisa geser samping
+    Odom/GuessMotion: "true"        # tebakan awal = gerak terakhir (constant velocity)
+    Reg/Force3DoF: "true"           # robot darat: hanya x, y, yaw
+    Reg/Strategy: "0"               # registrasi visual (PnP RANSAC)
+
+    # Kalau 1 frame gagal, odometri dilanjutkan dari pose terakhir yang sukses
+    # (kovariansi besar -> RTAB-Map membuat sesi peta baru, lalu digabung lagi saat
+    # loop closure). 0 = tunggu sampai melihat fitur lama lagi (robot "beku").
+    Odom/ResetCountdown: "1"
+
+    # Fitur visual: GFTT/ORB (default rtabmap), fitur dibatasi pada depth yang
+    # masih akurat. Noise depth D455 asli: 26 mm @2-3 m, 41 mm @3-4 m.
+    Vis/FeatureType: "8"
+    Vis/MaxFeatures: "1000"
+    # Optical flow: di world ini (dinding polos) feature matching sering hanya
+    # dapat 10-25 match; optical flow melacak fitur yang sama lebih stabil.
+    Vis/CorType: "1"                # 0 = feature matching, 1 = optical flow
+    Vis/CorFlowWinSize: "16"
+    Vis/MinInliers: "15"
+    Vis/MinDepth: "0.3"             # D455 asli buta < 0.293 m
+    Vis/MaxDepth: "5.0"
+    Vis/CorNNDR: "0.8"
+    GFTT/MinDistance: "7"
+
+    # Frame-to-Map
+    OdomF2M/MaxSize: "2000"
+    OdomF2M/BundleAdjustment: "1"   # g2o
+    OdomF2M/BundleAdjustmentMaxFrames: "10"
+    Odom/KeyFrameThr: "0.3"

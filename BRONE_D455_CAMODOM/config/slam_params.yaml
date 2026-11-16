@@ -1,0 +1,76 @@
+# =============================================================================
+# LAYER 3: Parameter Graph-Based 2D SLAM untuk Kamera Intel RealSense D455
+# Referensi:
+# - Siegwart et al., Bab 5.8.6 (Graph-Based SLAM) & Bab 5.3.2 (Occupancy Grid)
+# - Intel RealSense D400 Series Datasheet (Tabel 3-42: HFOV 86°, Range 0.4–6.0m)
+# =============================================================================
+
+slam_toolbox:
+  ros__parameters:
+    # -------------------------------------------------------------------------
+    # 1. KERANGKA KOORDINAT (TF TREE) & TOPIK INPUT (u_t dan z_t)
+    # -------------------------------------------------------------------------
+    odom_frame: odom          # Kerangka odometri lokal dari Layer 1 (u_t)
+    base_frame: base_link     # Titik pusat robot omniwheel
+    map_frame: map            # Kerangka peta global hasil koreksi SLAM (m)
+    scan_topic: /scan         # Topik irisan kedalaman D455 dari Layer 2 (z_t)
+    mode: mapping             # Mode SLAM penuh (membangun peta m & melokalisasi x_t)
+    use_sim_time: false
+
+    # -------------------------------------------------------------------------
+    # 2. PARAMETER SPESIFIK KAMERA INTEL REALSENSE D455 (Observasi z_t)
+    # -------------------------------------------------------------------------
+    # Sesuai Datasheet D455: Jarak efektif indoor adalah 0.40 m s/d 6.00 m.
+    # JANGAN diisi > 6.0 m agar noise kedalaman jauh tidak merusak peta!
+    min_laser_range: 0.15
+    max_laser_range: 6.00
+
+    # -------------------------------------------------------------------------
+    # 3. PARAMETER REPRESENTASI PETA (Occupancy Grid m - Bab 5.3.2)
+    # -------------------------------------------------------------------------
+    resolution: 0.05          # Ukuran 1 sel grid = 5 cm x 5 cm
+    map_update_interval: 1.0  # Frekuensi pembaruan peta visual di RViz2 (detik)
+
+    # -------------------------------------------------------------------------
+    # 4. PEMBENTUKAN SIMPUL GRAF (Pose-Graph Nodes x_t - Bab 5.8.6)
+    # -------------------------------------------------------------------------
+    # Karena FOV horizontal RealSense D455 hanya 86 derajat (1.501 rad),
+    # kita membutuhkan OVERLAP pandangan yang rapat saat robot berbelok!
+    # - minimum_travel_distance: 0.15 m (ambil simpul baru tiap maju/geser 15 cm)
+    # - minimum_travel_heading : 0.15 rad (~8.6 derajat, menjaga ~90% overlap FOV D455)
+    minimum_travel_distance: 0.15
+    minimum_travel_heading: 0.15
+
+    # -------------------------------------------------------------------------
+    # 5. SCAN MATCHING & LOOP CLOSURE (Koreksi Drift Odometri - Bab 5.8.6)
+    # -------------------------------------------------------------------------
+    use_scan_matching: true
+    use_scan_barycenter: true
+    scan_buffer_size: 20
+    scan_buffer_maximum_scan_distance: 6.0
+
+    # Ambang kecocokan fitur rak/tembok antar simpul berurutan (Odometry Edge + Scan Edge)
+    link_match_minimum_response_fine: 0.45
+    link_scan_maximum_distance: 1.5
+
+    # Loop Closure: Saat robot mengelilingi gudang Open-RMF dan kembali ke titik lama,
+    # cari simpul lama dalam radius 4.0 m untuk meratakan akumulasi error odometri
+    do_loop_closing: true
+    loop_search_maximum_distance: 4.0
+    loop_match_minimum_chain_size: 6
+    loop_match_maximum_variance_coarse: 0.4
+    loop_match_minimum_response_coarse: 0.50
+    loop_match_minimum_response_fine: 0.60
+
+    # Ruang pencarian korelasi Scan Matcher (mengakomodasi selip roller omniwheel)
+    correlation_search_space_dimension: 0.4
+    correlation_search_space_resolution: 0.01
+    correlation_search_space_smear_deviation: 0.03
+
+    # Solver Optimasi Graf Non-Linier (Ceres Pose-Graph Optimizer)
+    solver_plugin: solver_plugins::CeresSolver
+    ceres_linear_solver: SPARSE_NORMAL_CHOLESKY
+    ceres_preconditioner: SCHUR_JACOBI
+    ceres_trust_strategy: LEVENBERG_MARQUARDT
+    ceres_dogleg_type: TRADITIONAL_DOGLEG
+    ceres_loss_function: HuberLoss
